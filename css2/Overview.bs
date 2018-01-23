@@ -180,6 +180,18 @@ information that resembles the following:</p>
 
 <!-- #include src=properties/property-name.srb -->
 
+<xmp class='propdef'>
+Name: property-name
+Value: legal values &amp; syntax
+Initial: initial value
+Applies to: elements this property applies to
+Inherited: whether the property is inherited
+Computed value: how to compute the computed value
+Percentages: how percentage values are interpreted
+Media: which media groups the property applies to
+</xmp>
+
+
 <h5><a id="value-defs">Value</a></h5>
 
 <P>This part specifies the set of valid values for the property whose
@@ -5561,9 +5573,8 @@ their respective side.  These properties apply to all elements, but
 vertical margins will not have any effect on non-replaced inline
 elements.
 
-<P>The properties defined in this section refer to the <span
-class="index-def" title="&lt;margin-width&gt;::definition of"><a
-id="value-def-margin-width"><strong>&lt;margin-width&gt;</strong></a></span>
+<P>The properties defined in this section refer to the <dfn
+id="value-def-margin-width"><strong>&lt;margin-width&gt;</strong></dfn>
 value type, which may take one of the following values:</p>
 
 <dl>
@@ -5589,10 +5600,54 @@ implementation-specific limits.
 
 <!-- #include src=properties/margin-top.srb -->
 
+<xmp class='propdef'>
+Name: margin-top
+Value: <<margin-width>> | inherit
+Initial: 0
+Applies to: all elements except elements with table display types other than table-caption, table and inline-table
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: margin-bottom
+Value: <<margin-width>> | inherit
+Initial: 0
+Applies to: all elements except elements with table display types other than table-caption, table and inline-table
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
+
 <p class="note">These properties have no effect on non-replaced inline
 elements.</p>
 
 <!-- #include src=properties/margin-right.srb -->
+
+<xmp class='propdef'>
+Name: margin-right
+Value: <<margin-width>> | inherit
+Initial: 0
+Applies to: all elements except elements with table display types other than table-caption, table and inline-table
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: margin-left
+Value: <<margin-width>> | inherit
+Initial: 0
+Applies to: all elements except elements with table display types other than table-caption, table and inline-table
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <P>These properties set the top, right, bottom, and left margin of a
 box.
@@ -5604,6 +5659,18 @@ h1 { margin-top: 2em }
 </div>
 
 <!-- #include src=properties/margin.srb -->
+
+<xmp class='propdef'>
+Name: margin
+Value: <<margin-width>>{1,4} | inherit
+Initial: see individual properties
+Applies to: all elements except elements with table display types other than table-caption, table and inline-table
+Inherited: no
+Computed value: see individual properties
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <P> The <span class="propinst-margin">'margin'</span> property is a
 shorthand property for setting <span
@@ -5827,6 +5894,48 @@ properties refer to the width of the generated box's containing block.
 
 <!-- #include src=properties/padding-top.srb -->
 
+<xmp class='propdef'>
+Name: padding-top
+Value: <<padding-width>> | inherit
+Initial: 0
+Applies to: all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: padding-right
+Value: <<padding-width>> | inherit
+Initial: 0
+Applies to: all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: padding-bottom
+Value: <<padding-width>> | inherit
+Initial: 0
+Applies to: all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: padding-left
+Value: <<padding-width>> | inherit
+Initial: 0
+Applies to: all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
+
 <P>These properties set the top, right, bottom, and left padding of
 a box.
 
@@ -5837,6 +5946,18 @@ blockquote { padding-top: 0.3em }
 </div>
 
 <!-- #include src=properties/padding.srb -->
+
+<xmp class='propdef'>
+Name: padding
+Value: <<padding-width>>{1,4} | inherit
+Initial: see individual properties
+Applies to: all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column
+Inherited: no
+Computed value: see individual properties
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <P> The <span class="propinst-padding">'padding'</span> property is a
 shorthand property for setting <span
@@ -5929,10 +6050,64 @@ agent. The following relationships must hold, however:
 
 <!-- #include src=properties/border-top-width.srb -->
 
+<xmp class='propdef'>
+Name: border-top-width
+Value: <<border-width>> | inherit
+Initial: medium
+Applies to: *
+Inherited: no
+Computed value: absolute length; '0' if the border style is 'none' or 'hidden'
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-right-width
+Value: <<border-width>> | inherit
+Initial: medium
+Applies to: *
+Inherited: no
+Computed value: absolute length; '0' if the border style is 'none' or 'hidden'
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-bottom-width
+Value: <<border-width>> | inherit
+Initial: medium
+Applies to: *
+Inherited: no
+Computed value: absolute length; '0' if the border style is 'none' or 'hidden'
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-left-width
+Value: <<border-width>> | inherit
+Initial: medium
+Applies to: *
+Inherited: no
+Computed value: absolute length; '0' if the border style is 'none' or 'hidden'
+Percentages: N/A
+Media: visual
+</xmp>
+
+
 <P>These properties set the width of the top, right, bottom,
 and left border of a box.
 
 <!-- #include src=properties/border-width.srb -->
+
+<xmp class='propdef'>
+Name: border-width
+Value: <<border-width>>{1,4} | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P> This property is a shorthand property for setting
 <span class="propinst-border-top-width">'border-top-width'</span>, 
@@ -5973,7 +6148,60 @@ h1 { border-width: thin thick medium }      /* thin thick medium thick */
 <P>The border color properties specify the color of a box's border.
 
 <!-- #include src=properties/border-top-color.srb -->
+<xmp class='propdef'>
+Name: border-top-color
+Value: <<color>> | transparent | inherit
+Initial: the value of the 'color' property
+Applies to: *
+Inherited: no
+Computed value: when taken from the 'color' property, the computed value of 'color'; otherwise, as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-right-color
+Value: <<color>> | transparent | inherit
+Initial: the value of the 'color' property
+Applies to: *
+Inherited: no
+Computed value: when taken from the 'color' property, the computed value of 'color'; otherwise, as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-bottom-color
+Value: <<color>> | transparent | inherit
+Initial: the value of the 'color' property
+Applies to: *
+Inherited: no
+Computed value: when taken from the 'color' property, the computed value of 'color'; otherwise, as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-left-color
+Value: <<color>> | transparent | inherit
+Initial: the value of the 'color' property
+Applies to: *
+Inherited: no
+Computed value: when taken from the 'color' property, the computed value of 'color'; otherwise, as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
+
 <!-- #include src=properties/border-color.srb -->
+<xmp class='propdef'>
+Name: border-color
+Value: [ <<color>> | transparent ]{1,4} | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P>The <span class="propinst-border-color">'border-color'</span>
 property sets the color of the four borders. Values have the following
@@ -6075,7 +6303,59 @@ interpret 'dotted', 'dashed', 'double', 'groove', 'ridge',
 -->
 
 <!-- #include src=properties/border-top-style.srb -->
+<xmp class='propdef'>
+Name: border-top-style
+Value: <<border-style>> | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-right-style
+Value: <<border-style>> | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-bottom-style
+Value: <<border-style>> | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-left-style
+Value: <<border-style>> | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 <!-- #include src=properties/border-style.srb -->
+<xmp class='propdef'>
+Name: border-style
+Value: <<border-style>>{1,4} | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P> The <span class="propinst-border-style">'border-style'</span>
 property sets the style of the four borders. It can have from one to
@@ -6101,6 +6381,47 @@ will be visible unless the border style is set.
 <span class="propinst-border">'border'</span></h4>
 
 <!-- #include src=properties/border-top.srb -->
+<xmp class='propdef'>
+Name: border-top
+Value: [ <<border-width>> || <<border-style>> || <<'border-top-color'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-right
+Value: [ <<border-width>> || <<border-style>> || <<'border-top-color'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-bottom
+Value: [ <<border-width>> || <<border-style>> || <<'border-top-color'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+<xmp class='propdef'>
+Name: border-left
+Value: [ <<border-width>> || <<border-style>> || <<'border-top-color'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P> This is a shorthand property for setting the width, style, and
 color of the top, right, bottom, and left border of a box.
@@ -6123,6 +6444,17 @@ H1 { border-bottom: thick solid }
 </div>
 
 <!-- #include src=properties/border.srb -->
+<xmp class='propdef'>
+Name: border
+Value: [ <<border-width>> || <<border-style>> || <<'border-top-color'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P> The <span class="propinst-border">'border'</span> property is a
 shorthand property for setting the same width, color, and style for
@@ -6517,6 +6849,17 @@ href="https://www.w3.org/TR/css3-box/">CSS basic box model</a>).]
 class="propinst-display">'display'</span> property</h4>
 
 <!-- #include src=properties/display.srb -->
+<xmp class='propdef'>
+Name: display
+Value: inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none | inherit
+Initial: inline
+Applies to: *
+Inherited: no
+Computed value: see text
+Percentages: N/A
+Media: all
+</xmp>
+
 
 <p>The values of this property have the following meanings:</p>
 
@@ -6672,6 +7015,16 @@ the position of a box.
 </p>
 
 <!-- #include src=properties/position.srb -->
+<xmp class='propdef'>
+Name: position
+Value: static | relative | absolute | fixed | inherit
+Initial: static
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The values of this property have the following meanings:</p>
 
@@ -6762,6 +7115,16 @@ a value other than 'static'. Positioned elements generate
 positioned boxes, laid out according to four properties:</p>
 
 <!-- #include src=properties/top.srb -->
+<xmp class='propdef'>
+Name: top
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: positioned elements
+Inherited: no
+Computed value: if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Percentages: refer to height of containing block
+Media: visual
+</xmp>
 
 <p>This property specifies how far an <a
 href="#absolutely-positioned">absolutely positioned</a> box's top
@@ -6773,6 +7136,17 @@ offset from that position according to these properties).
 </p>
 
 <!-- #include src=properties/right.srb -->
+<xmp class='propdef'>
+Name: right
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: positioned elements
+Inherited: no
+Computed value: if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <p>Like 'top', but specifies how far a box's right margin edge is
 offset to the left of the right edge of the box's <a
@@ -6782,6 +7156,17 @@ box itself.
 </p>
 
 <!-- #include src=properties/bottom.srb -->
+<xmp class='propdef'>
+Name: bottom
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: positioned elements
+Inherited: no
+Computed value: if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Percentages: refer to height of containing block
+Media: visual
+</xmp>
+
 
 <p>Like 'top', but specifies how far a box's bottom margin edge is
 offset above the bottom of the box's <a
@@ -6791,6 +7176,17 @@ box itself.
 </p>
 
 <!-- #include src=properties/left.srb -->
+<xmp class='propdef'>
+Name: left
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: positioned elements
+Inherited: no
+Computed value: if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'.
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <p>Like 'top', but specifies how far a box's left margin edge is
 offset to the right of the left edge of the box's <a
@@ -7344,6 +7740,16 @@ class="propinst-clear">'clear'</span> property).
 <span class="propinst-float">'float'</span> property</h4>
 
 <!-- #include src=properties/float.srb -->
+<xmp class='propdef'>
+Name: float
+Value: left | right | none | inherit
+Initial: none
+Applies to: all, but see {visuren.html#dis-pos-flo}9.7{}
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property specifies whether a box should float to the left,
 right, or not at all. It may be set for any element, but only applies to 
@@ -7462,6 +7868,17 @@ alt="An a at the left side of a box and a b at the right side">
 the <span class="propinst-clear">'clear'</span> property</h4> 
 
 <!-- #include src=properties/clear.srb -->
+<xmp class='propdef'>
+Name: clear
+Value: none | left | right | both | inherit
+Initial: none
+Applies to: block-level elements
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>This property indicates which sides of an element's box(es) may
 <em>not</em> be adjacent to an earlier floating box. The 'clear'
@@ -8114,6 +8531,17 @@ line.</p>
 class="propinst-z-index">'z-index'</span> property</h4> 
 
 <!-- #include src=properties/z-index.srb -->
+<xmp class='propdef'>
+Name: z-index
+Value: auto | <<integer>> | inherit
+Initial: auto
+Applies to: positioned elements
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>For a positioned box, the <span
 class="propinst-z-index">'z-index'</span> property specifies:
@@ -8330,6 +8758,17 @@ bidirectionality issues.
 </p>
 
 <!-- #include src=properties/direction.srb -->
+<xmp class='propdef'>
+Name: direction
+Value: ltr | rtl | inherit
+Initial: ltr
+Applies to: all elements, but see prose
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>This property specifies the base writing direction of blocks and
 the direction of embeddings and overrides (see <span
@@ -8366,6 +8805,18 @@ in [[HTML401]], section 11.3.2.1.
 </em></p></div>
 
 <!-- #include src=properties/unicode-bidi.srb -->
+<xmp class='propdef'>
+Name: unicode-bidi
+Value: normal | embed | bidi-override | inherit
+Initial: normal
+Applies to: all elements, but see prose
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
+
 
 <p>Values for this property have the following meanings:</p>
 
@@ -8699,6 +9150,17 @@ by "div1").
 class="propinst-width">'width'</span> property</h3>
 
 <!-- #include src=properties/width.srb -->
+<xmp class='propdef'>
+Name: width
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: all elements but non-replaced inline elements, table rows, and row groups
+Inherited: no
+Computed value: the percentage or 'auto' as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <p> This property specifies the <a
 href="#content-width">content width</a> of boxes.  
@@ -9138,7 +9600,29 @@ class="propinst-min-width">'min-width'</span> and <span
 class="propinst-max-width">'max-width'</span></h3>
 
 <!-- #include src=properties/min-width.srb -->
+<xmp class='propdef'>
+Name: min-width
+Value: <<length>> | <<percentage>> | inherit
+Initial: 0
+Applies to: all elements but non-replaced inline elements, table rows, and row groups
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 <!-- #include src=properties/max-width.srb -->
+<xmp class='propdef'>
+Name: max-width
+Value: <<length>> | <<percentage>> | none | inherit
+Initial: none
+Applies to: all elements but non-replaced inline elements, table rows, and row groups
+Inherited: no
+Computed value: the percentage as specified or the absolute length or 'none'
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
+
 
 <p>These two properties allow authors to constrain content widths to a
 certain range. Values have the following meanings:</p>
@@ -9321,6 +9805,17 @@ were computed as this value.
 class="propinst-height">'height'</span> property</h3>
 
 <!-- #include src=properties/height.srb -->
+<xmp class='propdef'>
+Name: height
+Value: <<length>> | <<percentage>> | auto | inherit
+Initial: auto
+Applies to: all elements but non-replaced inline elements, table columns, and column groups
+Inherited: no
+Computed value: the percentage or 'auto' (as specified) or the absolute length
+Percentages: see prose
+Media: visual
+</xmp>
+
 
 <p> This property specifies the <a
 href="#content-height">content height</a> of boxes.
@@ -9702,7 +10197,28 @@ certain range. Two properties offer this functionality:
 </p>
 
 <!-- #include src=properties/min-height.srb -->
+<xmp class='propdef'>
+Name: min-height
+Value: <<length>> | <<percentage>> | inherit
+Initial: 0
+Applies to: all elements but non-replaced inline elements, table columns, and column groups
+Inherited: no
+Computed value: the percentage as specified or the absolute length
+Percentages: see prose
+Media: visual
+</xmp>
+
 <!-- #include src=properties/max-height.srb -->
+<xmp class='propdef'>
+Name: max-height
+Value: <<length>> | <<percentage>> | none | inherit
+Initial: none
+Applies to: all elements but non-replaced inline elements, table columns, and column groups
+Inherited: no
+Computed value: the percentage as specified or the absolute length or 'none'
+Percentages: see prose
+Media: visual
+</xmp>
 
 <p>These two properties allow authors to constrain box heights to a
 certain range. Values have the following meanings:</p>
@@ -9898,6 +10414,16 @@ size). In the absence of these metrics, the "Ascent" and "Descent"
 metrics from the HHEA table should be used.</em>
 
 <!-- #include src=properties/line-height.srb -->
+<xmp class='propdef'>
+Name: line-height
+Value: normal | <<number>> | <<length>> | <<percentage>> | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: for <length> and <percentage> the absolute value; otherwise as specified
+Percentages: refer to the font size of the element itself
+Media: visual
+</xmp>
 
 <p>On a <a href="#block-boxes">block container element</a>
 whose content
@@ -9971,6 +10497,16 @@ important when columns of text in different fonts have to be aligned,
 for example in a table.</em>
 </p>
 <!-- #include src=properties/vertical-align.srb -->
+<xmp class='propdef'>
+Name: vertical-align
+Value: baseline | sub | super | top | text-top | middle | bottom | text-bottom | <<percentage>> | <<length>> | inherit
+Initial: baseline
+Applies to: inline-level and 'table-cell' elements
+Inherited: no
+Computed value: for <percentage> and <length> the absolute length, otherwise as specified
+Percentages: refer to the 'line-height' of the element itself
+Media: visual
+</xmp>
 
 <p>This property affects the vertical positioning inside a line box of
 the boxes generated by an inline-level element.</p>
@@ -10111,6 +10647,16 @@ a scrolling mechanism is provided to access any clipped out content.
 class="propinst-overflow">'overflow'</span> property</h4>
 
 <!-- #include src=properties/overflow.srb -->
+<xmp class='propdef'>
+Name: overflow
+Value: visible | hidden | scroll | auto | inherit
+Initial: visible
+Applies to: block containers and boxes that establish a formatting context
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>
 This property specifies whether content of a block container element is 
@@ -10301,6 +10847,16 @@ is visible. By default, the element is not clipped. However, the clipping region
 </p>
 
 <!-- #include src=properties/clip.srb -->
+<xmp class='propdef'>
+Name: clip
+Value: <<shape>> | auto | inherit
+Initial: auto
+Applies to: absolutely positioned elements
+Inherited: no
+Computed value: 'auto' if specified as 'auto', otherwise a rectangle with four values, each of which is 'auto' if specified as 'auto' and the computed length otherwise
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The 'clip' property applies only to absolutely positioned elements.
 Values have the following meanings:</p>
@@ -10395,6 +10951,16 @@ a point.</em></p></div>
 class="propinst-visibility">'visibility'</span> property</h3>
 
 <!-- #include src=properties/visibility.srb -->
+<xmp class='propdef'>
+Name: visibility
+Value: visible | hidden | collapse | inherit
+Initial: visible
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The <span class="propinst-visibility">'visibility'</span> property
 specifies whether the boxes generated by an element are
@@ -10623,6 +11189,16 @@ be defined in more detail in a future specification.</p>
 class="propinst-content">'content'</span> property</h3>
 
 <!-- #include src=properties/content.srb -->
+<xmp class='propdef'>
+Name: content
+Value: normal | none | [ <<string>> | <<uri>> | <<counter>> | attr(<<identifier>>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit
+Initial: normal
+Applies to: :before and :after pseudo-elements
+Inherited: no
+Computed value: On elements, always computes to 'normal'. On :before and :after, if 'normal' is specified, computes to 'none'. Otherwise, for URI values, the absolute URI; for attr() values, the resulting string; for other keywords, as specified.
+Percentages: N/A
+Media: all
+</xmp>
 
 <p>This property is used with the :before and :after pseudo-elements
 to generate content in a document. Values have the following
@@ -10752,6 +11328,17 @@ inserted before and after a quotation.
 class="propinst-quotes">'quotes'</span> property</h4>
 
 <!-- #include src=properties/quotes.srb -->
+<xmp class='propdef'>
+Name: quotes
+Value: [<<string>> <<string>>]+ | none | inherit
+Initial: depends on user agent
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P>This property specifies quotation marks for any number of embedded
 quotations. Values have the following meanings:</p>
@@ -10929,7 +11516,29 @@ counters() functions of the the <span
 class="propinst-content">'content'</span> property.
 
 <!-- #include src=properties/counter-reset.srb -->
+<xmp class='propdef'>
+Name: counter-reset
+Value: [ <<identifier>> <<integer>>? ]+ | none | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: all
+</xmp>
+
 <!-- #include src=properties/counter-increment.srb -->
+<xmp class='propdef'>
+Name: counter-increment
+Value: [ <<identifier>> <<integer>>? ]+ | none | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: all
+</xmp>
+
 
 <p>The <span
 class="propinst-counter-increment">'counter-increment'</span> property
@@ -11225,6 +11834,17 @@ class="propinst-list-style-position">'list-style-position'</span>, and
 
 
 <!-- #include src=properties/list-style-type.srb -->
+<xmp class='propdef'>
+Name: list-style-type
+Value: disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none | inherit
+Initial: disc
+Applies to: elements with 'display: list-item'
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <P> This property specifies appearance of the list item marker if
 <span class="propinst-list-style-image">'list-style-image'</span> has
@@ -11324,6 +11944,16 @@ iii This is the third item.
 
 
 <!-- #include src=properties/list-style-image.srb -->
+<xmp class='propdef'>
+Name: list-style-image
+Value: <<uri>> | none | inherit
+Initial: none
+Applies to: elements with 'display: list-item'
+Inherited: yes
+Computed value: absolute URI or 'none'
+Percentages: N/A
+Media: visual
+</xmp>
 
 <P> This property sets the image that will be used as the list item
 marker. When the image is available, it will replace the marker set
@@ -11363,6 +11993,18 @@ ul { list-style-image: url("http://png.com/ellipse.png") }
 </div>
 
 <!-- #include src=properties/list-style-position.srb -->
+<xmp class='propdef'>
+Name: list-style-position
+Value: inside | outside | inherit
+Initial: outside
+Applies to: elements with 'display: list-item'
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
+
 
 <P> This property specifies the position of the marker box with
 respect to the
@@ -11442,6 +12084,16 @@ side of the box.
 </div>
 
 <!-- #include src=properties/list-style.srb -->
+<xmp class='propdef'>
+Name: list-style
+Value: [ <<'list-style-type'>> || <<'list-style-position'>> || <<'list-style-image'>> ] | inherit
+Initial: see individual properties
+Applies to: elements with 'display: list-item'
+Inherited: yes
+Computed value: see individual properties
+Percentages: N/A
+Media: visual
+</xmp>
 
 <P> The <span class="propinst-list-style">'list-style'</span> property
 is a shorthand notation for setting the three properties <span
@@ -11805,10 +12457,43 @@ class="propinst-page-break-before">'page-break-before'</span>,
 </h4>
 
 <!-- #include src=properties/page-break-before.srb -->
+<xmp class='propdef'>
+Name: page-break-before
+Value: auto | always | avoid | left | right | inherit
+Initial: auto
+Applies to: block-level elements (but see text)
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual, paged
+</xmp>
+
 
 <!-- #include src=properties/page-break-after.srb -->
+<xmp class='propdef'>
+Name: page-break-after
+Value: auto | always | avoid | left | right | inherit
+Initial: auto
+Applies to: block-level elements (but see text)
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual, paged
+</xmp>
+
 
 <!-- #include src=properties/page-break-inside.srb -->
+<xmp class='propdef'>
+Name: page-break-inside
+Value: avoid | auto | inherit
+Initial: auto
+Applies to: block-level elements (but see text)
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual, paged
+</xmp>
+
 
 <P>Values for these properties have the following meanings:</p>
 
@@ -11860,7 +12545,29 @@ class="propinst-widows">'widows'</span></h4>
 
 <!-- #include src=properties/orphans.srb -->
 
+<xmp class='propdef'>
+Name: orphans
+Value: <<integer>> | inherit
+Initial: 2
+Applies to: block container elements
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual, paged
+</xmp>
+
 <!-- #include src=properties/widows.srb -->
+<xmp class='propdef'>
+Name: widows
+Value: <<integer>> | inherit
+Initial: 2
+Applies to: block container elements
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual, paged
+</xmp>
+
 
 <P>The <span class="propinst-orphans">'orphans'</span> property
 specifies the minimum number of lines in a block container that must be left
@@ -12051,6 +12758,16 @@ class="propinst-color">'color'</span> property</h3>
 Level 3</cite> [[CSS3COLOR]].
 
 <!-- #include src=properties/color.srb -->
+<xmp class='propdef'>
+Name: color
+Value: <<color>> | inherit
+Initial: depends on user agent
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p> This property describes the foreground color of an element's text
 content. There are different ways to specify red:
@@ -12146,6 +12863,17 @@ class="propinst-background-position">'background-position'</span>, and
 </h4>
 
 <!-- #include src=properties/background-color.srb -->
+<xmp class='propdef'>
+Name: background-color
+Value: <<color>> | transparent | inherit
+Initial: transparent
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>This property sets the background color of an element, either a
 <span class="index-inst" title="&lt;color&gt;"><span
@@ -12160,6 +12888,17 @@ h1 { background-color: #F00 }
 
 
 <!-- #include src=properties/background-image.srb -->
+<xmp class='propdef'>
+Name: background-image
+Value: <<uri>> | none | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: absolute URI or none
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p> This property sets the background image of an element. When
 setting a background image, authors should also specify a background
@@ -12210,6 +12949,18 @@ property.
 </p>
 
 <!-- #include src=properties/background-repeat.srb -->
+<xmp class='propdef'>
+Name: background-repeat
+Value: repeat | repeat-x | repeat-y | no-repeat | inherit
+Initial: repeat
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
+
 
 <p>If a background image is specified, this property specifies whether
 the image is repeated (tiled), and how.  All tiling covers the <a
@@ -12255,6 +13006,16 @@ the element.
 </div>
 
 <!-- #include src=properties/background-attachment.srb -->
+<xmp class='propdef'>
+Name: background-attachment
+Value: scroll | fixed | inherit
+Initial: scroll
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>If a background image is specified, this property specifies
 whether it is fixed with regard to the <a
@@ -12303,6 +13064,16 @@ href="#conformance">conformance</a> for details.
 </p>
 
 <!-- #include src=properties/background-position.srb -->
+<xmp class='propdef'>
+Name: background-position
+Value: [ [ <<percentage>> | <<length>> | left | center | right ] [ <<percentage>> | <<length>> | top | center | bottom ]? ] | [ [ left | center | right ] || [ top | center | bottom ] ] | inherit
+Initial: 0% 0%
+Applies to: *
+Inherited: no
+Computed value: for <length> the absolute value, otherwise a percentage
+Percentages: refer to the size of the box itself
+Media: visual
+</xmp>
 
 <p>If a background image has been specified, this property specifies
 its initial position. If only one value is specified, the second value
@@ -12400,6 +13171,16 @@ corner of the viewport.
 </div>
 
 <!-- #include src=properties/background.srb -->
+<xmp class='propdef'>
+Name: background
+Value: [<<'background-color'>> || <<'background-image'>> || <<'background-repeat'>> || <<'background-attachment'>> || <<'background-position'>>] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: allowed on 'background-position'
+Media: visual
+</xmp>
 
 <p> The <span class="propinst-background">'background'</span> property
 is a shorthand property for setting the individual background
@@ -12529,6 +13310,16 @@ the computed value of 'font-size'.
 class="propinst-font-family">'font-family'</span> property</h3>
 
 <!-- #include src=properties/font-family.srb -->
+<xmp class='propdef'>
+Name: font-family
+Value: [[ <<family-name>> | <<generic-family>> ] [, [ <<family-name>>| <<generic-family>>] ]* ] | inherit
+Initial: depends on user agent
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The property value is a prioritized list of font family names
 and/or <a href="#generic-font-families">generic family names.</a>
@@ -12775,6 +13566,16 @@ typewriter, and is often used to set samples of computer code.
 <span class="propinst-font-style">'font-style'</span> property</h3>
 
 <!-- #include src=properties/font-style.srb -->
+<xmp class='propdef'>
+Name: font-style
+Value: normal | italic | oblique | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The 'font-style' property selects between normal (sometimes
 referred to as "roman" or "upright"), italic and oblique faces within
@@ -12805,6 +13606,16 @@ normal face.
 <span class="propinst-font-variant">'font-variant'</span> property</h3>
 
 <!-- #include src=properties/font-variant.srb -->
+<xmp class='propdef'>
+Name: font-variant
+Value: normal | small-caps | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>Another type of variation within a font family is the small-caps.
 In a small-caps font the lower case letters look similar to the
@@ -12839,6 +13650,16 @@ class="propinst-text-transform">'text-transform'</span> apply.
 <span class="propinst-font-weight">'font-weight'</span> property</h3>
 
 <!-- #include src=properties/font-weight.srb -->
+<xmp class='propdef'>
+Name: font-weight
+Value: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: see text
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>The 'font-weight' property selects the weight of the font. The
 values '100' to '900' form an ordered sequence, where each number
@@ -13008,6 +13829,16 @@ class="propinst-font-size">'font-size'</span>
 property</h3>
 
 <!-- #include src=properties/font-size.srb -->
+<xmp class='propdef'>
+Name: font-size
+Value: <<absolute-size>> | <<relative-size>> | <<length>> | <<percentage>> | inherit
+Initial: medium
+Applies to: *
+Inherited: yes
+Computed value: absolute length
+Percentages: refer to inherited font size
+Media: visual
+</xmp>
 
 <p>The font size corresponds to the em square, a concept used in typography.
 Note that certain glyphs may bleed outside their em squares. Values
@@ -13114,6 +13945,16 @@ em { font-size: 1.5em }
 <h3><a id="font-shorthand">Shorthand font property</a>: the <span class="propinst-font">'font'</span> property</h3>
 
 <!-- #include src=properties/font.srb -->
+<xmp class='propdef'>
+Name: font
+Value: [ [ <<'font-style'>> || <<'font-variant'>> || <<'font-weight'>> ]? <<'font-size'>> [ / <<'line-height'>> ]? <<'font-family'>> ] | caption | icon | menu | message-box | small-caption | status-bar | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: yes
+Computed value: see individual properties
+Percentages: see individual properties
+Media: visual
+</xmp>
 
 <p>
 The <span class="propinst-font">'font'</span> property is,
@@ -13241,6 +14082,16 @@ presentation of characters, spaces, words, and paragraphs.
 class="propinst-text-indent">'text-indent'</span> property</h3>
 
 <!-- #include src=properties/text-indent.srb -->
+<xmp class='propdef'>
+Name: text-indent
+Value: <<length>> | <<percentage>> | inherit
+Initial: 0
+Applies to: block containers
+Inherited: yes
+Computed value: the percentage as specified or the absolute length
+Percentages: refer to width of containing block
+Media: visual
+</xmp>
 
 <p>This property specifies the indentation of the first line of text
 in a block container. More precisely, it specifies the indentation of the
@@ -13299,6 +14150,16 @@ on elements that are specified '<code>display:inline-block</code>'.
 class="propinst-text-align">'text-align'</span> property</h3>
 
 <!-- #include src=properties/text-align.srb -->
+<xmp class='propdef'>
+Name: text-align
+Value: left | right | center | justify | inherit
+Initial: a nameless value that acts as 'left' if 'direction' is 'ltr', 'right' if 'direction' is 'rtl'
+Applies to: block containers
+Inherited: yes
+Computed value: the initial value or as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property describes how inline-level content of a block
 container is aligned. Values
@@ -13362,6 +14223,16 @@ class="propinst-text-decoration">'text-decoration'</span>
 property</h4>
 
 <!-- #include src=properties/text-decoration.srb -->
+<xmp class='propdef'>
+Name: text-decoration
+Value: none | [ underline || overline || line-through || blink ] | inherit
+Initial: none
+Applies to: *
+Inherited: no (see prose)
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>
 This property describes decorations that are added
@@ -13502,6 +14373,16 @@ class="propinst-letter-spacing">'letter-spacing'</span> and <span
 class="propinst-word-spacing">'word-spacing'</span> properties</h3>
 
 <!-- #include src=properties/letter-spacing.srb -->
+<xmp class='propdef'>
+Name: letter-spacing
+Value: normal | <<length>> | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: 'normal' or absolute length
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property specifies spacing behavior between
 text characters. Values have the following meanings:</p>
@@ -13545,6 +14426,16 @@ the default space, user agents should not use
 </p>
 
 <!-- #include src=properties/word-spacing.srb -->
+<xmp class='propdef'>
+Name: word-spacing
+Value: normal | <<length>> | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: for 'normal' the value '0'; otherwise the absolute length
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property specifies spacing behavior between words.
 Values have the following meanings:</p>
@@ -13585,6 +14476,16 @@ h1 { word-spacing: 1em }
 class="propinst-text-transform">'text-transform'</span> property</h3>
 
 <!-- #include src=properties/text-transform.srb -->
+<xmp class='propdef'>
+Name: text-transform
+Value: capitalize | uppercase | lowercase | none | inherit
+Initial: none
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property controls capitalization effects of
 an element's text. Values have the following meanings:</p>
@@ -13620,6 +14521,16 @@ h1 { text-transform: uppercase }
 class="propinst-white-space">'white-space'</span> property</h3>
 
 <!-- #include src=properties/white-space.srb -->
+<xmp class='propdef'>
+Name: white-space
+Value: normal | pre | nowrap | pre-wrap | pre-line | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p> This property declares how white space inside the element is
 handled. Values have the following meanings:</p>
@@ -14325,6 +15236,16 @@ it">
 <h4><a id="caption-position">Caption position and alignment</a></h4>
 
 <!-- #include src=properties/caption-side.srb -->
+<xmp class='propdef'>
+Name: caption-side
+Value: top | bottom | inherit
+Initial: top
+Applies to: 'table-caption' elements
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>This property specifies the position of the caption box with
 respect to the table box. Values have the following meanings:
@@ -14594,6 +15515,17 @@ automatically fit their containing blocks.
 
 
 <!-- #include src=properties/table-layout.srb -->
+<xmp class='propdef'>
+Name: table-layout
+Value: auto | fixed | inherit
+Initial: auto
+Applies to: 'table' and 'inline-table' elements
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>The <span class="propinst-table-layout">'table-layout'</span>
 property controls the algorithm used to lay out the table cells, rows,
@@ -14952,6 +15884,17 @@ end of the table to the other. Many border styles can be achieved with
 either model, so it is often a matter of taste which one is used.
 
 <!-- #include src=properties/border-collapse.srb -->
+<xmp class='propdef'>
+Name: border-collapse
+Value: collapse | separate | inherit
+Initial: separate
+Applies to: 'table' and 'inline-table' elements
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
+
 
 <p>This property selects a table's border model. The value 'separate'
 selects the separated borders border model. The value 'collapse'
@@ -14960,6 +15903,16 @@ selects the collapsing borders model. The models are described below.
 <h4><a id="separated-borders">The separated borders model</a></h4>
 
 <!-- #include src=properties/border-spacing.srb -->
+<xmp class='propdef'>
+Name: border-spacing
+Value: <<length>> <<length>>? | inherit
+Initial: 0
+Applies to: 'table' and 'inline-table' elements*
+Inherited: yes
+Computed value: two absolute lengths
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p class="note">*) Note: user agents may also apply the
 'border-spacing' property to 'frameset' elements. Which elements are
@@ -15030,6 +15983,16 @@ td.special { border: inset 10pt }  /* The top-left cell */
 class="propinst-empty-cells">'empty-cells'</span> property</h5>
 
 <!-- #include src=properties/empty-cells.srb -->
+<xmp class='propdef'>
+Name: empty-cells
+Value: show | hide | inherit
+Initial: show
+Applies to: 'table-cell' elements
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: visual
+</xmp>
 
 <p>In the separated borders model, this property controls the
 rendering of borders and backgrounds around cells that have no visible
@@ -15330,6 +16293,17 @@ below they are marked with an asterisk.
 class="propinst-cursor">'cursor'</span> property</h3>
 
 <!-- #include src=properties/cursor.srb -->
+<xmp class='propdef'>
+Name: cursor
+Value: [ [<<uri>> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] ] | inherit
+Initial: auto
+Applies to: *
+Inherited: yes
+Computed value: as specified, except with any relative URLs converted to absolute
+Percentages: N/A
+Media: visual, interactive
+</xmp>
+
 
 <p>This property specifies the type of cursor to be displayed for the
 	pointing device. Values have the following meanings:
@@ -15524,9 +16498,50 @@ ways:</p>
 <p>The outline properties control the style of these dynamic outlines.
 </p>
 <!-- #include src=properties/outline.srb -->
+<xmp class='propdef'>
+Name: outline
+Value: [ <<'outline-color'>> || <<'outline-style'>> || <<'outline-width'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: visual, interactive
+</xmp>
 <!-- #include src=properties/outline-width.srb -->
+<xmp class='propdef'>
+Name: outline-width
+Value: <<border-width>> | inherit
+Initial: medium
+Applies to: *
+Inherited: no
+Computed value: absolute length; '0' if the outline style is 'none'
+Percentages: N/A
+Media: visual, interactive
+</xmp>
+
 <!-- #include src=properties/outline-style.srb -->
+<xmp class='propdef'>
+Name: outline-style
+Value: <<border-style>> | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual, interactive
+</xmp>
 <!-- #include src=properties/outline-color.srb -->
+<xmp class='propdef'>
+Name: outline-color
+Value: <<color>> | invert | inherit
+Initial: invert
+Applies to: *
+Inherited: no
+Computed value: as specified
+Percentages: N/A
+Media: visual, interactive
+</xmp>
 
 <p>The outline created with the outline properties is drawn "over" a
 box, i.e., the outline is always on top, and does not influence the
@@ -15809,6 +16824,16 @@ zero: '0Hz' may be written as '0'.
 class="propinst-volume">'volume'</span></h3>
 
 <!-- #include src=properties/volume.srb -->
+<xmp class='propdef'>
+Name: volume
+Value: <<number>> | <<percentage>> | silent | x-soft | soft | medium | loud | x-loud | inherit
+Initial: medium
+Applies to: *
+Inherited: yes
+Computed value: number
+Percentages: refer to inherited value
+Media: aural
+</xmp>
 
 <P><span class="index-def" title="volume">Volume</span> refers to the
 median volume of the waveform. In other words, a highly inflected
@@ -15878,6 +16903,16 @@ mapping the '0' and '100' points suitably at the client side.
 class="propinst-speak">'speak'</span></h3>
 
 <!-- #include src=properties/speak.srb -->
+<xmp class='propdef'>
+Name: speak
+Value: normal | none | spell-out | inherit
+Initial: normal
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
 
 <P>This property specifies whether text will be rendered aurally and
 if so, in what manner. The possible values are:
@@ -15915,8 +16950,28 @@ class="propinst-pause-after">'pause-after'</span>, and <span
 class="propinst-pause">'pause'</span></h3>
 
 <!-- #include src=properties/pause-before.srb -->
+<xmp class='propdef'>
+Name: pause-before
+Value: <<time>> | <<percentage>> | inherit
+Initial: 0
+Applies to: *
+Inherited: no
+Computed value: time
+Percentages: see prose
+Media: aural
+</xmp>
 
 <!-- #include src=properties/pause-after.srb -->
+<xmp class='propdef'>
+Name: pause-after
+Value: <<time>> | <<percentage>> | inherit
+Initial: 0
+Applies to: *
+Inherited: no
+Computed value: time
+Percentages: see prose
+Media: aural
+</xmp>
 
 
 <P>These properties specify a pause to be observed before (or after)
@@ -15949,6 +17004,16 @@ class="propinst-cue-after">'cue-after'</span> content.
 sheets in the face of large changes in speech-rate.</p>
 
 <!-- #include src=properties/pause.srb -->
+<xmp class='propdef'>
+Name: pause
+Value: [ [<<time>> | <<percentage>>]{1,2} ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: see descriptions of 'pause-before' and 'pause-after'
+Media: aural
+</xmp>
 
 <P>The <span class="propinst-pause">'pause'</span> property is a
 shorthand for setting <span
@@ -15973,8 +17038,30 @@ class="propinst-cue-after">'cue-after'</span>, and <span
 class="propinst-cue">'cue'</span></h3>
 
 <!-- #include src=properties/cue-before.srb -->
+<xmp class='propdef'>
+Name: cue-before
+Value: <<uri>> | none | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: absolute URI or 'none'
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <!-- #include src=properties/cue-after.srb -->
+<xmp class='propdef'>
+Name: cue-after
+Value: <<uri>> | none | inherit
+Initial: none
+Applies to: *
+Inherited: no
+Computed value: absolute URI or 'none'
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>Auditory icons are another way to distinguish semantic
 elements. Sounds may be played before and/or after the element to
@@ -15996,6 +17083,17 @@ h1 {cue-before: url("pop.au"); cue-after: url("pop.au") }
 </div>
 
 <!-- #include src=properties/cue.srb -->
+<xmp class='propdef'>
+Name: cue
+Value: [ <<'cue-before'>> || <<'cue-after'>> ] | inherit
+Initial: see individual properties
+Applies to: *
+Inherited: no
+Computed value: see individual properties
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>The <span class="propinst-cue">'cue'</span> property is a shorthand
 for setting <span class="propinst-cue-before">'cue-before'</span>
@@ -16029,6 +17127,17 @@ from the ':after' pseudo-element.
 class="propinst-play-during">'play-during'</span></h3>
 
 <!-- #include src=properties/play-during.srb -->
+<xmp class='propdef'>
+Name: play-during
+Value: <<uri>> [ mix || repeat ]? | auto | none | inherit
+Initial: auto
+Applies to: *
+Inherited: no
+Computed value: absolute URI, rest as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <p>Similar to the <span
 class="propinst-cue-before">'cue-before'</span> and <span
@@ -16093,6 +17202,17 @@ audio, which implies that in time consumer-priced spatial audio
 hardware will become more widely available.</p>
 
 <!-- #include src=properties/azimuth.srb -->
+<xmp class='propdef'>
+Name: azimuth
+Value: <<angle>> | [[ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards | inherit
+Initial: center
+Applies to: *
+Inherited: yes
+Computed value: normalized angle
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>Values have the following meanings:</p>
 
@@ -16165,6 +17285,17 @@ hemisphere values.  One method is as follows:</p>
 </ul>
 
 <!-- #include src=properties/elevation.srb -->
+<xmp class='propdef'>
+Name: elevation
+Value: <<angle>> | below | level | above | higher | lower | inherit
+Initial: level
+Applies to: *
+Inherited: yes
+Computed value: normalized angle
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>Values of this property have the following meanings:</p>
 
@@ -16208,6 +17339,17 @@ class="propinst-voice-family">'voice-family'</span>,
 <span class="propinst-richness">'richness'</span></h3>
 
 <!-- #include src=properties/speech-rate.srb -->
+<xmp class='propdef'>
+Name: speech-rate
+Value: <<number>> | x-slow | slow | medium | fast | x-fast | faster | slower | inherit
+Initial: medium
+Applies to: *
+Inherited: yes
+Computed value: number
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>This property specifies the speaking rate. Note that both absolute
 and relative keyword values are allowed (compare with <span
@@ -16237,6 +17379,17 @@ synthesizers.
 </dl>
 
 <!-- #include src=properties/voice-family.srb -->
+<xmp class='propdef'>
+Name: voice-family
+Value: [[<<specific-voice>> | <<generic-voice>> ],]* [<<specific-voice>> | <<generic-voice>> ] | inherit
+Initial: depends on user agent
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>The value is a comma-separated, prioritized list of voice family
 names (compare with <span
@@ -16273,6 +17426,17 @@ after the voice family name are ignored and any sequence of white space
 characters inside the voice family name is converted to a single space.
 
 <!-- #include src=properties/pitch.srb -->
+<xmp class='propdef'>
+Name: pitch
+Value: <<frequency>> | x-low | low | medium | high | x-high | inherit
+Initial: medium
+Applies to: *
+Inherited: yes
+Computed value: frequency
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <p>Specifies the average pitch (a frequency) of the speaking voice.  The
 average pitch of a voice depends on the voice family.  For example,
@@ -16295,6 +17459,18 @@ order (i.e., 'x-low' is a lower frequency than 'low', etc.).
 
 
 <!-- #include src=properties/pitch-range.srb -->
+<xmp class='propdef'>
+Name: pitch-range
+Value: <<number>> | inherit
+Initial: 50
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
+
 
 <p>Specifies variation in average pitch.  The perceived pitch of a
 human voice is determined by the fundamental frequency and typically
@@ -16317,6 +17493,17 @@ inflection.  Pitch ranges greater than 50 produce animated voices.
 
 
 <!-- #include src=properties/stress.srb -->
+<xmp class='propdef'>
+Name: stress
+Value: <<number>> | inherit
+Initial: 50
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <p>Specifies the height of "local peaks" in the intonation contour
 of a voice. For example, English is a <strong>stressed</strong>
@@ -16341,6 +17528,17 @@ meaning than '50' for an Italian voice.
 </dl>
 
 <!-- #include src=properties/richness.srb -->
+<xmp class='propdef'>
+Name: richness
+Value: <<number>> | inherit
+Initial: 50
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>Specifies the richness, or brightness, of the speaking voice.  A
 rich voice will "carry" in a large room, a smooth voice will not.
@@ -16365,6 +17563,17 @@ class="propinst-speak-header">'speak-header'</span>, is
 described below.
 
 <!-- #include src=properties/speak-punctuation.srb -->
+<xmp class='propdef'>
+Name: speak-punctuation
+Value: code | none | inherit
+Initial: none
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <P>This property specifies how punctuation is spoken.  Values have the
 following meanings:</p>
@@ -16379,6 +17588,17 @@ naturally as various pauses.
 </dl>
 
 <!-- #include src=properties/speak-numeral.srb -->
+<xmp class='propdef'>
+Name: speak-numeral
+Value: digits | continuous | inherit
+Initial: continuous
+Applies to: *
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
 
 <p>This property controls how numerals are spoken.  Values have the
 following meanings:</P>
@@ -16406,6 +17626,18 @@ class="propinst-speak-header">'speak-header'</span> property</h4>
 
 
 <!-- #include src=properties/speak-header.srb -->
+<xmp class='propdef'>
+Name: speak-header
+Value: once | always | inherit
+Initial: once
+Applies to: elements that have table header information
+Inherited: yes
+Computed value: as specified
+Percentages: N/A
+Media: aural
+</xmp>
+
+
 
 <P>This property specifies whether table headers
 are spoken before every
