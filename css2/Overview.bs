@@ -16663,7 +16663,7 @@ page, a user agent should keep the text within the comic strip balloon.
 <!-- SPLIT: aural.html -->  
   
   
-<h2 id="aural">Aural style sheets</h2>
+<h2 id="aural">Appendix A: Aural style sheets</h2>
 
 <p>This chapter is informative. UAs are not required to implement the
 properties of this chapter in order to conform to CSS 2.
@@ -17819,7 +17819,7 @@ status of aural properties.)
 
 <!-- SPLIT: refs.html -->  
   
-<h2 id="refs">Bibliography</h2>
+<h2 id="refs">Appendix B: Bibliography</h2>
 <!--
 <h3><a id="normative">Normative references</a></h3>
 <dl>
@@ -18094,7 +18094,7 @@ http://www.w3.org/TR/2009/REC-xml-names-20091208/</a>.
 -->
 <!-- SPLIT: changes.html -->  
 
-<h2 id=changes>Changes</h2>
+<h2 id=changes>Appendix C: Changes</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>Below are the changes relative to the first revision of CSS2
@@ -19220,7 +19220,7 @@ p { color:green; color{;color:maroon} } /* unexpected tokens { } */
 
 <!-- SPLIT: sample.html -->  
 
-<h2 id=sample>Default style sheet for HTML 4</h2>
+<h2 id=sample>Appendix D: Default style sheet for HTML 4</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>This style sheet describes the typical formatting of all HTML 4
@@ -19325,7 +19325,7 @@ BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
 
 <!-- SPLIT: zindex.html -->  
 
-<h2 id=zindex>Elaborate description of Stacking Contexts</h2>
+<h2 id=zindex>Appendix E: Elaborate description of Stacking Contexts</h2>
 
 <p>This chapter defines the CSS&nbsp;2 painting order in more detail than
 described in the rest of the specification.</p>
@@ -19590,7 +19590,7 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: propidx.html -->  
 
-<h2 id=propidx>Full property table</h2>
+<h2 id=propidx>Appendix F: Full property table</h2>
 
 <P><em>This appendix is informative, not normative.</em></P>
 
@@ -19598,7 +19598,7 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: grammar.html -->  
 
-<h2 id=grammar>Grammar of CSS&nbsp;2</h2>
+<h2 id=grammar>Appendix G: Grammar of CSS&nbsp;2</h2>
 
 <p>This appendix is non-normative.
 
@@ -19915,12 +19915,12 @@ u\+[0-9a-f?]{1,6}/- return UNICODE_RANGE;
 
 <!-- SPLIT: leftblank.html -->
 
-<h2 id=leftblank>Appendix H: Has been intentionally left blank</h2>
+<h2 id=leftblank class=no-toc>Appendix H: Has been intentionally left blank</h2>
 
 
 <!-- SPLIT: indexlist.html -->  
 
-<h2 id=indexlist>Index</h2>
+<h2 id=indexlist>Appendix I: Index</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 <!--
 <DIV class=NOPRINT>
