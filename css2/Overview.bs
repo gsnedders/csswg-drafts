@@ -44,7 +44,7 @@ Abstract: an overview of specifications that make up the whole of CSS.
 
 <!-- SPLIT: about.html -->
 
-<h2>About the CSS&nbsp;2 Specification</h2>
+<h2 id=about>About the CSS&nbsp;2 Specification</h2>
 
 <h3><a id="css2.x-v-css2">CSS&nbsp;2.x vs CSS&nbsp;2</a></h3>
 
@@ -109,7 +109,7 @@ mind: CSS authors and CSS implementors. We hope the specification will
 provide authors with the tools they need to write efficient,
 attractive, and accessible documents, without overexposing them to
 CSS's implementation details. Implementors, however, should find all
-they need to build <a href="conform.html#conformance">conforming user
+they need to build <a href="#conformance">conforming user
 agents</a>.
 
 The specification begins with a general presentation of CSS and
@@ -146,24 +146,24 @@ a discussion of design principles behind CSS&nbsp;2.
 reference. This reference defines what may go into a CSS&nbsp;2 style sheet
 (syntax, properties, property values) and how user agents must
 interpret these style sheets in order to claim <a
-href="conform.html#conformance">conformance</a>.
+href="#conformance">conformance</a>.
 
 
 <dt><strong>Appendixes:</strong>
 
-<dd>Appendixes contain information about <a href="aural.html">aural
-properties</a> (non-normative), <a href="sample.html">a
-sample style sheet for HTML 4</a>, <a href="changes.html">changes
-from CSS&nbsp;2.1</a>, <a href="grammar.html">the grammar of CSS&nbsp;2</a>, 
-a list of normative and informative <a href="refs.html">references</a>,
+<dd>Appendixes contain information about <a href="#aural">aural
+properties</a> (non-normative), <a href="#sample">a
+sample style sheet for HTML 4</a>, <a href="#changes">changes
+from CSS&nbsp;2.1</a>, <a href="#grammar">the grammar of CSS&nbsp;2</a>, 
+a list of normative and informative <a href="#refs">references</a>,
 and two indexes: one for
-<a href="propidx.html">properties</a> and one
-<a href="indexlist.html">general index</a>.
+<a href="#propidx">properties</a> and one
+<a href="#indexlist">general index</a>.
 </dl>
 
 <h3><a id="conventions">Conventions</a></h3>
 
-<h4><a id="doc-language" href="conform.html#doclanguage">Document language</a> elements
+<h4><a id="doc-language" href="#doclanguage">Document language</a> elements
 and attributes</h4>
 
 <ul>
@@ -188,7 +188,7 @@ value can have one or more components. Component value types are designated
 in several ways:
 
 <ol>
-<li> <a id="syndata.html#keywords">keyword</a> values (e.g., auto,
+<li> <a id="#keywords">keyword</a> values (e.g., auto,
 disc, etc.)
 
 <li> basic data types, which appear between "&lt;" and "&gt;" (e.g.,
@@ -277,7 +277,7 @@ the following modifiers:</p>
 </BLOCKQUOTE>
 
 <p>Component values are specified in terms of tokens, as described in <a
-href="grammar.html#scanner">Appendix G.2</a>. As the grammar allows spaces
+href="#scanner">Appendix G.2</a>. As the grammar allows spaces
 between tokens in the components of the <code>expr</code> production,
 spaces may appear between tokens in property values.
 
@@ -293,7 +293,7 @@ and '2em'.
 <h5><a id="initial-value">Initial</a></h5>
 
 <P>This part specifies the property's initial value. Please consult
-the section on <a href="cascade.html">the cascade</a> for information
+the section on <a href="#cascade">the cascade</a> for information
 about the interaction between style sheet-specified, inherited, and
 initial property values.
 
@@ -309,7 +309,7 @@ class="propinst-clear">'clear'</span> property only affects block-level elements
 
 <p>This part indicates whether the value of the property is inherited
 from an ancestor element. Please consult the section on <a
-href="cascade.html">the cascade</a> for information about the
+href="#cascade">the cascade</a> for information about the
 interaction between style sheet-specified, inherited, and initial
 property values.
 
@@ -322,14 +322,14 @@ property does not accept percentages in its values.
 
 <h5><a id="media-applies">Media groups</a></h5>
 
-<p>This part indicates the <a href="media.html#media-groups">media
+<p>This part indicates the <a href="#media-groups">media
 groups</a> to which the property applies. Information about media
 groups is non-normative.
 
 <h5><a id="computed-defs">Computed value</a></h5>
 
 <p>This part describes the computed value for the property. See the
-section on <a href="cascade.html#computed-value">computed values</a>
+section on <a href="#computed-value">computed values</a>
 for how this definition is used.
 
 
@@ -351,7 +351,7 @@ class="propinst-font-family">'font-family'</span> all at once.</p>
 
 <P>When values are omitted from a shorthand form, each
 "missing" property is assigned
-its initial value (see the section on <a href="cascade.html">the
+its initial value (see the section on <a href="#cascade">the
 cascade</a>).
 
 <div class="example"><p>
@@ -391,7 +391,7 @@ conform to the DTDs given in the examples.
 
 <P>All notes are informative only.
 
-<P>Examples and notes are <a href="conform.html#defs">marked within
+<P>Examples and notes are <a href="#defs">marked within
 the source HTML</a> for the specification and CSS user agents will
 render them specially.
 
@@ -414,6 +414,7 @@ href="http://www.w3.org/TR/2011/REC-CSS2-20110607/about.html#acknowledgements"
 >acknowledgments section of CSS&nbsp;2.1</a> for the people that
 contributed to CSS2 and CSS&nbsp;2.1.
 
+<!-- TODO
 <p>We would like to thank the following people who, through their
 input and feedback on the www-style mailing list, have helped us with
 the creation of this specification:
@@ -431,9 +432,10 @@ the creation of this specification:
 
 	 &hellip; and all the contributors to the CSS1 test suite.
 
+-->
 <!-- SPLIT: intro.html -->
 
-<h2>Introduction to CSS&nbsp;2</h2> 
+<h2 id=intro>Introduction to CSS&nbsp;2</h2> 
 
 <h3><a id="html-tutorial">A brief CSS&nbsp;2 tutorial for HTML</a></h3>
 
@@ -466,7 +468,7 @@ following CSS rules:</P>
 </PRE>
 
 <P>A CSS rule consists of two main parts: <a
-href="selector.html">selector</a> ('h1') and declaration
+href="#selector">selector</a> ('h1') and declaration
 ('color:&nbsp;red'). In HTML, element names are case-insensitive so
 'h1' works just as well as 'H1'. The declaration has two parts:
 property name ('color') and property value ('red'). While the example above tries to
@@ -704,24 +706,24 @@ by going through the following steps:</P>
 
 <ol>
 <li>Parse the source document and create a <a
-href="conform.html#doctree">document tree</a>.</li>
+href="#doctree">document tree</a>.</li>
 
-<li>Identify the target <a href="media.html">media type</a>.
+<li>Identify the target <a href="#media">media type</a>.
 
 <li>Retrieve all style sheets associated with the document that are
-specified for the target <a href="media.html">media type</a>.
+specified for the target <a href="#media">media type</a>.
 
 <li>Annotate every element of the document tree by assigning a single
-value to every <a href="syndata.html#properties">property</a> that is
-applicable to the target <a href="media.html">media type</a>.
+value to every <a href="#properties">property</a> that is
+applicable to the target <a href="#media">media type</a>.
 Properties are assigned values according to the mechanisms described
-in the section on <a href="cascade.html">cascading and
+in the section on <a href="#cascade">cascading and
 inheritance</a>. 
 
 <P>Part of the calculation of values depends on the formatting
-algorithm appropriate for the target <a href="media.html">media
+algorithm appropriate for the target <a href="#media">media
 type</a>. For example, if the target medium is the screen, user agents
-apply the <a href="visuren.html">visual formatting model</a>. 
+apply the <a href="#visuren">visual formatting model</a>. 
 
 <li>From the annotated document tree, generate a 
 <span class="index-def" title="formatting structure">
@@ -759,36 +761,36 @@ dimension of the space, but rendering generally occurs within
 a finite region of the canvas, established by the user agent
 according to the target medium. For instance, user agents rendering
 to a screen generally impose a minimum width and choose an initial
-width based on the dimensions of the <a href="visuren.html#viewport">
+width based on the dimensions of the <a href="#viewport">
 viewport</a>. User agents rendering to a page generally impose
 width and height constraints. Aural user agents may impose limits
 in audio space, but not in time. 
 
 <h4><a id="addressing">CSS&nbsp;2 addressing model</a></h4>
 
-<P> CSS&nbsp;2 <a href="selector.html">selectors</a> and properties allow
+<P> CSS&nbsp;2 <a href="#selector">selectors</a> and properties allow
 style sheets to refer to the following parts of a document
 or user agent:</p>
 
 <ul>
 <li>Elements in the document tree and certain relationships between
-them (see the section on <a href="selector.html">selectors</a>).
+them (see the section on <a href="#selector">selectors</a>).
 
 <li>Attributes of elements in the document tree, and values of those
 attributes (see the section on <a
-href="selector.html#attribute-selectors">attribute selectors</a>).
+href="#attribute-selectors">attribute selectors</a>).
 
 <li>Some parts of element content (see the <a
-href="selector.html#first-line-pseudo">:first-line</a> and <a
-href="selector.html#first-letter">:first-letter</a> pseudo-elements).
+href="#first-line-pseudo">:first-line</a> and <a
+href="#first-letter">:first-letter</a> pseudo-elements).
 
 <li>Elements of the document tree when they are in a certain state
-(see the section on <a href="selector.html#pseudo-classes">pseudo-classes</a>).
+(see the section on <a href="#pseudo-classes">pseudo-classes</a>).
 
 <li>Some aspects of the <a href="#canvas">canvas</a> where
 the document will be rendered.
 
-<li>Some system information (see the section on <a href="ui.html">user
+<li>Some system information (see the section on <a href="#ui">user
 interface</a>).
 </ul>
 
@@ -911,7 +913,7 @@ about designing accessible documents using CSS and HTML, see [[!WCAG20]].</em>
 
 <!-- SPLIT: conform.html -->
 
-<h2>Conformance: Requirements and Recommendations</h2>
+<h2 id=conform>Conformance: Requirements and Recommendations</h2>
 
 <h3><a id="defs">Definitions</a></h3>
 
@@ -937,9 +939,9 @@ recommend ...", "This specification recommends ...", or some similar
 wording.</P>
 
 <P>The fact that a feature is marked as deprecated (namely the <a
-href="aural.html#aural-media-group">'aural'</a> keyword) or going to
+href="#aural-media-group">'aural'</a> keyword) or going to
 be deprecated in CSS3 (namely the <a
-href="ui.html#system-colors">system colors</a>) also has no influence
+href="#system-colors">system colors</a>) also has no influence
 on conformance. (For example, 'aural' is marked as non-normative, so
 UAs do not need to support it; the system colors are normative, so UAs
 must support them.)
@@ -947,7 +949,7 @@ must support them.)
 <p>All sections of this specification, including appendices, are
 normative unless otherwise noted.
 
-<p><a href="about.html#notes-and-examples">Examples and notes</a>
+<p><a href="#notes-and-examples">Examples and notes</a>
 are not normative.
 
 <div class=example><p>Examples usually have the word "example" near
@@ -973,7 +975,7 @@ sheet"><a id="style-sheet">Style sheet</a></span></strong>
 <P>Style sheets may have three different origins: <a
 href="#author">author</a>, <a href="#user">user</a>, and <a
 href="#user-agent">user agent</a>. The interaction of these sources is
-described in the section on <a href="cascade.html">cascading and
+described in the section on <a href="#cascade">cascading and
 inheritance</a>.
 
 <dt><strong><span class="index-def" title="valid style
@@ -988,7 +990,7 @@ CSS&nbsp;2. Some features in CSS2 are not part of CSS&nbsp;2.x, so not all CSS2
 style sheets are valid CSS&nbsp;2.x style sheets.
 
 <P>A valid CSS&nbsp;2 style sheet must be written according to the <a
-href="grammar.html">grammar of CSS&nbsp;2</a>. Furthermore, it must contain
+href="#grammar">grammar of CSS&nbsp;2</a>. Furthermore, it must contain
 only at-rules, property names, and property values defined in this
 specification.
 An <span
@@ -1086,9 +1088,9 @@ specification. First, a CSS parser must follow certain rules when it
 discovers unknown or illegal syntax in a style sheet. The parser must
 then ignore certain parts of the style sheets. The exact rules for
 which parts must be ignored are described in these sections (<a
-href="syndata.html#declaration">Declarations and properties,</a> <a
-href="syndata.html#parsing-errors">Rules for handling parsing
-errors,</a> <a href="syndata.html#unsupported-values">Unsupported
+href="#declaration">Declarations and properties,</a> <a
+href="#parsing-errors">Rules for handling parsing
+errors,</a> <a href="#unsupported-values">Unsupported
 Values</a>) or may be explained in the text where the term "ignore"
 appears. Second, a user agent may (and, in some cases must) disregard
 certain properties or values in the style sheet, even if the syntax is
@@ -1201,7 +1203,7 @@ direct the rendering of a document. Each property has a name (e.g.,
 'dotted'). Properties are attached to various parts of the document
 and to the page on which the document is to be displayed by the
 mechanisms of specificity, cascading, and inheritance (see the chapter
-on <a href="cascade.html">Assigning property values, Cascading, and
+on <a href="#cascade">Assigning property values, Cascading, and
 Inheritance</a>).
 
 </dl>
@@ -1260,7 +1262,7 @@ claiming conformance to this specification:</P>
 
 <ol>
 
-<li>It must recognize one or more of the CSS&nbsp;2 <a href="media.html">media types</a>.
+<li>It must recognize one or more of the CSS&nbsp;2 <a href="#media">media types</a>.
 
 <li>For each source document, it must attempt to retrieve all 
 associated style sheets that are appropriate for the recognized media
@@ -1270,7 +1272,7 @@ it can retrieve.
 
 <li>It must parse the style sheets according to this specification.
 In particular, it must recognize all at-rules, blocks, declarations,
-and selectors (see the <a href="grammar.html">grammar of CSS&nbsp;2</a>).
+and selectors (see the <a href="#grammar">grammar of CSS&nbsp;2</a>).
 If a user agent encounters a property that applies for a supported
 media type, the user agent must parse the value according to the property
 definition. This means that the user agent must accept all valid
@@ -1278,7 +1280,7 @@ values and must
 <span class="index-inst" title="ignore">ignore</span> declarations with
 invalid values. User
 agents must <span class="index-inst" title="ignore">ignore</span>
-rules that apply to unsupported <a href="media.html">media
+rules that apply to unsupported <a href="#media">media
 types</a>.
 
 <!-- Define "accept"? Include statement that conforming user
@@ -1289,7 +1291,7 @@ i.e., the default style sheet value -IJ -->
 <li>For each element in a <a href="#doctree">document tree</a>, it
 must assign a value for every property according to the
 property's definition and the rules of <a
-href="cascade.html">cascading and inheritance</a>.
+href="#cascade">cascading and inheritance</a>.
 
 <li>If the source document comes with alternate style sheet sets (such as
 with the "alternate" keyword in HTML 4 [[!HTML401]]), the UA must
@@ -1312,7 +1314,7 @@ href="#valid-style-sheet">valid style sheets</a>
 <li>A user agent that <em>renders</em> a document with associated style
 sheets must respect points 1-6 and render the document
 according to the media-specific requirements set forth in this
-specification. <a href="cascade.html#actual-value">Values</a> 
+specification. <a href="#actual-value">Values</a> 
 may be approximated when required by the user agent.
 
 </ul>
@@ -1338,7 +1340,7 @@ support as experimental. A future level of CSS may specify this further.
 
 <p>In general, this document specifies error handling behavior
 throughout the specification. For example, see the <a
-href="syndata.html#parsing-errors">rules for handling parsing errors</a>. 
+href="#parsing-errors">rules for handling parsing errors</a>. 
 
 <h3><span class="index-def" title="text/css"><a
 id="text-css">The text/css content type</a></span></h3>
@@ -1355,7 +1357,7 @@ content type has been registered by RFC 2318 ([[RFC2318]]).
 
   <!-- SPLIT: syndata.html -->
   
-  <h2>Syntax and basic data types</h2>
+  <h2 id=syndata>Syntax and basic data types</h2>
 <h3 id="syntax">Syntax</h3>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
@@ -1369,7 +1371,7 @@ although they may add additional syntactic constraints.
 </p>
 <p>These descriptions are normative. They are also
 complemented by the normative grammar rules presented in <a
-href="grammar.html">Appendix G</a>.
+href="#grammar">Appendix G</a>.
 </p>
 <p>In this specification, the expressions "immediately before" or
 "immediately after" mean with no intervening white space or comments.
@@ -1478,7 +1480,7 @@ followed by a CDC.
 </div>
 
 <p>Below is the core syntax for CSS. The sections that follow describe
-how to use it. <a href="grammar.html">Appendix G</a> describes a
+how to use it. <a href="#grammar">Appendix G</a> describes a
 more restrictive grammar that is closer to the CSS level 2 language.
 Parts of style sheets that can be parsed according to this grammar but
 not according to the grammar in Appendix G are among the parts that
@@ -1655,7 +1657,7 @@ Level 3</cite> [[CSS3SYN]].
     title="identifier|identifier, definition of"><a
     id="value-def-identifier"><dfn>identifiers</dfn></a></span>
     (including element names, classes, and IDs in <a
-    href="selector.html">selectors</a>) can contain only the
+    href="#selector">selectors</a>) can contain only the
     characters [a-zA-Z0-9] and ISO 10646 characters <!--128--> U+0080 and higher,
     plus the hyphen (-) and the underscore (_); they cannot start with
     a digit, two hyphens, or a hyphen followed by a digit.
@@ -1718,7 +1720,7 @@ Level 3</cite> [[CSS3SYN]].
     the UA may replace the escape with the "replacement character"
     (U+FFFD). If the character is to be displayed, the UA should show
     a visible symbol, such as a "missing character" glyph (cf. <a
-    href="fonts.html#algorithm">15.2,</a> point 5).
+    href="#algorithm">15.2,</a> point 5).
 	</li>
     <li class=note>Note: Backslash escapes are always
     considered to be part of an <a
@@ -1768,7 +1770,7 @@ first.
 
 <p>CSS&nbsp;2 user agents must <span class="index-inst" title="ignore"><a
 href="#ignore">ignore</a></span> any <a
-href="cascade.html#at-import">'@import'</a> rule that occurs inside a <a
+href="#at-import">'@import'</a> rule that occurs inside a <a
 href="#block">block</a> or after any non-ignored statement other than an <span
 class="index-inst">@charset</span> or an @import rule.
 </p>
@@ -1875,7 +1877,7 @@ inside rule sets, but such at-rules may be defined in future levels.
 </p>
 <p>The <span class="index-def"
 title="selector"><em>selector</em></span> (see also the section on <a
-href="selector.html">selectors</a>) consists of everything up to (but
+href="#selector">selectors</a>) consists of everything up to (but
 not including) the first left curly brace ({).  A selector always goes
 together with a declaration block. When a user agent cannot parse the selector (i.e., it
 is not valid CSS&nbsp;2), it must <span class="index-inst" title="ignore"><a
@@ -2058,7 +2060,7 @@ scenarios:</p>
 <ul>
 <li><strong>Unknown properties.</strong> User agents must <span
 class="index-inst" title="ignore"><a href="#ignore">ignore</a></span> a <a
-href="syndata.html#declaration">declaration</a> with an unknown
+href="#declaration">declaration</a> with an unknown
 property. For example, if the style sheet is:
 
 <pre class="illegal example">
@@ -2296,9 +2298,9 @@ supported.
    negative length values, the declaration is ignored.
 </p>
 
-<p>In cases where the <a href="cascade.html#usedValue">used</a>
+<p>In cases where the <a href="#usedValue">used</a>
 length cannot be supported, user agents must approximate it in the
-<a href="cascade.html#actual-value">actual value.</a>
+<a href="#actual-value">actual value.</a>
 
 <p><a id="absrel-units">There are two types of length units:
 relative and absolute.</a> <span class="index-def" title="relative
@@ -2366,14 +2368,14 @@ h1 { font-size: 1.2em }
 the font size inherited by "h1" elements.</p>
 </div>
 
-<p>When specified for the root of the <a href="conform.html#doctree">
+<p>When specified for the root of the <a href="#doctree">
 document tree</a> (e.g., "HTML" in HTML), 'em' and 'ex' refer to
-the property's <a href="about.html#initial-value">initial value</a>.
+the property's <a href="#initial-value">initial value</a>.
 </p>
 
 <p>Child elements do not inherit the relative values specified for
 their parent; they inherit the <a
-href="cascade.html#computed-value">computed values</a>.</p>
+href="#computed-value">computed values</a>.</p>
 
 <div class="example"><p> 
 In the following rules, the computed <span
@@ -2504,16 +2506,16 @@ example a length. Each property that allows percentages also defines
 the value to which the percentage refers. The value may be that of
 another property for the same element, a property for an ancestor
 element, or a value of the formatting context (e.g., the width of a <a
-href="visuren.html#containing-block">containing block</a>). When a
+href="#containing-block">containing block</a>). When a
 percentage value is set for a property of the <a
-href="conform.html#root">root</a> element and the percentage is
+href="#root">root</a> element and the percentage is
 defined as referring to the inherited value of some property, the
 resultant value is the percentage times the <a
-href="about.html#initial-value">initial value</a> of that property.
+href="#initial-value">initial value</a> of that property.
 </p>
 <div class="example"><p> 
 Since child elements (generally) inherit the <a
-href="cascade.html#computed-value">computed values</a> of their parent, in
+href="#computed-value">computed values</a> of their parent, in
 the following example, the children of the P element will inherit a
 value of 12px for <span
 class="propinst-line-height">'line-height'</span>, not the percentage
@@ -2625,8 +2627,8 @@ notation is 'counters(&lt;identifier&gt;, &lt;string&gt;)' or
 'counters(&lt;identifier&gt;, &lt;string&gt;, &lt;'list-style-type'&gt;)'
 with optional white space separating the tokens.
 </p>
-<p>See <a href="generate.html#scope">"Nested counters and scope"</a>
-in the chapter on <a href="generate.html">generated content</a> for
+<p>See <a href="#scope">"Nested counters and scope"</a>
+in the chapter on <a href="#generate">generated content</a> for
 how user agents must determine the value or values of the counter. See
 the definition of counter values of the <span
 class="propinst-content">'content'</span> property for how it must
@@ -2699,7 +2701,7 @@ white, and yellow. These 17 colors have the following values:
 In addition to these color keywords, users may specify
 keywords that correspond to the colors used by certain objects in the
 user's environment. Please consult the section on <a
-href="./ui.html#system-colors">system colors</a> for more information.
+href="#system-colors">system colors</a> for more information.
 </p>
 
 <div class="example">
@@ -2744,13 +2746,13 @@ represent these colors, but using sRGB provides an unambiguous and
 objectively measurable definition of what the color should be, which
 can be related to international standards (see [[COLORIMETRY]]).
 </p>
-<p><a href="conform.html#conformance">Conforming user agents</a> may
+<p><a href="#conformance">Conforming user agents</a> may
 limit their color-displaying efforts to performing a gamma-correction
 on them. sRGB specifies a display gamma of 2.2 under specified viewing
 conditions. User agents should adjust the colors given in CSS such that,
 in combination with an output device's "natural" display gamma, an
 effective display gamma of 2.2 is produced. <!--See the section on <a
-href="colors.html#gamma-correction">gamma correction</a> for further
+href="#gamma-correction">gamma correction</a> for further
 details.--> Note that only colors specified in CSS are affected; e.g.,
 images are expected to carry their own color information.
 </p>
@@ -3041,7 +3043,7 @@ encoding. Intermediate processors must not, on
 the other hand, alter escape sequences that cancel the special meaning
 of an ASCII character.
 </p>
-<p><a href="conform.html#conformance">Conforming user agents</a> must
+<p><a href="#conformance">Conforming user agents</a> must
 correctly map to ISO-10646 all characters in any character encodings
 that they recognize (or they must behave as if they did).
 </p>
@@ -3073,7 +3075,7 @@ For example, we recommend:</em></p>
 
 <!-- SPLIT: selector.html -->
 
-<h2>Selectors</h2>
+<h2 id=selector>Selectors</h2>
 
 
 
@@ -3083,7 +3085,7 @@ For example, we recommend:</em></p>
 [[CSS3-SELECTORS]].
 
 <p>In CSS, pattern matching rules determine which style rules apply to
-elements in the <a href="conform.html#doctree">document
+elements in the <a href="#doctree">document
 tree</a>. These patterns, called <span class="index-inst"
 title="selector">selectors,</span> may range from simple element names
 to rich contextual patterns. If all conditions in the pattern are true
@@ -3221,9 +3223,9 @@ h1, h2, h3 { font-family: sans-serif }
 
 <P>CSS offers other "shorthand" mechanisms as well, including 
 <span class="index-def" title="multiple declarations">
-<a href="syndata.html#declaration">multiple declarations</a></span>
+<a href="#declaration">multiple declarations</a></span>
 and <span class="index-inst" title="shorthand property"><a
-href="about.html#shorthand">shorthand properties</a></span>.
+href="#shorthand">shorthand properties</a></span>.
 
 
 
@@ -3235,7 +3237,7 @@ href="about.html#shorthand">shorthand properties</a></span>.
 <P>The <span class="index-def" title="universal selector">universal
 selector</span>, written "*", matches the name of any element
 type. It matches any single element in the <a
-href="conform.html#doctree">document tree.</a>
+href="#doctree">document tree.</a>
 
 
 <P>If the universal selector is not the only component of a <a
@@ -3282,10 +3284,10 @@ those EM elements that are contained by an H1 element").  <span
 class="index-def" title="descendant-selectors">Descendant
 selectors</span> express such a relationship in a pattern. A
 descendant selector is made up of two or more selectors separated by
-<a href="syndata.html#whitespace">white space</a>. A descendant
+<a href="#whitespace">white space</a>. A descendant
 selector of the form "<code>A B</code>" matches when an element
 <code>B</code> is an arbitrary descendant of some <a
-href="conform.html#doctree">ancestor</a> element <code>A</code>.
+href="#doctree">ancestor</a> element <code>A</code>.
 
 <div class="example"><p>
 For example, consider the following rules:</p>
@@ -3355,7 +3357,7 @@ div p *[href]
 
 <p>A <span class="index-def" title="child selector"><em>child
 selector</em></span> matches when an element is the <a
-href="conform.html#doctree">child</a> of some element. A child
+href="#doctree">child</a> of some element. A child
 selector is made up of two or more selectors separated by "&gt;".
 
 <div class="example"><p>
@@ -3605,7 +3607,7 @@ EXAMPLE[notation=octal]   { /*... other settings...*/ }
 </pre>
 
 <p>Here, because the selector <code>EXAMPLE[notation=octal]</code> is
-more <a href="cascade.html#specificity">specific</a> than the type
+more <a href="#specificity">specific</a> than the type
 selector alone, the style declarations in the second rule will override
 those in the first for elements that have a "notation" attribute value
 of "octal". Care has to be taken that all property declarations that
@@ -3774,7 +3776,7 @@ P element in this example:</p>
 <P>ID selectors have a higher specificity than attribute selectors.
 For example, in HTML, the selector <samp>#p123</samp> is more specific
 than <samp>[id=p123]</samp> in terms of the <a
-href="cascade.html">cascade</a>.
+href="#cascade">cascade</a>.
 
 <div class="note">
 <p><em><strong>Note.</strong> In XML 1.1 [[!XML11]], the information about which
@@ -3804,10 +3806,10 @@ id="pseudo-classes">pseudo-classes</a></h3>
 [[CSS3-SELECTORS]].
 
 <p>In CSS&nbsp;2.2, style is normally attached to an element based on its
-position in the <a href="conform.html#doctree">document tree</a>. This
+position in the <a href="#doctree">document tree</a>. This
 simple model is sufficient for many cases, but some common publishing
 scenarios may not be possible due to the structure of the <a
-href="conform.html#doctree">document tree</a>. For instance, in HTML
+href="#doctree">document tree</a>. For instance, in HTML
 4 (see [[[HTML401]]]), no element refers to the first line of a
 paragraph, and therefore no simple CSS selector may refer to it.</p>
 
@@ -3827,7 +3829,7 @@ designers to refer to this otherwise inaccessible
 information. Pseudo-elements may also provide style sheet designers a
 way to assign style to content that does not exist in the source
 document (e.g., the <a
-href="generate.html#before-after-content">:before and :after</a>
+href="#before-after-content">:before and :after</a>
 pseudo-elements give access to generated content).
 
 <li>Pseudo-classes classify elements on characteristics other than
@@ -3854,7 +3856,7 @@ the selector.
 
 <P>Some pseudo-classes are mutually exclusive, while others can be
 applied simultaneously to the same element. In case of conflicting
-rules, the normal <a href="cascade.html#cascading-order">cascading
+rules, the normal <a href="#cascading-order">cascading
 order</A> determines the outcome.
 
 
@@ -3911,7 +3913,7 @@ p:first-child em { font-weight : bold }
 </pre>
 </div>
 
-<P>Note that since <a href="visuren.html#anonymous">anonymous</a>
+<P>Note that since <a href="#anonymous">anonymous</a>
 boxes are not part of the document tree, they are not counted when
 calculating the first child.</p>
 
@@ -4017,10 +4019,10 @@ element (with some pointing device), but does not activate it. For
 example, a visual user agent could apply this pseudo-class when the
 cursor (mouse pointer) hovers over a box generated by the element.
 User agents not supporting
-<a href="media.html#interactive-media-group">interactive media</a>
+<a href="#interactive-media-group">interactive media</a>
 do not have to support this pseudo-class.
 Some conforming user agents supporting
-<a href="media.html#interactive-media-group">interactive media</a>
+<a href="#interactive-media-group">interactive media</a>
 may not be able to support this pseudo-class (e.g., a pen device).
 
 <li> The :active pseudo-class applies while an element is being
@@ -4084,7 +4086,7 @@ expected to be able to reformat a document dynamically. [this
 conflicts with the statement above, HWL] --> 
 
 <P>For information about the presentation of focus outlines, please
-consult the section on <a href="ui.html#dynamic-outlines">dynamic
+consult the section on <a href="#dynamic-outlines">dynamic
 focus outlines</a>.
 
 <div class="note"><P>
@@ -4179,7 +4181,7 @@ text uses the English quotation marks.  </div>
 
 <p>Pseudo-elements behave just like real elements in CSS with the
 exceptions described below and <a
-href="generate.html#before-after-content">elsewhere.</a>
+href="#before-after-content">elsewhere.</a>
 
 <p class="note"><em>Note that the sections below do not define the
 exact rendering of ':first-line' and ':first-letter' in all cases. A
@@ -4205,7 +4207,7 @@ p:first-line { text-transform: uppercase }
 <p>The above rule means "change the letters of the first line of
 every paragraph to uppercase". However, the selector "P:first-line"
 does not match any real HTML element. It does match a pseudo-element
-that <a href="conform.html#conformance">conforming user agents</a>
+that <a href="#conformance">conforming user agents</a>
 will insert at the beginning of every paragraph.</p>
 
 <p>Note that the length of the first line depends on a number of
@@ -4275,7 +4277,7 @@ paragraph.&lt;/P&gt;
 
 <p> The <span class="index-inst"
 title="pseudo-elements:::first-line">:first-line</span> pseudo-element
-can only be attached to a <a href="visuren.html#block-boxes">block
+can only be attached to a <a href="#block-boxes">block
 container element.</a>
 
 <p>The "<dfn id="first-formatted-line">first formatted line</dfn>" of an
@@ -4323,8 +4325,8 @@ fictional tag sequence for
 <p>The <a id="first-line">:first-line</a> pseudo-element is similar
 to an inline-level element, but with certain restrictions. The
 following properties apply to a :first-line pseudo-element: <a
-href="fonts.html">font properties,</a> <a href="colors.html">color
-property,</a> <a href="colors.html#background-properties">background
+href="#fonts">font properties,</a> <a href="#colors">color
+property,</a> <a href="#background-properties">background
 properties,</a> <span
 class="propinst-word-spacing">'word-spacing',</span> <span
 class="propinst-letter-spacing">'letter-spacing',</span> <span
@@ -4351,7 +4353,7 @@ type of initial letter is similar to an inline-level element if its
 otherwise it is similar to a floated element.</p>
 
 <p>These are the properties that apply to :first-letter pseudo-elements:
-<a href="fonts.html">font properties,</a> 
+<a href="#fonts">font properties,</a> 
 <span class="propinst-text-decoration">'text-decoration',</span>
 <span class="propinst-text-transform">'text-transform',</span>
 <span class="propinst-letter-spacing">'letter-spacing',</span>
@@ -4359,11 +4361,11 @@ otherwise it is similar to a floated element.</p>
 <span class="propinst-line-height">'line-height',</span>
 <span class="propinst-float">'float',</span>
 <span class="propinst-vertical-align">'vertical-align'</span> (only if 'float' is 'none'), 
-<a href="box.html#margin-properties">margin properties,</a>
-<a href="box.html#padding-properties">padding properties,</a>
-<a href="box.html#border-properties">border properties,</a>
-<a href="colors.html">color property,</a>
-<a href="colors.html#background-properties">background properties.</a>
+<a href="#margin-properties">margin properties,</a>
+<a href="#padding-properties">padding properties,</a>
+<a href="#border-properties">border properties,</a>
+<a href="#colors">color property,</a>
+<a href="#background-properties">background properties.</a>
 UAs may apply other properties as well.
 To allow UAs to render a typographically correct drop cap or initial
 cap, the UA may choose a line-height, width and height based on the
@@ -4459,7 +4461,7 @@ first letter should be included."></p>
 digit, e.g., the "6" in "67 million dollars is a lot of money."
 
 <p>The :first-letter pseudo-element applies
-to <a href="visuren.html#block-boxes">block container elements.</a>
+to <a href="#block-boxes">block container elements.</a>
 
 <p>The :first-letter pseudo-element can be used with all such elements that
 contain text, or that have a descendant in the same flow that contains
@@ -4494,7 +4496,7 @@ does not contain any letters and ':first-letter' does not match anything
 (assuming the default style for BR in HTML 4). In particular, it
 does not match the "F" of "First."
 
-<p>If an element is a <a href="generate.html#lists">list item</a>
+<p>If an element is a <a href="#lists">list item</a>
 ('display: list-item'), the ':first-letter' applies to the first
 letter in the principal box after the marker. UAs may ignore
 ':first-letter' on list items with 'list-style-position: inside'. If
@@ -4569,7 +4571,7 @@ pseudo-elements</h4>
 
 <p>The ':before' and ':after' pseudo-elements can be used to insert
 generated content before or after an element's content. They are
-explained in the section on <a href="generate.html">generated
+explained in the section on <a href="#generate">generated
 text.</a>
 
 <div class="example"><P>
@@ -4597,14 +4599,14 @@ p.special:first-letter {color: #ffd800}
 
 <!-- SPLIT: cascade.src -->
 
-<h2>Assigning property values, Cascading, and Inheritance</h2>
+<h2 id=cascade>Assigning property values, Cascading, and Inheritance</h2>
 
 <h3><a id="value-stages">Specified, computed, and actual values</a></h3>
 
 <p>Once a user agent has parsed a document and constructed a <a
-href="conform.html#doctree">document tree</a>, it must assign, for
+href="#doctree">document tree</a>, it must assign, for
 every element in the tree, a value to every property that applies to the
-target <a href="media.html">media type</a>. 
+target <a href="#media">media type</a>. 
 
 <p>The final value of a property is the result of a four-step
 calculation: the value is determined through specification (the
@@ -4649,7 +4651,7 @@ for the definition of computed values when the specified value is
 'inherit'.
 
 <p>The computed value exists even when the property does not apply, as
-defined by the <a href="about.html#applies-to">'Applies To'</a> line.
+defined by the <a href="#applies-to">'Applies To'</a> line.
 However, some
 properties may define the computed value of a property for an element
 to depend on whether the property applies to that element.
@@ -4682,9 +4684,9 @@ value is the used value after any approximations have been applied.
 <h3><a id="inheritance">Inheritance</a></h3>
 
 <p>Some values are inherited by the children of an element in the <a
-href="conform.html#doctree">document tree</a>, as described <a
+href="#doctree">document tree</a>, as described <a
 href="#specified-value">above</a>. Each property <a
-href="about.html#property-defs">defines</a> whether it is inherited or
+href="#property-defs">defines</a> whether it is inherited or
 not.
 
 <div class="html example"><P>
@@ -4732,7 +4734,7 @@ for both H1 and EM might be, for example, '12pt'.
 
 <p class=note>Note that inheritance follows the document tree and is
 not intercepted by <span class=index-inst><a
-href="visuren.html#box-gen">anonymous boxes.</a></span>
+href="#box-gen">anonymous boxes.</a></span>
 
 
 <h4>The <span class="index-def" title="inherit, definition
@@ -4781,7 +4783,7 @@ http://lists.w3.org/Archives/Member/w3c-css-wg/1998JanMar/0054.html
 title="@import"><dfn>'@import'</dfn></span> rule allows users to
 import style rules from other style sheets. In CSS&nbsp;2, any
 @import rules must precede all other rules (except the @charset rule,
-if present). See the <a href="syndata.html#at-rules">section on
+if present). See the <a href="#at-rules">section on
 parsing</a> for when user agents must ignore @import rules. The
 '@import' keyword must be followed by the URI of the style sheet to
 include. A string is also allowed; it will be interpreted as if it had
@@ -4798,7 +4800,7 @@ The following lines are equivalent in meaning and illustrate both
 </div>
 
 <p>So that user agents can avoid retrieving resources for unsupported
-<a href="media.html">media types</a>, authors may specify
+<a href="#media">media types</a>, authors may specify
 media-dependent <span class="index-inst"
 title="@import">@import</span> rules.  These <span class="index-def"
 title="conditional import|media-dependent import">conditional
@@ -4846,7 +4848,7 @@ provide an interface that generates a user style sheet (or behaves as
 if it did).
 
 <li><strong>User agent</strong>: <a
-href="conform.html#conformance">Conforming user agents</a> must apply
+href="#conformance">Conforming user agents</a> must apply
 a <span class="index-def" title="default style sheet"><a
 id="default-style-sheet"><dfn>default style sheet</dfn></a></span>
 (or behave as if they did). A user agent's default style sheet should
@@ -4854,7 +4856,7 @@ present the
 elements of the document language in ways that satisfy general
 presentation expectations for the document language (e.g., for visual
 browsers, the EM element in HTML is presented using an italic
-font). See <a href="sample.html">A sample style sheet for HTML
+font). See <a href="#sample">A sample style sheet for HTML
 </a> for a recommended default style sheet for HTML documents.
 
 <p class="note">Note that the user may modify system settings (e.g., 
@@ -4884,9 +4886,9 @@ must apply the following sorting order:</p>
 <OL>
     <LI>
       Find all declarations that apply to the element and property in
-      question, for the target <a href="media.html">media type</a>.
+      question, for the target <a href="#media">media type</a>.
       Declarations apply if the associated selector <A
-      HREF="selector.html">matches</A> the element in question and the
+      HREF="#selector">matches</A> the element in question and the
       target medium matches the media list on all @media rules
       containing the declaration and on all links on the path through
       which the style sheet was reached.
@@ -5085,7 +5087,7 @@ font[color] { color: orange ! important; }
 
 <!-- SPLIT: media.html -->
 
-<h2>Media types</h2>
+<h2 id=media>Media types</h2>
 
 <h3><a id="media-intro">Introduction to media types</a></h3>
 
@@ -5148,8 +5150,8 @@ element specifies the target media of an external style sheet:
 </div>
 </UL>
 
-<p>The <a href="cascade.html#at-import">@import</a> rule is defined in
-the <a href="cascade.html">chapter on the cascade</a>.
+<p>The <a href="#at-import">@import</a> rule is defined in
+the <a href="#cascade">chapter on the cascade</a>.
 
 
 <h4><a id="at-media-rule">The @media rule</a></h4> 
@@ -5157,10 +5159,10 @@ the <a href="cascade.html">chapter on the cascade</a>.
 <P>An <span class="index-def" title="media">@media</span> rule
 specifies the target <a href="#media-types">media types</a> (separated
 by commas) of a set of <a
-href="syndata.html#tokenization">statements</a> (delimited by curly
+href="#tokenization">statements</a> (delimited by curly
 braces). Invalid statements must be ignored per <a
-href="syndata.html#rule-sets">4.1.7 "Rule sets, declaration blocks,
-and selectors"</a> and <a href="syndata.html#parsing-errors">4.2
+href="#rule-sets">4.1.7 "Rule sets, declaration blocks,
+and selectors"</a> and <a href="#parsing-errors">4.2
 "Rules for handling parsing errors."</a> The <span
 class="index-inst" title="@media">@media</span> construct allows style
 sheet rules for various media in the same style sheet:</P>
@@ -5210,7 +5212,7 @@ description of each property is informative.
 <!--
 <dt><strong>aural</strong> 
 <dd>Intended for speech synthesizers which also support audio sound effects. 
-See the section on <a href="./aural.html">aural style sheets</a> for details.
+See the section on <a href="#aural">aural style sheets</a> for details.
 -->
 
 <dt><strong>braille</strong>
@@ -5226,12 +5228,12 @@ screen, limited bandwidth).
 <dt><strong>print</strong> 
 <dd>Intended for paged material and for documents viewed on
 screen in print preview mode.  Please consult the section on <a
-href="page.html">paged media</a> for information about formatting
+href="#page">paged media</a> for information about formatting
 issues that are specific to paged media.
 
 <dt><strong>projection</strong>
 <dd>Intended for projected presentations, for example projectors.
-Please consult the section on <a href="page.html">paged media</a> for
+Please consult the section on <a href="#page">paged media</a> for
 information about formatting issues that are specific to paged media.
 
 <dt><strong>screen</strong> 
@@ -5240,13 +5242,13 @@ information about formatting issues that are specific to paged media.
 <dt><strong>speech</strong>
 <dd>Intended for speech synthesizers. Note: CSS2 had a similar media type 
 called 'aural' for this purpose.  See the appendix on 
-<a href="./aural.html">aural style sheets</a> for details. 
+<a href="#aural">aural style sheets</a> for details. 
 
 <dt><strong>tty</strong>
 <dd>Intended for media using a fixed-pitch character grid (such as
 teletypes, terminals, or portable devices with limited display
 capabilities). Authors should not use <a
-href="syndata.html#length-units">pixel units</a> with the "tty" media
+href="#length-units">pixel units</a> with the "tty" media
 type.
 
 <dt><strong>tv</strong>
@@ -5376,11 +5378,11 @@ align="center">bitmap<TD align="center">static</TR>
 
 <!-- SPLIT: box.html -->
 
-<h2><a id="box-model">Box model</a></h2>
+<h2 id=box><a id="box-model">Box model</a></h2>
 
 <P>The CSS box model describes the rectangular boxes that are
-generated for elements in the <a href="conform.html#doctree">document
-tree</a> and laid out according to the <a href="visuren.html">visual formatting
+generated for elements in the <a href="#doctree">document
+tree</a> and laid out according to the <a href="#visuren">visual formatting
 model</a>.
 
 <h3><a id="box-dimensions">Box dimensions</a></h3> 
@@ -5416,10 +5418,10 @@ and margin) is called an "edge", so each box has four edges:</P>
 title="content edge"><a id="content-edge"><strong>content edge</strong></a></span>
 or <span class="index-def" title="inner edge"><a id="inner-edge"><strong>inner edge</strong></a></span>
 <dd>The content edge surrounds the rectangle given by the <a
-href="visudet.html#Computing_widths_and_margins">width</a> and <a
-href="visudet.html#Computing_heights_and_margins">height</a>
+href="#Computing_widths_and_margins">width</a> and <a
+href="#Computing_heights_and_margins">height</a>
 of the box, which often depend on the element's <a
-href="conform.html#rendered-content">rendered content</a>.
+href="#rendered-content">rendered content</a>.
 The four content edges define the
 box's <dfn><span class="index-def">content box</span></dfn>.
 <dt><span class="index-def" title="padding edge"><a id="padding-edge"><strong>padding edge</strong></a></span>
@@ -5454,7 +5456,7 @@ the box has the <span class="propinst-width">'width'</span>
 or <span class="propinst-height">'height'</span> property
 set, whether the box contains text or other boxes, whether the
 box is a table, etc. Box widths and heights are discussed
-in the chapter on <a href="visudet.html">visual formatting
+in the chapter on <a href="#visudet">visual formatting
 model details</a>.
 
 <P>The background style of the content, padding, and border areas of a
@@ -5504,7 +5506,7 @@ interact. The example HTML document:
 &lt;/HTML&gt;
 </pre>
 
-<P>results in a <a href="conform.html#doctree">document tree</a> with
+<P>results in a <a href="#doctree">document tree</a> with
 (among other relationships) a UL element that has two LI
 children. 
 
@@ -5524,7 +5526,7 @@ and padding relate."></p>
 <ul>
 
 <li>The <a href="#content-width">content width</a> for each LI box is
-calculated top-down; the <a href="visuren.html#containing-block">containing
+calculated top-down; the <a href="#containing-block">containing
 block</a> for each LI box is established by the UL element.
 
 <li>The margin box height of each LI box depends on its <a
@@ -5570,7 +5572,7 @@ value type, which may take one of the following values:</p>
 <dt><span class="value-inst-percentage"><strong>&lt;percentage&gt;</strong></span>
 <dd>The percentage is calculated
 with respect to the <em>width</em> of the generated box's 
-<a href="visuren.html#containing-block">containing block</a>.
+<a href="#containing-block">containing block</a>.
 <span class="note">Note that this is true for <span
 class="propinst-margin-top">'margin-top'</span> and <span
 class="propinst-margin-bottom">'margin-bottom'</span> as well.</span>
@@ -5578,7 +5580,7 @@ If the containing block's width depends on this element, then the
 resulting layout is undefined in CSS&nbsp;2.
 <dt><strong>auto</strong>
 <dd>See the section on <a
-href="visudet.html#Computing_widths_and_margins">calculating widths and 
+href="#Computing_widths_and_margins">calculating widths and 
 margins</a> for behavior.
 </dl>
 
@@ -5655,7 +5657,7 @@ title="collapsing margin">collapsed margin</span></dfn>.
   <LI>Margins of the root element's box do not collapse.
 
   <LI>If the top and bottom margins of an element with <a
-  href="visuren.html#clearance">clearance</a> are adjoining, its
+  href="#clearance">clearance</a> are adjoining, its
   margins collapse with the adjoining margins of following siblings
   but that resulting margin does not collapse with the bottom margin
   of the parent block.
@@ -5673,14 +5675,14 @@ title="adjoining margins"><DFN>adjoining</DFN></span> if and only if:
 
 <UL>
   <LI>both belong to in-flow <a
-  href="visuren.html#block-boxes">block-level boxes</a> that
+  href="#block-boxes">block-level boxes</a> that
   participate in the same <a
-  href="visuren.html#block-formatting">block formatting context</a>
+  href="#block-formatting">block formatting context</a>
 
   <LI>no line boxes, no clearance, no padding and no border separate
   them <span class="note">(Note that <a
-  href="visuren.html#phantom-line-box">certain zero-height line
-  boxes</a> (see <a href="visuren.html#inline-formatting">9.4.2</a>)
+  href="#phantom-line-box">certain zero-height line
+  boxes</a> (see <a href="#inline-formatting">9.4.2</a>)
   are ignored for this purpose.)</span>
 
   <LI>both belong to vertically-adjacent box edges, i.e. form one of
@@ -5713,7 +5715,7 @@ generated by elements that are not related as siblings or ancestors.
 <P><STRONG>Note</STRONG> the above rules imply that:
 
 <UL>
-  <LI>Margins between a <a href="visuren.html#floats">floated</a> box
+  <LI>Margins between a <a href="#floats">floated</a> box
   and any other box do not collapse (not even between a float and its
   in-flow children).
 
@@ -5723,7 +5725,7 @@ generated by elements that are not related as siblings or ancestors.
   not collapse with their in-flow children.
 
   <LI>Margins of <a
-  href="visuren.html#absolutely-positioned">absolutely positioned</a>
+  href="#absolutely-positioned">absolutely positioned</a>
   boxes do not collapse (not even with their in-flow children).
 
   <LI>Margins of inline-block boxes do not collapse (not even with
@@ -5812,7 +5814,7 @@ id="value-def-padding-width"><strong>&lt;padding-width&gt;</strong>
 <dt><span class="value-inst-percentage"><strong>&lt;percentage&gt;</strong></span>
 <dd>The percentage is calculated with
 respect to the <em>width</em> of the generated box's <a
-href="visuren.html#containing-block">containing block</a>, even for
+href="#containing-block">containing block</a>, even for
 <span class="propinst-padding-top">'padding-top'</span> and <span
 class="propinst-padding-bottom">'padding-bottom'</span>.
 If the containing block's width depends on this element, then the
@@ -5995,7 +5997,7 @@ class="propinst-border-width">'border-width'</span>.
 with a border property, user agents must use the value
 of the element's <span
 class="propinst-color">'color'</span> property as the 
-<a href="cascade.html#computed-value">computed value</a> 
+<a href="#computed-value">computed value</a> 
 for the border color.
 
 <div class="example">
@@ -6028,8 +6030,8 @@ value type, which may take one of the following values:</p>
 <dd>No border; the computed border width is zero.
 <dt><strong><span class="index-def" title="'hidden'"><a id="value-def-hidden" class="value-def">hidden</a></span></strong>
 <dd>Same as 'none', except in terms of <a
-href="tables.html#border-conflict-resolution">border conflict
-resolution</a> for <a href="tables.html">table elements</a>.
+href="#border-conflict-resolution">border conflict
+resolution</a> for <a href="#tables">table elements</a>.
 <dt><strong><span class="index-def" title="'dotted'"><a id="value-def-dotted" class="value-def">dotted</a></span></strong>
 <dd>The border is a series of dots.
 <dt><strong><span class="index-def" title="'dashed'"><a id="value-def-dashed" class="value-def">dashed</a></span></strong>
@@ -6067,7 +6069,7 @@ white to dark gray to indicate a sloping border.
 
 <!-- Remove? BB 29 Apr 2003
 <P><span class="index-inst" title="conformance"><a
-href="conform.html#conformance">Conforming HTML user agents</a></span> may
+href="#conformance">Conforming HTML user agents</a></span> may
 interpret 'dotted', 'dashed', 'double', 'groove', 'ridge',
 'inset', and 'outset' to be 'solid'. 
 -->
@@ -6110,7 +6112,7 @@ h1 { border-bottom: thick solid red }
 
 <P> The above rule will set the width, style, and color of the border
 <strong>below</strong> the H1 element. Omitted values are set to
-their <a href="about.html#initial-value">initial values</a>. Since
+their <a href="#initial-value">initial values</a>. Since
 the following rule does not specify a border color, the border will
 have the color specified by the <span class="propinst-color">
 'color'</span> property:
@@ -6196,44 +6198,44 @@ appears has the left margin, left border and left padding.
 
 <!-- SPLIT: visuren.html -->
 
-<h2>Visual formatting model</h2>
+<h2 id=visuren>Visual formatting model</h2>
 
 <h3><a id="visual-model-intro">Introduction to the visual formatting model</a></h3>
 
 <p>This chapter and the next describe the <span class="index-def"
 title="visual formatting model">visual formatting model</span>: how user
-agents process the <a href="conform.html#doctree">document tree</a>
-for visual <a href="media.html">media</a>.
+agents process the <a href="#doctree">document tree</a>
+for visual <a href="#media">media</a>.
 </p>
 
 <p>In the visual formatting model, each element in the document tree
-generates zero or more boxes according to the <a href="box.html">box
+generates zero or more boxes according to the <a href="#box">box
 model</a>. The layout of these boxes is governed by:</p>
 
 <ul>
-<li><a href="box.html#box-dimensions">box dimensions</a> and <a
+<li><a href="#box-dimensions">box dimensions</a> and <a
 href="#box-gen">type</a>.
 </li><li><a href="#positioning-scheme">positioning scheme</a>
 (normal flow, float, and absolute positioning).
 </li><li>relationships between elements
-in the <a href="conform.html#doctree">document tree.</a>
+in the <a href="#doctree">document tree.</a>
 </li><li>external information (e.g., viewport size, <a
-href="conform.html#intrinsic">intrinsic</a> dimensions of images, etc.).
+href="#intrinsic">intrinsic</a> dimensions of images, etc.).
 </li></ul>
 
 <p>The properties defined in this chapter and the next apply to both
-<a href="media.html#continuous-media-group">continuous media</a> and
-<a href="media.html#paged-media-group">paged media</a>. <span class="paged">
+<a href="#continuous-media-group">continuous media</a> and
+<a href="#paged-media-group">paged media</a>. <span class="paged">
 However, the
-meanings of the <a href="box.html#margin-properties">margin
+meanings of the <a href="#margin-properties">margin
 properties</a> vary when applied to paged media (see the <a
-href="page.html#page-margins">page model</a> for details).
+href="#page-margins">page model</a> for details).
 </span>
 </p>
 
 <p>The visual formatting model does not specify all aspects of
 formatting (e.g., it does not specify a letter-spacing algorithm). <a
-href="conform.html#conformance">Conforming user agents</a> may behave
+href="#conformance">Conforming user agents</a> may behave
 differently for those formatting issues not covered by this
 specification.
 </p>
@@ -6241,13 +6243,13 @@ specification.
 <h4><a id="viewport">The viewport</a></h4>
 
 <p>User agents for <a
-href="media.html#continuous-media-group">continuous media</a>
+href="#continuous-media-group">continuous media</a>
 generally offer users a <span class="index-def" title="viewport">
 <dfn>viewport</dfn></span> (a window or other
 viewing area on the screen) through which users consult a
 document. User agents may change the document's layout when the
 viewport is resized (see the <a
-href="visudet.html#containing-block-details">initial containing block</a>).
+href="#containing-block-details">initial containing block</a>).
 </p>
 <p>
 When the viewport is smaller than the area of the canvas on which
@@ -6255,7 +6257,7 @@ the document is rendered, the user agent should offer a scrolling
 mechanism.
 
 There is at most
-one viewport per <a href="intro.html#canvas">canvas</a>, but user
+one viewport per <a href="#canvas">canvas</a>, but user
 agents may render to more than one canvas (i.e., provide different
 views of the same document).
 </p>
@@ -6274,12 +6276,12 @@ containing block in which the box lives," not the one it generates.
 </p>
 <p>Each box is given a position with respect to its containing block,
 but it is not confined by this containing block; it may <a
-href="visufx.html#overflow">overflow</a>.
+href="#overflow">overflow</a>.
 </p>
 
-<p>The <a href="visudet.html#containing-block-details">details</a> of
+<p>The <a href="#containing-block-details">details</a> of
 how a containing block's dimensions are calculated are described in
-the <a href="visudet.html">next chapter</a>.
+the <a href="#visudet">next chapter</a>.
 </p>
 <h3><a id="box-gen">Controlling box generation</a></h3>
 
@@ -6502,7 +6504,7 @@ meant, both anonymous inline boxes and anonymous block boxes are
 simply called anonymous boxes in this specification.
 </p>
 <p>There are more types of anonymous boxes that arise when formatting
-<a href="tables.html#anonymous-boxes">tables</a>.
+<a href="#anonymous-boxes">tables</a>.
 </p>
 <h4><a id="run-in">Run-in boxes</a></h4>
 
@@ -6543,13 +6545,13 @@ id="value-def-list-item"><strong>list-item</strong></a></span>
 <dd>This value causes an element (e.g., LI in HTML) to generate a
 principal block box and a marker box. For information about
 lists and examples of list formatting, please consult the section on
-<a href="generate.html#lists">lists</a>.
+<a href="#lists">lists</a>.
 </dd>
 <dt><strong>none</strong></dt>
 
 <dd><span class="index-def" title="'none'::as display value">This
 value</span> causes an element to not appear in the <a
-href="intro.html#formatting-structure">formatting structure</a> (i.e.,
+href="#formatting-structure">formatting structure</a> (i.e.,
 in visual media the element generates no boxes and has no effect on
 layout). Descendant elements do not generate any boxes either; the
 element and its content are removed from the formatting structure
@@ -6561,7 +6563,7 @@ on the descendants.
 box; it creates no box at all. CSS includes mechanisms that enable an
 element to generate boxes in the formatting structure that affect
 formatting but are not visible themselves. Please consult the section
-on <a href="visufx.html#visibility">visibility</a> for details.
+on <a href="#visibility">visibility</a> for details.
 </p>
 </dd>
 <dt>
@@ -6578,7 +6580,7 @@ on <a href="visufx.html#visibility">visibility</a> for details.
 </dt>
 <dd>These values cause an element to behave like a table element
 (subject to restrictions described in the chapter on <a
-href="tables.html">tables</a>).
+href="#tables">tables</a>).
 </dd>
 </dl>
 
@@ -6595,12 +6597,12 @@ For the root element, the computed value is changed as described in
 the section on the <a href="#dis-pos-flo">relationships between 'display', 'position', and 'float'</a>.
 </p>
 
-<p>Note that although the <a href="about.html#initial-value">initial
+<p>Note that although the <a href="#initial-value">initial
 value</a> of <span class="propinst-display">'display'</span> is
 'inline', rules in the user agent's <a
-href="cascade.html#default-style-sheet">default style sheet</a> may <a
-href="cascade.html">override</a> this value. See the <a
-href="sample.html">sample style sheet</a> for HTML 4 in the
+href="#default-style-sheet">default style sheet</a> may <a
+href="#cascade">override</a> this value. See the <a
+href="#sample">sample style sheet</a> for HTML 4 in the
 appendix.
 </p>
 <div class="example">
@@ -6706,7 +6708,7 @@ positioned boxes are taken out of the normal flow. This means
 they have no impact on the layout of later siblings. Also,
 though <a href="#absolutely-positioned">absolutely positioned</a> 
 boxes have margins, they
-do not <a href="box.html#collapsing-margins">collapse</a>
+do not <a href="#collapsing-margins">collapse</a>
 with any other margins.
 </dd>
 <dt><strong>fixed</strong></dt>
@@ -6724,7 +6726,7 @@ Authors may wish to specify 'fixed' in a
 media-dependent way.  For instance, an author may want a box to remain
 at the top of the <a href="#viewport">viewport</a> on the screen, but
 not at the top of each printed page. The two specifications may be
-separated by using an <a href="media.html#at-media-rule">@media
+separated by using an <a href="#at-media-rule">@media
 rule</a>, as in:
 
 <div class="example">
@@ -6739,7 +6741,7 @@ rule</a>, as in:
 </div>
 <p>UAs must not paginate the content of fixed boxes. <span
 class="note">Note that UAs may print invisible content in other
-ways. See <a href="page.html#outside-page-box">"Content outside the
+ways. See <a href="#outside-page-box">"Content outside the
 page box"</a> in chapter&nbsp;13.</span>
 </dd>
 </dl>
@@ -6814,14 +6816,14 @@ class="propinst-bottom">'bottom'</span>). Negative values are allowed.
 <dd>For non-replaced elements, the effect of this value 
 depends on which of related properties have the value 'auto' as
 well. See the sections on the 
-<a href="visudet.html#abs-non-replaced-width">width</a>
-and <a href="visudet.html#abs-non-replaced-height">height</a>
+<a href="#abs-non-replaced-width">width</a>
+and <a href="#abs-non-replaced-height">height</a>
 of <a href="#absolutely-positioned">absolutely positioned</a>, 
 non-replaced elements for details.  For replaced elements, the
 effect of this value depends only on the intrinsic dimensions of the
 replaced content. See the sections on the <a
-href="visudet.html#abs-replaced-width">width</a> and <a
-href="visudet.html#abs-replaced-height">height</a> of absolutely
+href="#abs-replaced-width">width</a> and <a
+href="#abs-replaced-height">height</a> of absolutely
 positioned, replaced elements for details.
 </dd>
 </dl>
@@ -6836,7 +6838,7 @@ href="#block-level">Block-level</a> boxes participate in a <a
 href="#block-formatting">block formatting</a> context.  <a
 href="#inline-level">Inline-level boxes</a> participate in an <a
 href="#inline-formatting">inline formatting</a> context. Table
-formatting contexts are described in the <a href="tables.html"
+formatting contexts are described in the <a href="#tables"
 >chapter on tables.</a>
 </p>
 <h4><a id="block-formatting">Block formatting contexts</a></h4>
@@ -6852,7 +6854,7 @@ other, vertically, beginning at the top of a containing block. The
 vertical distance between two sibling boxes is determined by the <span
 class="propinst-margin">'margin'</span> properties. Vertical margins
 between adjacent block-level boxes in a block formatting context <a
-href="box.html#collapsing-margins">collapse</a>.
+href="#collapsing-margins">collapse</a>.
 </p>
 
 <p>
@@ -6866,7 +6868,7 @@ the floats).
 </p>
 
 <p>For information about page breaks in paged media, please consult
-the section on <a href="page.html#allowed-page-breaks">allowed
+the section on <a href="#allowed-page-breaks">allowed
 page breaks</a>.
 </p>
 
@@ -6887,7 +6889,7 @@ id="line-box"><dfn>line box</dfn></a></span>.
 href="#containing-block">containing block</a> and the presence of floats.  
 The height of a line
 box is determined by the rules given in the section on <a
-href="visudet.html#line-height">line height calculations</a>. 
+href="#line-height">line height calculations</a>. 
 </p>
 <p>A line box is always tall enough for all of the boxes it contains. 
 However, it may be taller than the tallest box it contains 
@@ -6936,7 +6938,7 @@ processing</a>.
 <p id="phantom-line-box">Line boxes are created as needed to hold
 inline-level content within an inline formatting context. Line boxes
 that contain no text, no <a
-href="text.html#white-space-prop">preserved white space,</a> no inline
+href="#white-space-prop">preserved white space,</a> no inline
 elements with non-zero margins, padding, or borders, and no other <a
 href="#positioning-scheme">in-flow</a> content (such as images, inline
 blocks or inline tables), and do not end with a preserved newline must
@@ -7109,7 +7111,7 @@ class="propinst-visibility">'visibility'</span> property).
 Although relative positioning may be used as a form of superscripting and 
 subscripting, the line height is not automatically adjusted to take the 
 positioning into consideration. See the description of <a
-href="visudet.html#line-height">line height calculations</a> for more
+href="#line-height">line height calculations</a> for more
 information.
 </p>
 <p>Examples of relative positioning are provided in the section <a
@@ -7171,7 +7173,7 @@ the left float is placed on that line, aligned with the top of the line box, and
 </p>
 
 <p id="bfc-next-to-float">
-The border box of a table, a block-level replaced element, or an element in the normal flow that establishes a new <a href="visuren.html#block-formatting">block formatting context</a> 
+The border box of a table, a block-level replaced element, or an element in the normal flow that establishes a new <a href="#block-formatting">block formatting context</a> 
 (such as an element with 'overflow' other than 'visible')
 must not overlap the margin box of any floats in the same block
 formatting context as
@@ -7179,7 +7181,7 @@ the element itself. If necessary, implementations should clear the
 said element by placing it below any preceding floats, but may place
 it adjacent to such floats if there is sufficient space.
 They may even make the border box of said element narrower than
-defined by <a href="visudet.html#blockwidth">section&nbsp;10.3.3.</a>
+defined by <a href="#blockwidth">section&nbsp;10.3.3.</a>
 CSS2 does not define when a UA may put said element next to the float
 or by how much said element may become narrower.
 </p>
@@ -7279,11 +7281,11 @@ been:
 the float and reflowed down its right side.
 </p></div>
 
-<p>As stated in <a href="box.html#collapsing-margins">section 8.3.1</a>, 
+<p>As stated in <a href="#collapsing-margins">section 8.3.1</a>, 
 the margins of floating boxes never <a
-href="box.html#collapsing-margins">collapse</a> with margins of
+href="#collapsing-margins">collapse</a> with margins of
 adjacent boxes. Thus, in the previous example, vertical margins do not
-<a href="box.html#collapsing-margins">collapse</a> between the P box
+<a href="#collapsing-margins">collapse</a> between the P box
 and the floated IMG box.
 </p>
 <p>
@@ -7377,7 +7379,7 @@ id="float-rules">Here are the precise rules</a></span> that
 govern the behavior of floats:</p>
 
 <ol>
-<li> The left <a href="box.html#outer-edge">outer edge</a> of a
+<li> The left <a href="#outer-edge">outer edge</a> of a
 left-floating box may not be to the left of the left edge of its <a
 href="#containing-block">containing block</a>. An
 analogous rule holds for right-floating elements.
@@ -7385,34 +7387,34 @@ analogous rule holds for right-floating elements.
 <li> If the current box is left-floating, and there are any left-floating 
 boxes generated by elements earlier in the source document,
 then for each such earlier box, either the left <a
-href="box.html#outer-edge">outer edge</a> of the current box must be
-to the right of the right <a href="box.html#outer-edge">outer edge</a>
+href="#outer-edge">outer edge</a> of the current box must be
+to the right of the right <a href="#outer-edge">outer edge</a>
 of the earlier box, or its top must be lower than the bottom of the
 earlier box. Analogous rules hold for right-floating boxes.
 </li>
-<li>The right <a href="box.html#outer-edge">outer edge</a> of a
+<li>The right <a href="#outer-edge">outer edge</a> of a
 left-floating box may not be to the right of the left <a
-href="box.html#outer-edge">outer edge</a> of any right-floating
+href="#outer-edge">outer edge</a> of any right-floating
 box that is next to it. Analogous rules hold for
 right-floating elements.
 </li>
-<li>A floating box's <a href="box.html#outer-edge">outer top</a>
+<li>A floating box's <a href="#outer-edge">outer top</a>
 may not be higher than the top of its <a
 href="#containing-block">containing block</a>.
 When the float occurs between two collapsing margins, the
 float is positioned as if it had an otherwise empty <a
 href="#anonymous-block-level">anonymous block parent</a> taking part in
 the flow. The position of such a parent is defined by <a
-href="box.html#collapsed-through">the rules</a> in the section on margin
+href="#collapsed-through">the rules</a> in the section on margin
 collapsing.
 </li>
-<li> The <a href="box.html#outer-edge">outer top</a> of a floating box
+<li> The <a href="#outer-edge">outer top</a> of a floating box
 may not be higher than the outer top of any <a
 href="#block-boxes">block</a> or <a
 href="#floats">floated</a> box generated by an element
 earlier in the source document.
 </li>
-<li>The <a href="box.html#outer-edge">outer top</a> of an element's
+<li>The <a href="#outer-edge">outer top</a> of an element's
 floating box may not be higher than the top of any <span
 class="index-inst" title="line-box"><a
 href="#line-box">line-box</a></span> containing a box
@@ -7464,7 +7466,7 @@ the <span class="propinst-clear">'clear'</span> property</h4>
 <p>This property indicates which sides of an element's box(es) may
 <em>not</em> be adjacent to an earlier floating box. The 'clear'
 property does not consider floats inside the element itself or in
-other <a href="visuren.html#block-formatting">block formatting
+other <a href="#block-formatting">block formatting
 contexts.</a>
 </p>
 
@@ -7636,7 +7638,7 @@ positioning the float. An extra constraint (#10) is added:
 </p>
 
 <ul>
-<li>The top <a href="box.html#outer-edge">outer edge</a> 
+<li>The top <a href="#outer-edge">outer edge</a> 
 of the float must be below the bottom outer
 edge of all earlier left-floating boxes (in the case of 'clear:
 left'), or all earlier right-floating boxes (in the case of 'clear:
@@ -7680,10 +7682,10 @@ class="propinst-position">'position'</span> property has the value
 <p>Fixed positioning is a subcategory of absolute positioning. The
 only difference is that for a fixed positioned box, the containing
 block is established by the <a href="#viewport">viewport</a>.  For <a
-href="media.html#continuous-media-group">continuous media</a>, fixed
+href="#continuous-media-group">continuous media</a>, fixed
 boxes do not move when the document is scrolled. In this respect, they
-are similar to <a href="colors.html#background-properties">fixed
-background images</a>.  For <a href="page.html">paged media</a>, boxes
+are similar to <a href="#background-properties">fixed
+background images</a>.  For <a href="#page">paged media</a>, boxes
 with fixed positions are repeated on every page. This is useful for
 placing, for instance, a signature at the bottom of each page.
 Boxes with fixed position that are larger than the page area are
@@ -8010,7 +8012,7 @@ Consider the following CSS declarations for <em>outer</em> and
 <p>which cause the top of the <em>outer</em> box to be positioned with
 respect to its containing block. The containing block for a positioned
 box is established by the nearest positioned ancestor (or, if none
-exists, the <a href="visudet.html#containing-block-details">initial containing
+exists, the <a href="#containing-block-details">initial containing
 block</a>, as in our example). The top side of the <em>outer</em> box
 is '200px' below the top of the containing block and the left side is
 '200px' from the left side. The child box of <em>outer</em> is flowed
@@ -8066,7 +8068,7 @@ box with respect to a containing block."></p>
 </code></pre>
 
 <p>the containing block for <em>inner</em> becomes the <a
-href="visudet.html#containing-block-details">initial containing block</a> (in our
+href="#containing-block-details">initial containing block</a> (in our
 example). The following illustration shows where the <em>inner</em>
 box would end up in this case.</p>
 
@@ -8212,7 +8214,7 @@ stacking contexts take part in the current stacking context.
 <p>This painting order is applied recursively to each stacking
 context. This description of stacking context painting order
 constitutes an overview of the detailed normative definition in
-<a href="zindex.html">Appendix&nbsp;E.</a>
+<a href="#zindex">Appendix&nbsp;E.</a>
 
 <div class="html example">
 <p>In the following example, the stack levels of
@@ -8266,7 +8268,7 @@ class="propinst-z-index">'z-index'</span> property.
 <em>transparency</em>. The default behavior of the background is to allow boxes behind it to be visible. 
 In the example, each box transparently overlays the boxes below it. This
 behavior can be overridden by using one of the existing
-<a href="colors.html#background-properties">
+<a href="#background-properties">
 background properties</a>.
 </p>
 
@@ -8276,7 +8278,7 @@ and <span class="propinst-unicode-bidi">'unicode-bidi'</span>
 properties
 </h3>
 
-<p><a href="conform.html#conformance">Conforming</a> user agents that do
+<p><a href="#conformance">Conforming</a> user agents that do
 not support bidirectional text may ignore the <span
 class="propinst-direction">'direction'</span> and <span
 class="propinst-unicode-bidi">'unicode-bidi'</span> properties
@@ -8322,7 +8324,7 @@ override them.
 <p>The HTML 4 specification ([[HTML401]], section 8.2) defines
 bidirectionality behavior for HTML elements. The style sheet
 rules that would achieve the bidi behavior specified in [[HTML401]] are
-given in <a href="sample.html#bidi">the sample style sheet</a>. The
+given in <a href="#bidi">the sample style sheet</a>. The
 HTML 4 specification also contains more information on
 bidirectionality issues.
 </p>
@@ -8334,8 +8336,8 @@ the direction of embeddings and overrides (see <span
 class="propinst-unicode-bidi">'unicode-bidi'</span>) for the Unicode
 bidirectional algorithm. In addition, it specifies such things as the
 direction of <a
-href="tables.html">table</a> column layout, the direction of
-horizontal <a href="visufx.html#overflow">overflow</a>, the
+href="#tables">table</a> column layout, the direction of
+horizontal <a href="#overflow">overflow</a>, the
 position of an incomplete last line in a block in case of 'text-align:
 justify'.
 </p>
@@ -8544,7 +8546,7 @@ of a line.
 
 <!-- SPLIT: visudet.html -->
 
-<h2>Visual formatting model details</h2>
+<h2 id=visudet>Visual formatting model details</h2>
 
 <h3><a id="containing-block-details">Definition of "containing
 block"</a></h3>
@@ -8556,23 +8558,23 @@ block</span></dfn> of the element. The containing block of an element
 is defined as follows:</p>
 
 <ol>
-<li>The containing block in which the <a href="conform.html#root">root
+<li>The containing block in which the <a href="#root">root
 element</a> lives is a rectangle called the <dfn><span
 class="index-def" title="initial containing block|containing
 block::initial">initial containing block</span></dfn>. For continuous
 media, it has the dimensions of the <a
-href="visuren.html#viewport">viewport</a> and is anchored at the
-canvas origin; it is the <a href="page.html#page-area">page area</a>
+href="#viewport">viewport</a> and is anchored at the
+canvas origin; it is the <a href="#page-area">page area</a>
 for paged media. The 'direction' property of the initial
 containing block is the same as for the root element.
 </li>
 <li>For other elements, if the element's position is 'relative' or 'static',
 the containing block is formed by the content edge of the nearest
-ancestor box that is a <a href="visuren.html#block-boxes">block
+ancestor box that is a <a href="#block-boxes">block
 container</a> or which establishes a formatting context.
 </li>
 <li>If the element has 'position: fixed', the containing block is
-established by the <a href="visuren.html#viewport">viewport</a>
+established by the <a href="#viewport">viewport</a>
 in the case of continuous media or the page area in the case of paged media.
 </li>
 <li>If the element has 'position: absolute', the containing block is
@@ -8588,7 +8590,7 @@ element is split
 across multiple lines, the containing block is undefined.
 </li>
 <li>Otherwise, the containing block
-is formed by the <a href="box.html#padding-edge">padding edge</a> of
+is formed by the <a href="#padding-edge">padding edge</a> of
 <!-- we probably mean: the principal box of -->
 the ancestor.
 </li>
@@ -8699,18 +8701,18 @@ class="propinst-width">'width'</span> property</h3>
 <!-- #include src=properties/width.srb -->
 
 <p> This property specifies the <a
-href="box.html#content-width">content width</a> of boxes.  
+href="#content-width">content width</a> of boxes.  
 </p>
 <p>This property does not apply to non-replaced <a
-href="visuren.html#inline-boxes">inline</a> elements. The
+href="#inline-boxes">inline</a> elements. The
 content width
 of a non-replaced inline element's boxes is that of the rendered
 content within them (<em>before</em> any relative offset of
 children). Recall that inline boxes flow into <a
-href="visuren.html#line-box">line boxes</a>. The width of line boxes
+href="#line-box">line boxes</a>. The width of line boxes
 is given by the their <a
-href="visuren.html#containing-block">containing block</a>, but may be
-shorted by the presence of <a href="visuren.html#floats">floats</a>.
+href="#containing-block">containing block</a>, but may be
+shorted by the presence of <a href="#floats">floats</a>.
 </p>
 <p>Values have the following meanings:</p>
 
@@ -8723,7 +8725,7 @@ shorted by the presence of <a href="visuren.html#floats">floats</a>.
 </dt>
 <dd>Specifies a percentage width. The percentage is calculated
 with respect to the width of the generated box's 
-<a href="visuren.html#containing-block">containing block</a>.
+<a href="#containing-block">containing block</a>.
 If the containing block's width depends on this element's width, then
 the resulting layout is undefined in CSS&nbsp;2.
 <span class="note">
@@ -8765,7 +8767,7 @@ class="propinst-left">'left'</span> and <span
 class="propinst-right">'right'</span> properties as used for layout
 depend on the type of box generated and on each other. (The value used
 for layout is sometimes referred to as the <a
-href="cascade.html#usedValue">used value</a>.) In
+href="#usedValue">used value</a>.) In
 principle, the values used are the same as the computed values, with
 'auto' replaced by some suitable value, and percentages calculated
 based on the containing block, but there are exceptions. The following
@@ -8786,7 +8788,7 @@ situations need to be distinguished:</p>
 
 <p>For Points 1-6 and 9-10, the values of 'left' and 'right' in the
 case of relatively positioned elements are determined by the rules in <a
-href="visuren.html#relative-positioning">section 9.4.3.</a>
+href="#relative-positioning">section 9.4.3.</a>
 </p>
 
 <p class=note><em><strong>Note.</strong> The used value of 'width'
@@ -8957,7 +8959,7 @@ block of a hypothetical box that would have been the first box of the
 element if its specified <span
 class="propinst-position">'position'</span> value had been 'static'
 and its specified 'float' had been 'none'. (Note that due to the rules
-in <a href="visuren.html#dis-pos-flo">section&nbsp;9.7</a> this
+in <a href="#dis-pos-flo">section&nbsp;9.7</a> this
 hypothetical calculation might require also assuming a different
 computed value for 'display'.)
 </li>
@@ -9150,7 +9152,7 @@ certain range. Values have the following meanings:</p>
 </dt>
 <dd>Specifies a percentage for determining the used value. The
 percentage is calculated with respect to the width of the generated
-box's <a href="visuren.html#containing-block">containing block</a>.
+box's <a href="#containing-block">containing block</a>.
 If the containing block's width is negative, the used value is
 zero.
 If the containing block's width depends on this element's width,
@@ -9173,7 +9175,7 @@ tables, inline tables,
 table cells, table columns, and column groups is undefined.
 
 <p>The following algorithm describes how the two properties influence
-the <a href="cascade.html#computed-value">used value</a>
+the <a href="#computed-value">used value</a>
 of the <span class="propinst-width">'width'</span> property:</p>
 <ol>
 
@@ -9321,10 +9323,10 @@ class="propinst-height">'height'</span> property</h3>
 <!-- #include src=properties/height.srb -->
 
 <p> This property specifies the <a
-href="box.html#content-height">content height</a> of boxes.
+href="#content-height">content height</a> of boxes.
 
 <p>This property does not apply to non-replaced <a
-href="visuren.html#inline-boxes">inline</a> elements. See the <a
+href="#inline-boxes">inline</a> elements. See the <a
 href="#inline-non-replaced">section on computing heights and margins
 for non-replaced inline elements</a> for the rules used instead.
 </p>
@@ -9339,12 +9341,12 @@ for non-replaced inline elements</a> for the rules used instead.
 </dt>
 <dd>Specifies a percentage height. The percentage is calculated with
 respect to the height of the generated box's <a
-href="visuren.html#containing-block">containing block</a>. If the
+href="#containing-block">containing block</a>. If the
 height of the containing block is not specified explicitly (i.e., it
 depends on content height), and this element is not absolutely
 positioned, the used height is calculated as if 'auto' was specified.
 A percentage height
-on the <a href="conform.html#root">root element</a> is relative to the
+on the <a href="#root">root element</a> is relative to the
 <a href="#containing-block-details">initial containing block</a>.
 <span class="note">
 Note: For absolutely positioned elements whose containing block is
@@ -9381,7 +9383,7 @@ p { height: 100px }
 </pre>
 
 <p>Paragraphs of which the height of the contents exceeds 100 pixels
-will <a href="visufx.html#overflow">overflow</a> according to the
+will <a href="#overflow">overflow</a> according to the
 <span class="propinst-overflow">'overflow'</span> property.
 </p>
 </div>
@@ -9520,7 +9522,7 @@ the first applicable of the following:
 floating boxes and absolutely positioned boxes are ignored, and
 relatively positioned boxes are considered without their offset). Note
 that the child box may be an <a
-href="visuren.html#anonymous-block-level">anonymous block box.</a>
+href="#anonymous-block-level">anonymous block box.</a>
 </p>
 
 <h4><a id="abs-non-replaced-height">Absolutely positioned, non-replaced elements</a></h4>
@@ -9535,7 +9537,7 @@ class="propinst-position">'position'</span> value had been 'static'
 and its specified <span class="propinst-float">'float'</span> had been
 'none' and its specified <span class="propinst-clear">'clear'</span>
 had been 'none'. (Note that due to the rules
-in <a href="visuren.html#dis-pos-flo">section&nbsp;9.7</a> this might
+in <a href="#dis-pos-flo">section&nbsp;9.7</a> this might
 require also assuming a different computed value for 'display'.)
 The value is negative if the hypothetical box is above the containing
 block.
@@ -9598,7 +9600,7 @@ values for 'margin-top' and 'margin-bottom' are set to 0 and solve for
 <h4><a id="abs-replaced-height">Absolutely positioned, replaced elements</a></h4>
 
 <p>This situation is similar to the previous one, except that the
-element has an <a href="conform.html#intrinsic">intrinsic</a> height. The
+element has an <a href="#intrinsic">intrinsic</a> height. The
 sequence of substitutions is now:
 </p>
 <ol>
@@ -9680,7 +9682,7 @@ bottom margin-edge of the bottommost block-level child box.
 <p>Absolutely positioned children are ignored, and relatively
 positioned boxes are considered without their offset. Note that the
 child box may be an <a
-href="visuren.html#anonymous-block-level">anonymous block box.</a>
+href="#anonymous-block-level">anonymous block box.</a>
 </p>
 <p>In addition, if the element has any floating descendants
 whose bottom margin edge is below the element's bottom content edge,
@@ -9714,7 +9716,7 @@ certain range. Values have the following meanings:</p>
 </dt>
 <dd>Specifies a percentage for determining the used value.
 The percentage is calculated with respect to the height of the
-generated box's <a href="visuren.html#containing-block">containing block</a>.
+generated box's <a href="#containing-block">containing block</a>.
 If the height of the containing block is not 
 specified explicitly (i.e., it depends on content height), and this
 element is not absolutely positioned, the
@@ -9737,7 +9739,7 @@ class="propinst-max-height">'max-height'</span> are illegal.
 tables, inline tables, table cells, table rows, and row groups is undefined.
 
 <p>The following algorithm describes how the two properties influence
-the <a href="cascade.html#computed-value">used value</a>
+the <a href="#computed-value">used value</a>
 of the <span class="propinst-height">'height'</span> property:</p>
 
 <ol>
@@ -9784,9 +9786,9 @@ class="propinst-vertical-align">'vertical-align'</span>
 properties</h3>
 
 <p>As described in the section on <a
-href="visuren.html#inline-formatting">inline formatting contexts</a>,
+href="#inline-formatting">inline formatting contexts</a>,
 user agents flow inline-level boxes into a vertical stack of <a
-href="visuren.html#line-box">line boxes</a>. The height of a line box
+href="#line-box">line boxes</a>. The height of a line box
 is determined as follows:</p>
 
 <ol>
@@ -9897,9 +9899,9 @@ metrics from the HHEA table should be used.</em>
 
 <!-- #include src=properties/line-height.srb -->
 
-<p>On a <a href="visuren.html#block-boxes">block container element</a>
+<p>On a <a href="#block-boxes">block container element</a>
 whose content
-is composed of <a href="visuren.html#inline-level">inline-level</a>
+is composed of <a href="#inline-level">inline-level</a>
 elements, 'line-height' specifies the <em>minimal</em> height of line boxes
 within the element. The minimum height consists of a minimum height above
 the baseline and a minimum depth below it, exactly as if each
@@ -9913,7 +9915,7 @@ assumed to be metrics that are contained in the font. (For more
 details, see CSS level&nbsp;3.)
 
 <p>On a non-replaced <a
-href="visuren.html#inline-boxes">inline</a> element, 'line-height'
+href="#inline-boxes">inline</a> element, 'line-height'
 specifies the height that is used in the calculation of the line box
 height.
 </p>
@@ -9936,13 +9938,13 @@ class="value-inst-number"><strong>&lt;number&gt;</strong></span></span>
 </dt>
 <dd>The used value of the property is this number multiplied by the
 element's font size. Negative values are illegal. The <a
-href="cascade.html#computed-value">computed value</a> is the same as
+href="#computed-value">computed value</a> is the same as
 the specified value.
 </dd>
 <dt><span class="index-inst" title="&lt;percentage&gt;"><span
 class="value-inst-percentage"><strong>&lt;percentage&gt;</strong></span></span>
 </dt>
-<dd>The <a href="cascade.html#computed-value">computed value</a> of the
+<dd>The <a href="#computed-value">computed value</a> of the
 property is this percentage multiplied by the element's 
 computed font size. Negative values are illegal.
 </dd>
@@ -9976,7 +9978,7 @@ the boxes generated by an inline-level element.</p>
 <div class="note"><p>
 <em><strong>Note.</strong> Values of this property have
 different meanings in the context of tables.
-Please consult the section on <a href="tables.html#height-layout">
+Please consult the section on <a href="#height-layout">
 table height algorithms</a> for details.
 </em>
 </p>
@@ -10061,7 +10063,7 @@ bottom border edge.</p>
 
 <!-- SPLIT: visufx.html -->
 
-<h2>Visual effects</h2>
+<h2 id=visufx>Visual effects</h2>
 
 <h3><a id="overflow-clipping">Overflow and clipping</a></h3>
 
@@ -10086,13 +10088,13 @@ block (i.e., the containing block's height is determined by the <span
 class="propinst-height">'height'</span> property, not by content
 height).
 </li>
-<li>A descendant box is <a href="visuren.html#absolute-positioning">positioned
+<li>A descendant box is <a href="#absolute-positioning">positioned
 absolutely</a>, partly outside the box.  Such boxes are not always
 clipped by the overflow property on their ancestors; specifically,
 they are not clipped by the overflow of any ancestor between
 themselves and their containing block
 </li>
-<li>A descendant box has <a href="box.html#margin-properties">negative margins</a>, causing it
+<li>A descendant box has <a href="#margin-properties">negative margins</a>, causing it
 to be positioned partly outside the box.
 </li>
 <li>The 'text-indent' property causes an inline box to hang off either the left or right edge of the block box.
@@ -10142,7 +10144,7 @@ any problem with scrollbars appearing and disappearing in a dynamic
 environment. 
 When this value is specified and the target medium is
 'print', overflowing content may be printed.
-When used on <a href="tables.html#table-box">table boxes,</a> this
+When used on <a href="#table-box">table boxes,</a> this
 value has the same meaning as 'visible'.
 </dd>
 
@@ -10150,7 +10152,7 @@ value has the same meaning as 'visible'.
 
 <dd>The behavior of the 'auto' value is user agent-dependent, but
 should cause a scrolling mechanism to be provided for overflowing boxes.
-When used on <a href="tables.html#table-box">table boxes,</a> this
+When used on <a href="#table-box">table boxes,</a> this
 value has the same meaning as 'visible'.
 </dd>
 
@@ -10162,8 +10164,8 @@ native operating environment.
 </p>
 
 <p>On a table element ('display: table'), 'overflow' applies to the <a
-href="tables.html#table-box">table box</a> (i.e., not the <a
-href="tables.html#table-wrapper-box">table wrapper box</a>) and all
+href="#table-box">table box</a> (i.e., not the <a
+href="#table-wrapper-box">table wrapper box</a>) and all
 values other than 'hidden' are treated as 'visible'.
 
 <p>
@@ -10294,7 +10296,7 @@ BB]
 region</dfn></span> defines what portion of an element's 
 border box 
 <!--<a
-href="conform.html#rendered-content">rendered content</a>--> 
+href="#rendered-content">rendered content</a>--> 
 is visible. By default, the element is not clipped. However, the clipping region may be explicitly set with the <span class="propinst-clip">'clip'</span> property.
 </p>
 
@@ -10410,7 +10412,7 @@ affects layout. Furthermore, descendants of the element will
 be visible if they have 'visibility: visible'.</dd>
 <dt><strong>collapse</strong></dt>
 <dd>Please consult the section on 
-<a href="tables.html#dynamic-effects">dynamic row and column
+<a href="#dynamic-effects">dynamic row and column
 effects</a> in tables. If used on elements other than rows, row groups, columns, or column groups,
 'collapse' has the same meaning as 'hidden'.
 </dd>
@@ -10480,14 +10482,14 @@ UA.)
 
 <!-- SPLIT: generate.html -->
 
-<h2>
+<h2 id=generate>
 <a id="generated-text">Generated</a> <span class="index-def"
 title="generated content">content</span>, automatic <span
 class="index-def" title="automatic numbering">numbering</span>,
 and lists</h2>
 
 <p>In some cases, authors may want user agents to render content
-that does not come from the <a href="conform.html#doctree">document
+that does not come from the <a href="#doctree">document
 tree</a>. One familiar example of this is a numbered list; the author
 does not want to list the numbers explicitly, he or she wants the
 user agent to generate them automatically. Similarly, authors
@@ -10514,7 +10516,7 @@ pseudo-elements</h3>
 <p>Authors specify the style and location of generated content with
 the :before and :after pseudo-elements. As their names indicate, the
 :before and :after pseudo-elements specify the location of content
-before and after an element's <a href="conform.html#doctree">document
+before and after an element's <a href="#doctree">document
 tree</a> content.  The <span class="propinst-content">'content'</span>
 property, in conjunction with these pseudo-elements, specifies what is
 inserted.
@@ -10542,7 +10544,7 @@ p.note        { border: solid green }
 paragraph, including the initial string.
 
 <P>The :before and :after pseudo-elements <a
-href="cascade.html#inheritance">inherit</a> any inheritable properties
+href="#inheritance">inherit</a> any inheritable properties
 from the element in the document tree to which they are attached.</p>
 
 <!-- Does the previous statement apply to all pseudo-elements? -IJ -->
@@ -10562,7 +10564,7 @@ q:before {
 </div>
 
 <p>In a :before or :after pseudo-element declaration, non-inherited
-properties take their <a href="about.html#initial-value">initial
+properties take their <a href="#initial-value">initial
 values</a>.</p>
 
 <div class=example>
@@ -10637,7 +10639,7 @@ meanings:</p>
 <dt><span class="index-inst" title="&lt;string&gt;"><span
 class="value-inst-string"><strong>&lt;string&gt;</strong></span></span>
 <dd>Text content 
-(see the section on <a href="syndata.html#strings">strings</a>).
+(see the section on <a href="#strings">strings</a>).
 
 <dt><span class="index-inst" title="&lt;uri&gt;"><span
 class="value-inst-uri"><strong>&lt;uri&gt;</strong></span></span>
@@ -10648,7 +10650,7 @@ the resource cannot be displayed.
 
 <dt><span class="index-inst" title="&lt;counter&gt;"><span
 class="value-inst-counter"><strong>&lt;counter&gt;</strong></span></span>
-<dd><a href="syndata.html#counter">Counters</a> may be specified
+<dd><a href="#counter">Counters</a> may be specified
 with two different functions: 'counter()' or 'counters()'. 
 The former has two forms:
 'counter(<var>name</var>)' or 'counter(<var>name</var>,
@@ -10945,7 +10947,7 @@ is 0.
 <p>The keywords 'none', 'inherit' and 'initial' must not be used as
 counter names. A value of 'none' on its own means no counters are
 reset, resp. incremented. 'Inherit' on its own has its usual meaning
-(see <a href="cascade.html#value-def-inherit">6.2.1</a>). 'Initial' is
+(see <a href="#value-def-inherit">6.2.1</a>). 'Initial' is
 reserved for future use.
 
 <div class="example">
@@ -11195,7 +11197,7 @@ set to 'hidden', on the other hand, <em>do</em> increment counters.
 
 <P>CSS&nbsp;2 offers basic visual formatting of lists. An element with
 'display: list-item' generates a <a
-href="visuren.html#principal-box">principal block box</a> for the element's
+href="#principal-box">principal block box</a> for the element's
 content and, depending on the values of 'list-style-type' and
 'list-style-image', possibly also a marker box as a visual indication
 that the
@@ -11210,7 +11212,7 @@ specify distinct style (colors, fonts, alignment, etc.) for the list
 marker or adjust its position with respect to the principal box; these
 may be derived from the principal box.
 
-<P>The <a href="colors.html#background-properties">background
+<P>The <a href="#background-properties">background
 properties</a> apply to the principal box only; an 'outside' marker
 box is transparent.
  
@@ -11462,9 +11464,9 @@ ul > li > ul { list-style: circle outside } /* Any "ul" child
 class="propinst-list-style">'list-style'</span> information directly
 on list item elements (e.g., "li" in HTML), they should do so with
 care. The following rules look similar, but the first declares a <a
-href="./selector.html#descendant-selectors">descendant selector</a>
+href="#descendant-selectors">descendant selector</a>
 and the second a (more specific) <a
-href="./selector.html#child-selectors">child
+href="#child-selectors">child
 selector.</a>
 
 <PRE class="example">
@@ -11473,7 +11475,7 @@ ol.alpha > li { list-style: lower-alpha } /* Any "li" child of an "ol" */
 </PRE>
 
 <P>Authors who use only the <a
-href="selector.html#descendant-selectors">descendant selector</a> may
+href="#descendant-selectors">descendant selector</a> may
 not achieve the results they expect. Consider the following rules:
 
 <PRE class="html example">
@@ -11498,10 +11500,10 @@ not achieve the results they expect. Consider the following rules:
 
 <P>The desired rendering would have level 1 list items with
 'lower-alpha' labels and level 2 items with 'disc' labels. However,
-the <a href="./cascade.html#cascading-order">cascading order</a> will
+the <a href="#cascading-order">cascading order</a> will
 cause the first style rule (which includes specific class information)
 to mask the second. The following rules solve the problem by employing
-a <a href="./selector.html#child-selectors">child
+a <a href="#child-selectors">child
 selector</a> instead:
 
 <PRE class="example">
@@ -11559,13 +11561,13 @@ ul { list-style: none }
 
 <!-- SPLIT: page.html -->
   
-<h2><a id="the-page">Paged media</a></h2>
+<h2 id=page><a id="the-page">Paged media</a></h2>
 
 <h3><a id="page-intro">Introduction to paged media</a></h3>
 
 <p>Paged media (e.g., paper, transparencies, pages that are displayed
 on computer screens, etc.) differ from <a
-href="./media.html#continuous-media-group">continuous media</a> in
+href="#continuous-media-group">continuous media</a> in
 that the content of the document is split into one or more discrete
 pages. To handle pages, CSS&nbsp;2 describes how page margins are set
 on <a href="#page-box">page boxes</a>, and how <a href="#page-breaks">page breaks</a> are declared.
@@ -11602,7 +11604,7 @@ box</dfn></span> is a rectangular region that contains two areas:</p>
 id="page-area"><dfn>page area</dfn></a></span>. The page area
 includes the boxes laid out on that page. The edges of the first page
 area establish the rectangle that is the initial <a
-href="visudet.html#containing-block-details">containing block</a> of
+href="#containing-block-details">containing block</a> of
 the document.
 The canvas background is painted within and covers the page area.
 
@@ -11635,7 +11637,7 @@ all left pages, or all right pages</p>
 
 <h4><a id="page-margins">Page margins</a></h4>
 
-<P>In CSS&nbsp;2, only the <a href="box.html#margin-properties">margin
+<P>In CSS&nbsp;2, only the <a href="#margin-properties">margin
 properties</a> (<span class="propinst-margin-top">'margin-top'</span>,
 <span class="propinst-margin-right">'margin-right'</span>, <span
 class="propinst-margin-bottom">'margin-bottom'</span>, <span
@@ -11668,7 +11670,7 @@ refer to the height of the page box. All other units associated with
 the respective CSS&nbsp;2 properties are allowed.
 
 <P>Due to negative margin values (either on the page box or on
-elements) or <a href="visuren.html#absolute-positioning">absolute
+elements) or <a href="#absolute-positioning">absolute
 positioning</a> content may end up outside the page box, but this
 content may be "cut" &mdash; by the user agent, the printer, or ultimately,
 the paper cutter.
@@ -11793,7 +11795,7 @@ properties indicate where the user agent may or should break pages,
 and on what page (left or right) the subsequent content should resume.
 Each page break ends layout in the current <a href="#page-box">page
 box</a> and causes remaining pieces of the <a
-href="conform.html#doctree">document tree</a> to be laid out in a new
+href="#doctree">document tree</a> to be laid out in a new
 page box.
 
 <h4><a id="page-break-props">Page break properties</a>: <span
@@ -11869,7 +11871,7 @@ Examples of how they are used to control page breaks are given below.
 <p>Only positive values are allowed.
 
 <P>For information about paragraph formatting, please consult the
-section on <a href="visuren.html#line-box">line boxes</a>.
+section on <a href="#line-box">line boxes</a>.
 
 <h4><a id="allowed-page-breaks">Allowed page breaks</a></h4>
 
@@ -11878,7 +11880,7 @@ section on <a href="visuren.html#line-box">line boxes</a>.
 <ol>
 <li>
 In the vertical margin between block-level boxes. When an unforced page
-break occurs here, the <a href="cascade.html#used-value">used
+break occurs here, the <a href="#used-value">used
 values</a> of the relevant <span
 class="propinst-margin-top">'margin-top'</span> and <span
 class="propinst-margin-bottom">'margin-bottom'</span> properties are
@@ -11889,8 +11891,8 @@ to '0'; the relevant <span
 class="propinst-margin-top">'margin-top'</span> used value may either
 be set to '0' or retained.
 
-<li>Between <a href="visuren.html#line-box">line boxes</a>
-inside a <a href="visuren.html#block-boxes">block container</a> box.
+<li>Between <a href="#line-box">line boxes</a>
+inside a <a href="#block-boxes">block container</a> box.
 
 <li>Between the content edge of a block container box and the outer edges of its
 child content (margin edges of block-level children or line box edges
@@ -11921,7 +11923,7 @@ class="propinst-page-break-inside">'page-break-inside'</span> value of
 
 <li>
 <strong>Rule C:</strong> Breaking at (2) is allowed only if the number of <a
-href="visuren.html#line-box">line boxes</a> between the
+href="#line-box">line boxes</a> between the
 break and the start of the enclosing block box is 
 the value of <span
 class="propinst-orphans">'orphans'</span> or more, and the number of
@@ -11969,7 +11971,7 @@ the same height.
 <div class="example"><P> 
 Suppose, for example, that the style sheet 
 contains 'orphans: 4', 'widows: 2', and
-there are 20 lines (<a href="visuren.html#line-box">line boxes</a>)
+there are 20 lines (<a href="#line-box">line boxes</a>)
 available at the bottom of the current page:</p>
 
 <ul>
@@ -12006,7 +12008,7 @@ as a block to the next page.
 <h3><a id="page-cascade">Cascading in the page context</a></h3>
 
 <P>Declarations in the <a href="#page-context">page context</a> obey
-the <a href="cascade.html">cascade</a> just like normal CSS
+the <a href="#cascade">cascade</a> just like normal CSS
 declarations.
 
 <div class="example"><P>
@@ -12022,7 +12024,7 @@ Consider the following example:
 }
 </PRE>
 
-<P>Due to the <a href="cascade.html#cascading-order">higher
+<P>Due to the <a href="#cascading-order">higher
 specificity</a> of the pseudo-class selector, the left margin on left
 pages will be '4cm' and all other pages (i.e., the right pages) will
 have a left margin of '3cm'.
@@ -12030,16 +12032,16 @@ have a left margin of '3cm'.
 
 <!-- SPLIT: colors.html -->
   
-<h2>Colors and Backgrounds</h2>
+<h2 id=colors>Colors and Backgrounds</h2>
 
 <p>CSS properties allow authors to specify the foreground color and
 background of an element. Backgrounds may be colors or
 images. Background properties allow authors to position a background image,
 repeat it, and declare whether it should be fixed with respect
-to the <a href="visuren.html#viewport">viewport</a> or scrolled
+to the <a href="#viewport">viewport</a> or scrolled
 along with the document.
 </p>
-<p> See the section on <a href="./syndata.html#color-units">color units</a>
+<p> See the section on <a href="#color-units">color units</a>
 for the syntax of valid color values. 
 </p>
 <h3><a id="colors">Foreground color</a>: the <span
@@ -12064,13 +12066,13 @@ em { color: rgb(255,0,0) }     /* RGB range 0-255   */
 
 <p>Authors may specify the background of an element (i.e., its
 rendering surface) as either a color or an image.  In terms of the <a
-href="box.html#box-model">box model</a>, "background" refers to
+href="#box-model">box model</a>, "background" refers to
 the background of the <a
-href="box.html#box-content-area">content</a>, <a
-href="box.html#box-padding-area">padding</a> and <a
-href="box.html#box-border-area">border</a> areas. Border colors
+href="#box-content-area">content</a>, <a
+href="#box-padding-area">padding</a> and <a
+href="#box-border-area">border</a> areas. Border colors
 and styles are set with the <a
-href="box.html#border-properties">border properties</a>.  Margins
+href="#border-properties">border properties</a>.  Margins
 are always transparent.
 </p>
 <p>Background properties are not inherited, but the parent box's
@@ -12080,7 +12082,7 @@ class="propinst-background-color">'background-color'</span>.
 </p>
 <p>
 The background of the root element becomes the background of the canvas and
-covers the entire <a href="intro.html#canvas">canvas</a>, anchored (for
+covers the entire <a href="#canvas">canvas</a>, anchored (for
 <span class="propinst-background-position">'background-position'</span>) at
 the same point as it would be if it was painted only for the root element
 itself. The root element does not paint this background again.
@@ -12211,9 +12213,9 @@ property.
 
 <p>If a background image is specified, this property specifies whether
 the image is repeated (tiled), and how.  All tiling covers the <a
-href="box.html#box-content-area">content</a>, <a
-href="box.html#box-padding-area">padding</a> and <a
-href="box.html#box-border-area">border</a> areas of a box.
+href="#box-content-area">content</a>, <a
+href="#box-padding-area">padding</a> and <a
+href="#box-border-area">border</a> areas of a box.
 </p><p>
 The tiling and positioning of the 
 background-image on inline elements is undefined in this specification. 
@@ -12256,7 +12258,7 @@ the element.
 
 <p>If a background image is specified, this property specifies
 whether it is fixed with regard to the <a
-href="visuren.html#viewport">viewport</a> ('fixed') or scrolls along
+href="#viewport">viewport</a> ('fixed') or scrolls along
 with the containing block ('scroll').</p>
 
 <p>Note that there is only one viewport per view. If an element has
@@ -12297,7 +12299,7 @@ body {
 </pre>
 <p>
 See the section on <a
-href="conform.html#conformance">conformance</a> for details.
+href="#conformance">conformance</a> for details.
 </p>
 
 <!-- #include src=properties/background-position.srb -->
@@ -12430,7 +12432,7 @@ P { background: url("chess.png") gray 50% repeat fixed }
 
 <!-- SPLIT: fonts.html -->
   
-<h2>Fonts</h2>
+<h2 id=fonts>Fonts</h2>
 
 <h3><a id="fonts-intro">Introduction</a></h3>
 
@@ -13229,7 +13231,7 @@ button p {
 
 <!-- SPLIT: text.html -->
 
-  <h2>Text</h2>
+  <h2 id=text>Text</h2>
 
 <p>The properties defined in the following sections affect the visual
 presentation of characters, spaces, words, and paragraphs.
@@ -13243,13 +13245,13 @@ class="propinst-text-indent">'text-indent'</span> property</h3>
 <p>This property specifies the indentation of the first line of text
 in a block container. More precisely, it specifies the indentation of the
 first box that flows into the block's first <a
-href="visuren.html#line-box">line box</a>.  The box is indented with
+href="#line-box">line box</a>.  The box is indented with
 respect to the left (or right, for right-to-left layout) edge of the
 line box. User agents must render this indentation as blank space.
 </p>
 
 <p>'Text-indent' only affects a line if it is the <a
-href="selector.html#first-line-pseudo">first formatted line</a> of an
+href="#first-line-pseudo">first formatted line</a> of an
 element. For example, the first line of an anonymous block box is only
 affected if it is the first child of its parent element.
 
@@ -13304,14 +13306,14 @@ have the following meanings:</p>
 
 <dl>
 <dt>left, right, center, justify</dt>
-<dd>Left, right, center, and justify text, respectively, as described in <a href="visuren.html#inline-formatting">the section on inline formatting</a>.</dd>
+<dd>Left, right, center, and justify text, respectively, as described in <a href="#inline-formatting">the section on inline formatting</a>.</dd>
 </dl>
 
-<p>A block of text is a stack of <a href="visuren.html#line-box">line
+<p>A block of text is a stack of <a href="#line-box">line
 boxes</a>.  In the case of 'left', 'right' and 'center', this property specifies
 how the inline-level boxes within each line box align with respect to the line
 box's left and right sides; alignment is not with respect to the <a
-href="visuren.html#viewport">viewport</a>.  In the case of 'justify',
+href="#viewport">viewport</a>.  In the case of 'justify',
 this property specifies that the inline-level boxes are to be made flush
 with both sides of the line box if possible, by expanding or contracting
 the contents of inline boxes, else aligned as for the initial
@@ -13346,7 +13348,7 @@ of the text.</em>
 </p>
 </div>
 <p><em><span class="index-inst" title="conformance"><a
-href="conform.html#conformance">Conforming user agents</a></span> may
+href="#conformance">Conforming user agents</a></span> may
 interpret the value 'justify' as 'left' or 'right', depending on
 whether the element's default writing direction is left-to-right or
 right-to-left, respectively.</em>
@@ -13367,12 +13369,11 @@ to the text of an element using the element's color.
 When specified on or propagated to an inline element, it
 affects all the boxes generated by that element, and is further
 propagated to any in-flow block-level boxes that split the inline (see
-<a href="visuren.html#anonymous-block-level"
->section&nbsp;9.2.1.1</a>).
+<a href="#anonymous-block-level">section&nbsp;9.2.1.1</a>).
 But, in CSS&nbsp;2, it is undefined whether the decoration
 propagates into block-level tables.
 For block containers that establish an
-<a href="visuren.html#inline-formatting" >inline formatting
+<a href="#inline-formatting" >inline formatting
 context,</a> the decorations are propagated to an anonymous inline
 element that wraps all the in-flow inline-level children of the block
 container. For all other elements it is propagated to any in-flow
@@ -13426,7 +13427,7 @@ initial position on that line.
 <dd>Each line of text has a line through the middle.</dd>
 <dt>blink</dt>
 <dd>Text blinks (alternates between visible and invisible).
-<a href="conform.html#conformance">Conforming user agents</a>
+<a href="#conformance">Conforming user agents</a>
 may simply not blink the text. <!-- Note that not blinking the text 
 is one technique to satisfy 
 <a href="http://www.w3.org/TR/UAAG10/guidelines.html#tech-on-off-blinking-text">checkpoint 3.3 of WAI-UAAG</a>. --></dd>
@@ -13797,7 +13798,7 @@ match the base character.</p>
 
 <!-- SPLIT: tables.html -->
   
-<h2>Tables</h2>
+<h2 id=tables>Tables</h2>
 <h3><a id="tables-intro">Introduction to tables</a></h3>
 
 <p>This chapter defines the processing model for tables in CSS. Part
@@ -13811,7 +13812,7 @@ implementations have achieved relatively close interoperability.
 
 <p><span class="index-def" title="tables">Table</span> layout can be
 used to represent tabular relationships between data. Authors specify
-these relationships in the <a href="conform.html#doclanguage">document
+these relationships in the <a href="#doclanguage">document
 language</a> and can specify their <em>presentation</em> using
 CSS&nbsp;2.
 
@@ -13933,7 +13934,7 @@ class=index-def>row groups</span> (including header groups and footer
 groups), columns, column groups, and cells.
 
 <p>The CSS model does not require that the <a
-href="conform.html#doclanguage">document language</a> include elements
+href="#doclanguage">document language</a> include elements
 that correspond to each of these components.  For document languages
 (such as XML applications) that do not have pre-defined table
 elements, authors must map document language elements to table
@@ -13946,17 +13947,17 @@ formatting rules to an arbitrary element:
   <dt><strong><span class="index-def" title="table"><a
   class="value-def" id="value-def-table">table</a></span></strong>
   (In HTML: TABLE) <dd>Specifies that an element defines a <a
-  href="visuren.html#block-level">block-level</a> table: it is a
+  href="#block-level">block-level</a> table: it is a
   rectangular block that participates in a <a
-  href="visuren.html#block-formatting">block formatting context</a>.
+  href="#block-formatting">block formatting context</a>.
 
   <dt><strong><span class="index-def" title="inline-table"><a
   class="value-def"
   id="value-def-inline-table">inline-table</a></span></strong> (In
   HTML: TABLE) <dd>Specifies that an element defines an <a
-  href="visuren.html#inline-level">inline-level</a> table: it is a
+  href="#inline-level">inline-level</a> table: it is a
   rectangular block that participates in an <a
-  href="visuren.html#inline-formatting">inline formatting
+  href="#inline-formatting">inline formatting
   context</a>).
 
   <dt><strong><span class="index-def" title="table-row"><a
@@ -14030,7 +14031,7 @@ if they had 'display: none'), but they are useful, because they may
 have attributes which induce a certain style for the columns they
 represent.
 
-<p>The <a href="sample.html">default style sheet for HTML4</a>
+<p>The <a href="#sample">default style sheet for HTML4</a>
 in the appendix illustrates the use of these values for HTML4:
 
 <pre class="example">
@@ -14045,7 +14046,7 @@ td, th   { display: table-cell }
 caption  { display: table-caption }
 </pre>
 
-<p>User agents may <a href="conform.html#ignore">ignore</a> these
+<p>User agents may <a href="#ignore">ignore</a> these
 <span class="propinst-display">'display'</span> property values for
 HTML table elements, since HTML tables may be rendered using other
 algorithms intended for backwards compatible rendering. However, this
@@ -14061,7 +14062,7 @@ table element will automatically generate necessary anonymous table
 objects around itself, consisting of at least three nested objects
 corresponding to a 'table'/'inline-table' element, a 'table-row'
 element, and a 'table-cell' element. Missing elements generate <a
-href="visuren.html#anonymous">anonymous</a> objects (e.g., anonymous
+href="#anonymous">anonymous</a> objects (e.g., anonymous
 boxes in visual table layout) according to the following rules:
 
 <p>For the purposes of these rules, the following terms are defined:
@@ -14196,7 +14197,7 @@ VBOX { display: table-cell }
 <p>In this example, three 'table-cell' elements are assumed to contain
 the text in the ROWs. Note that the text is further encapsulated in
 anonymous inline boxes, as explained in <a
-href="visuren.html#anonymous">visual formatting model</a>:
+href="#anonymous">visual formatting model</a>:
 
 <pre class="xml">
 &lt;STACK&gt;
@@ -14276,8 +14277,8 @@ col.totals { width: 5em }
 <h3><a id="model">Tables in the visual formatting model</a></h3>
 
 <p>In terms of the visual formatting model, a table can behave like a
-<a href="visuren.html#block-level">block-level</a> (for 'display:
-table') or <a href="visuren.html#inline-level">inline-level</a> (for
+<a href="#block-level">block-level</a> (for 'display:
+table') or <a href="#inline-level">inline-level</a> (for
 'display: inline-table') element.
 
 <p>In both cases, the table generates a principal block container box
@@ -14362,7 +14363,7 @@ caption { caption-side: bottom;
 <h3><a id="table-layout">Visual layout of table contents</a></h3>
 
 <p>Internal table elements generate rectangular <a
-href="box.html#box-dimensions">boxes</a> which participate in the
+href="#box-dimensions">boxes</a> which participate in the
 table formatting context established by the table box. These boxes
 have content and borders and cells have padding as well. Internal
 table elements do not have margins.
@@ -14421,7 +14422,7 @@ with the hypothetical grid lines on which the borders of the cells are
 centered. (And thus, in this model, the rows together exactly cover
 the table, leaving no gaps; ditto for the columns.) In the <a
 href="#separated-borders">separated borders model,</a> the edges
-coincide with the <a href="box.html#border-edge">border edges</a> of
+coincide with the <a href="#border-edge">border edges</a> of
 cells. (And thus, in this model, there may be gaps between the rows,
 columns, row groups or column groups, corresponding to the <span
 class="propinst-border-spacing">'border-spacing'</span> property.)
@@ -14429,7 +14430,7 @@ class="propinst-border-spacing">'border-spacing'</span> property.)
 <div class="note">
 <p><em><strong>Note.</strong> Positioning and floating of table cells
 can cause them not to be table cells anymore, according to the rules
-in <a href="visuren.html#dis-pos-flo">section 9.7</a>. When floating
+in <a href="#dis-pos-flo">section 9.7</a>. When floating
 is used, the <a>rules on anonymous table objects</a> may cause an
 anonymous cell object to be created as well.</em>
 </div>
@@ -14579,7 +14580,7 @@ algorithm" is selected.
 
 <p>Note that this section overrides the rules that apply to
 calculating widths as described in <a
-href="visudet.html#Computing_widths_and_margins">section 10.3</a>. In
+href="#Computing_widths_and_margins">section 10.3</a>. In
 particular, if the margins of a table are set to '0' and the width to
 'auto', the table will not automatically size to fill its containing
 block. However, once the calculated value of 'width' for the table is
@@ -14619,7 +14620,7 @@ both 'display: table' and 'display: inline-table') means use the <a
 href="#auto-table-layout">automatic table layout</a> algorithm.
 However, if the table is a block-level table ('display: table') in
 normal flow, a UA may (but does not have to) use the algorithm of <a
-href="visudet.html#blockwidth">10.3.3</a> to compute a width and apply
+href="#blockwidth">10.3.3</a> to compute a width and apply
 fixed table layout even if the specified width is 'auto'.
 
 <div class="example">
@@ -14794,7 +14795,7 @@ and the minimum height (MIN) required by the cells. A <span
 class="propinst-height">'height'</span> value of 'auto' for a
 'table-row' means the row height used for layout is MIN. MIN depends
 on cell box heights and cell box alignment (much like the calculation
-of a <a href="visudet.html#line-height">line box</a> height).
+of a <a href="#line-height">line box</a> height).
 CSS&nbsp;2 does not define how the height of table cells and table
 rows is calculated when their height is specified using percentage
 values. CSS&nbsp;2 does not define the meaning of <span
@@ -14847,7 +14848,7 @@ following meanings:
 </dl>
 
 <p>The baseline of a cell is the baseline of the first in-flow <a
-href="visuren.html#line-box">line box</a> in the cell, or the first
+href="#line-box">line box</a> in the cell, or the first
 in-flow table-row in the cell, whichever comes first. If there is no
 such line box or table-row, the baseline is the bottom of content edge
 of the cell box. For the purposes of finding a baseline, in-flow boxes
@@ -14999,7 +15000,7 @@ space, the row, column, row group, and column group backgrounds are
 invisible, allowing the table background to show through. Rows,
 columns, row groups, and column groups cannot have borders (i.e., user
 agents must <span class="index-inst" title="ignore"><a
-href="conform.html#ignore">ignore</a></span> the border properties for
+href="#ignore">ignore</a></span> the border properties for
 those elements).
 
 <div class="example">
@@ -15323,7 +15324,7 @@ below they are marked with an asterisk.
 
 <!-- SPLIT: ui.html -->
   
-<h2>User interface</h2>
+<h2 id=ui>User interface</h2>
 
 <h3><a id="cursor-props">Cursors:</a> the <span
 class="propinst-cursor">'cursor'</span> property</h3>
@@ -15384,7 +15385,7 @@ to handle the second, etc. If the user agent cannot handle
 any user-defined cursor, it must use the generic cursor
 at the end of the list.
 Intrinsic sizes for cursors are calculated as for <a
-href="colors.html#background-properties">background images,</a> except
+href="#background-properties">background images,</a> except
 that a UA-defined rectangle is used in place of the rectangle that
 establishes the coordinate system for the 'background-image' property. 
 This UA-defined rectangle should be based on the size of a typical
@@ -15415,7 +15416,7 @@ The System Colors are deprecated in the CSS3 Color Module [[!CSS3COLOR]].
 </div>
 
 <p>In addition to being able to assign pre-defined <a
-href="syndata.html#color-units">color values</a> to text, backgrounds, etc., CSS2 introduced a set of named color values that allows authors to specify colors in a manner that integrates them into the operating system's graphic environment.
+href="#color-units">color values</a> to text, backgrounds, etc., CSS2 introduced a set of named color values that allows authors to specify colors in a manner that integrates them into the operating system's graphic environment.
 </p>
 
 <p>For systems that do not have a corresponding value, the
@@ -15512,7 +15513,7 @@ class="index-def" title="outline">'outline'</span> property</h3>
 <p>At times, style sheet authors may want to create outlines around
 visual objects such as buttons, active form fields, image maps, etc.,
 to make them stand out. CSS&nbsp;2 outlines differ from <a
-href="box.html#border-properties">borders</a> in the following
+href="#border-properties">borders</a> in the following
 ways:</p>
 
 <ol>
@@ -15533,12 +15534,12 @@ position or size of the box, or of any other boxes. Therefore,
 displaying or suppressing outlines does not cause reflow or overflow.
 </p>
 <p>The outline may be drawn starting just outside the <a
-href="box.html#border-edge">border edge</a>.
+href="#border-edge">border edge</a>.
 </p>
 <p>Outlines may be non-rectangular. For example, if the element is
 broken across several lines, the outline is the minimum outline that
 encloses all the element's boxes. In contrast to <a
-href="box.html#border-properties">borders</a>, the outline is not
+href="#border-properties">borders</a>, the outline is not
 open at the line box's end or start, but is always fully connected if possible.
 </p>
 <p>The <span class="propinst-outline-width">'outline-width'</span>
@@ -15611,7 +15612,7 @@ to any borders, and switching outlines on and off should not cause
 the document to reflow. The focus is the subject of user interaction
 in a document (e.g., for entering text, selecting a button,
 etc.). User agents supporting the <a
-href="media.html#interactive-media-group">interactive media group</a>
+href="#interactive-media-group">interactive media group</a>
 must keep track of where the focus lies and must also represent the
 focus. This may be done by using dynamic outlines in conjunction with
 the :focus pseudo-class.
@@ -15644,7 +15645,7 @@ page, a user agent should keep the text within the comic strip balloon.
 <!-- SPLIT: aural.html -->  
   
   
-<h2>Aural style sheets</h2>
+<h2 id="aural">Aural style sheets</h2>
 
 <p>This chapter is informative. UAs are not required to implement the
 properties of this chapter in order to conform to CSS 2.
@@ -15654,7 +15655,7 @@ properties of this chapter in order to conform to CSS 2.
 <p>We expect that in a future level of CSS there will be new
 properties and values defined for speech output. Therefore
 CSS&nbsp;2 reserves the 'speech' media type (see <a
-href="media.html">chapter 7, "Media types"</a>), but does not yet
+href="#media">chapter 7, "Media types"</a>), but does not yet
 define which properties do or do not apply to it.
 
 <p>The properties in this appendix apply to a media type 'aural', that
@@ -16017,7 +16018,7 @@ environment does not permit it), we recommend that it produce an
 alternative cue.
 
 <P>Please see the sections on <a
-href="generate.html#before-after-content"> the :before and :after
+href="#before-after-content"> the :before and :after
 pseudo-elements</a> for information on other content generation
 techniques. 'Cue-before' sounds and 'pause-before' gaps are inserted
 before content from the ':before' pseudo-element. Similarly,
@@ -16264,7 +16265,7 @@ p.part.juliet { voice-family: juliet, female }
 <p>Names of specific voices may be quoted, and indeed must be quoted
 if any of the words that make up the name does not conform to the
 syntax rules for <a
-href="syndata.html#tokenization">identifiers</a>. It is also
+href="#tokenization">identifiers</a>. It is also
 recommended to quote specific voices with a name consisting of more
 than one word. If quoting is omitted, any <a
 href="https://www.w3.org/TR/css-syntax-3/#whitespace">white space</a> [[!CSS3SYN]] characters before and
@@ -16583,7 +16584,7 @@ status of aural properties.)
 
 <!-- SPLIT: refs.html -->  
   
-<h2>Bibliography</h2>
+<h2 id="refs">Bibliography</h2>
 <!--
 <h3><a id="normative">Normative references</a></h3>
 <dl>
@@ -16623,7 +16624,7 @@ href="http://www.w3.org/TR/2015/CR-css-values-3-20150611/"
 <dt><strong><a id="ref-FLEX" class="normref">[FLEX]</a></strong>
 <dd>"Flex: The Lexical Scanner Generator", Version 2.3.7, ISBN 1882114213.
 
-<dt><strong><a id="ref-HTML4" class="normref">[HTML4]</a></strong>
+<dt><strong><a id="#ref4" class="normref">[HTML4]</a></strong>
 <dd>"HTML 4.01 Specification", D. Raggett, A. Le Hors, I. Jacobs,
 24 December 1999.<BR> 
 The latest version of
@@ -16834,7 +16835,7 @@ Michael Cooper, Loretta Guarino Reid, Gregg Vanderheiden, 11 December 2008.<BR>
 Available at: <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">
 http://www.w3.org/TR/2008/REC-WCAG20-20081211/</a>.
 
-<dt><strong><a id="ref-XHTML" class="informref">[XHTML]</a></strong>
+<dt><strong><a id="#ref-" class="informref">[XHTML]</a></strong>
 <dd>"XHTML™ 1.0 The Extensible HyperText Markup Language (Second
 Edition)", Steven Pemberton et al., W3C Recommendation, 26 January
 2000, revised 1 August 2002<br> Available at: <a
@@ -16858,7 +16859,7 @@ http://www.w3.org/TR/2009/REC-xml-names-20091208/</a>.
 -->
 <!-- SPLIT: changes.html -->  
 
-<h2>Changes</h2>
+<h2 id=changes>Changes</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>Below are the changes relative to the first revision of CSS2
@@ -16879,7 +16880,7 @@ other modules.
 
    <li id=s.6.2.1 class=change>
     <p><span class=updated>[2011-10-12]</span> In <a
-    href="cascade.html#value-def-inherit" >&ldquo;6.2.1 The 'inherit'
+    href="#value-def-inherit" >&ldquo;6.2.1 The 'inherit'
     value,&rdquo;</a> change
 
     <blockquote>
@@ -16905,14 +16906,14 @@ other modules.
 
    <li id=s.6.1.1 class=clarification>
     <p><span class=updated>[2011-10-12]</span> In <a
-    href="cascade.html#specified-value" >&ldquo;6.1.1 Specified values,&rdquo;</a>
+    href="#specified-value" >&ldquo;6.1.1 Specified values,&rdquo;</a>
     add this clarification:
 
     <blockquote>
      <ol>
       <li>If the cascade results in a value use it. <ins>Except that,
       if the value is 'inherit', the specified value is defined in <a
-      href="cascade.html#value-def-inherit" >&ldquo;The 'inherit' value&rdquo;</a>
+      href="#value-def-inherit" >&ldquo;The 'inherit' value&rdquo;</a>
       below</ins>
      </ol>
     </blockquote>
@@ -16928,7 +16929,7 @@ other modules.
 
    <li id=s.8.3.1c class=change>
     <p><span class=updated>[2012-04-04]</span> In <a
-    href="box.html#collapsing-margins" >&ldquo;8.3.1 Collapsing
+    href="#collapsing-margins" >&ldquo;8.3.1 Collapsing
     margins,&rdquo;</a> add a new item as follows:
 
     <blockquote>
@@ -16961,7 +16962,7 @@ other modules.
 
    <li id=s.10.7 class=clarification>
     <p><span class=updated>[2012-04-11]</span> In <a
-    href="visudet.html#min-max-heights" >&ldquo;10.7 Minimum and maximum
+    href="#min-max-heights" >&ldquo;10.7 Minimum and maximum
     heights: 'min-height' and 'max-height',&rdquo;</a> clarify the note as
     follows:
 
@@ -16992,7 +16993,7 @@ other modules.
 
    <li id=s.8.3.1d class=clarification>
     <p><span class=updated>[2012-04-11]</span> In <a
-    href="box.html#collapsing-margins" >&ldquo;8.3.1 Collapsing
+    href="#collapsing-margins" >&ldquo;8.3.1 Collapsing
     margins,&rdquo;</a> clarify 7th bullet in the 2nd note:
 
     <blockquote>
@@ -17029,7 +17030,7 @@ other modules.
 
    <li id=s.15.3a class=clarification>
     <p><span class=updated>[2012-05-02]</span> In <a
-    href="fonts.html#font-family-prop" >&ldquo;15.3 Font family: the 'font-family' property,&rdquo;</a>
+    href="#font-family-prop" >&ldquo;15.3 Font family: the 'font-family' property,&rdquo;</a>
     clarify that using the font name &ldquo;inherit&rdquo; <em>without</em> quotes is an error:
 
     <blockquote>
@@ -17064,7 +17065,7 @@ other modules.
     <p><span class=updated>[2012-05-02]</span> Spaces and comments are
     not allowed between the sign and the digits of a &lt;number&gt;,
     &lt;length&gt; or &lt;percentage&gt;. In <a
-    href="syndata.html#numbers" >&ldquo;4.3.1 Integers and real
+    href="#numbers" >&ldquo;4.3.1 Integers and real
     numbers,&rdquo;</a> insert &ldquo;immediately&rdquo; as follows:
 
     <blockquote>
@@ -17072,7 +17073,7 @@ other modules.
      preceded by a "-" or "+" to indicate the sign.
     </blockquote>
 
-    <p>In <a href="syndata.html#tokenization" >&ldquo;4.1.1
+    <p>In <a href="#tokenization" >&ldquo;4.1.1
     Tokenization,&rdquo;</a> allow "+" or "-" at the start of the
     {num} macro:
 
@@ -17104,7 +17105,7 @@ other modules.
 
    <li id=s.10.1a class=change>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="visudet.html#containing-block-details" >10.1 &ldquo;Definition of
+    href="#containing-block-details" >10.1 &ldquo;Definition of
     "containing block,"&rdquo;</a> change:
 
     <blockquote>
@@ -17114,7 +17115,7 @@ other modules.
       <li>For other elements, if the element's position is 'relative'
       or 'static', the containing block is formed by the content edge
       of the nearest <ins>ancestor box that is a</ins> <a
-      href="visuren.html#block-boxes">block container</a>
+      href="#block-boxes">block container</a>
       <del>ancestor box</del> <ins>or which establishes a formatting
       context</ins>.
      </ol>
@@ -17138,7 +17139,7 @@ other modules.
 
    <li id=s.9.4 class=change>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="visuren.html#normal-flow" >9.4 &ldquo;Normal flow,&rdquo;</a> replace as
+    href="#normal-flow" >9.4 &ldquo;Normal flow,&rdquo;</a> replace as
     follows:
 
     <blockquote>
@@ -17152,7 +17153,7 @@ other modules.
      context. <a href="#inline-level">Inline-level boxes</a>
      participate in an <a href="#inline-formatting">inline
      formatting</a> context. <ins>Table formatting contexts are
-     described in the <a href="tables.html" >chapter on
+     described in the <a href="#tables" >chapter on
      tables.</a></ins>
     </blockquote>
 
@@ -17166,7 +17167,7 @@ other modules.
 
    <li id=s.9.4.2 class=clarification>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="visuren.html#inline-formatting" >9.4.2 &ldquo;Inline formatting
+    href="#inline-formatting" >9.4.2 &ldquo;Inline formatting
     contexts,&rdquo;</a> add this sentence:
 
     <blockquote>
@@ -17189,7 +17190,7 @@ other modules.
 
    <li id=s.17.4a class=change>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="tables.html#model" >17.4 &ldquo;Tables in the visual formatting
+    href="#model" >17.4 &ldquo;Tables in the visual formatting
     model,&rdquo;</a> replace as follows:
 
     <blockquote>
@@ -17210,12 +17211,12 @@ other modules.
 
    <li id=s.17.5 class=change>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="tables.html#table-layout" >17.5 &ldquo;Visual layout of table
+    href="#table-layout" >17.5 &ldquo;Visual layout of table
     contents,&rdquo;</a> replace as follows:
 
     <blockquote>
      <p>Internal table elements generate rectangular <a
-     href="box.html#box-dimensions">boxes</a> <del>with</del>
+     href="#box-dimensions">boxes</a> <del>with</del>
      <ins>which participate in the table formatting context
      established by the table box. These boxes have</ins> content and
      borders<del>.</del> <ins>and</ins> cells have padding as
@@ -17232,7 +17233,7 @@ other modules.
 
    <li id=s.11.1.1a class=change>
     <p><span class=updated>[2012-08-01]</span> In <a
-    href="visufx.html#overflow" >11.1.1 &ldquo;Overflow: the 'overflow'
+    href="#overflow" >11.1.1 &ldquo;Overflow: the 'overflow'
     property,&rdquo;</a> change:
 
     <blockquote>
@@ -17254,7 +17255,7 @@ other modules.
    <li id=s.4.1.1a class=change>
     <p><span class=updated>[2013-04-29]</span> The letters u, r and l
     of the URI token may be written as escapes. In <a
-    href="syndata.html#tokenization" >4.1.1 &ldquo;Tokenization,&rdquo;</a> change
+    href="#tokenization" >4.1.1 &ldquo;Tokenization,&rdquo;</a> change
     in the first table:
 
     <blockquote>
@@ -17311,7 +17312,7 @@ other modules.
     <p><span class=updated>[2013-04-29]</span> The letters u, r and l
     of the URI token may be written as escapes (see the <a
     href="#s.4.1.1a">previous errata</a>). In <a
-    href="grammar.html#scanner" >G.2 &ldquo;Lexical scanner,&rdquo;</a> change:
+    href="#scanner" >G.2 &ldquo;Lexical scanner,&rdquo;</a> change:
 
     <blockquote>
      <pre>
@@ -17340,7 +17341,7 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
     <p><span class=updated>[2013-04-29]</span> Unicode control
     characters between U+0080 and U+009F can be used in identifiers
     and in URI tokens. (Previously such characters made the style
-    sheet invalid.) In <a href="syndata.html#tokenization" >4.1.1
+    sheet invalid.) In <a href="#tokenization" >4.1.1
     &ldquo;Tokenization,&rdquo;</a> change:
 
     <blockquote>
@@ -17361,13 +17362,13 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
     <p><span class=updated>[2013-04-29]</span> Unicode control
     characters between U+0080 and U+009F can be used in identifiers
     and in URI tokens. (Previously such characters made the style
-    sheet invalid.) In <a href="syndata.html#characters" >4.1.3
+    sheet invalid.) In <a href="#characters" >4.1.3
     &ldquo;Characters and case,&rdquo;</a> change:
 
     <blockquote>
      <ul>
       <li>In CSS, <span>identifiers</span> (including element names,
-      classes, and IDs in <a href="selector.html">selectors</a>) can
+      classes, and IDs in <a href="#selector">selectors</a>) can
       contain only the characters [a-zA-Z0-9] and ISO 10646
       characters <del>U+00A0</del> <ins>U+0080</ins> and higher, plus
       the hyphen (-) and the underscore (_);
@@ -17391,7 +17392,7 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
     out-of-band information, and the file starts with a <abbr
     title="Byte Order Mark">BOM,</abbr> then the BOM determines which
     of the UTF-based encodings is used, overriding the out-of-band
-    information. In <a href="syndata.html#charset">4.4 &ldquo;CSS style
+    information. In <a href="#charset">4.4 &ldquo;CSS style
     sheet representation,&rdquo;</a> insert:
 
     <blockquote>
@@ -17419,8 +17420,8 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
 
      <p class=note><ins>Note that the fact that a BOM at the start of
      a file is an error in UTF-16BE, UTF-16LE, UTF-32BE or UTF-32LE is
-     specified by <a href="refs.html#ref-UNICODE" rel="biblioentry"
-     class="noxref"><span class="normref">[[UNICODE]]</span></a>.</ins>
+     specified by <span href="#ref-UNICODE" rel="biblioentry"
+     class="noxref"><span class="normref">[[UNICODE]]</span></span>.</ins>
     </blockquote>
 
     <p>(See <a
@@ -17436,7 +17437,7 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
 
    <li id=s.11.1.1b class=change>
     <p><span class=updated>[2013-07-15]</span> In <a
-    href="visufx.html#overflow" >11.1.1 &ldquo;Overflow: the 'overflow'
+    href="#overflow" >11.1.1 &ldquo;Overflow: the 'overflow'
     property,&rdquo;</a> change the definition of 'scroll' and 'auto':
 
     <blockquote>
@@ -17449,13 +17450,13 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
        problem with scrollbars appearing and disappearing in a dynamic
        environment.  When this value is specified and the target
        medium is 'print', overflowing content may be printed.
-       <ins>When used on <a href="tables.html#table-box">table
+       <ins>When used on <a href="#table-box">table
        boxes,</a> this value has the same meaning as 'visible'.</ins>
 
       <dt><strong>auto</strong> <dd>The behavior of the 'auto' value
        is user agent-dependent, but should cause a scrolling mechanism
        to be provided for overflowing boxes. <ins>When used on <a
-       href="tables.html#table-box">table boxes,</a> this value has
+       href="#table-box">table boxes,</a> this value has
        the same meaning as 'visible'.</ins>
      </dl>
     </blockquote>
@@ -17478,7 +17479,7 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
 
    <li id=s.15.3b class=clarification>
     <p><span class=updated>[2013-07-15]</span> In <a
-    href="fonts.html#font-family-prop" >15.3 Font family: the
+    href="#font-family-prop" >15.3 Font family: the
     'font-family' property</a> the grammar is missing a pair of brackets:
 
     <blockquote>
@@ -17499,14 +17500,14 @@ baduri3         <del>url</del><ins>{U}{R}{L}</ins>\({w}{badstring}</pre>
     <p><span class=updated>[2013-07-15]</span> Spaces and comments are
     not allowed between the sign and the digits of a &lt;number&gt;,
     &lt;length&gt; or &lt;percentage&gt;. In <a
-    href="grammar.html#scanner" >&ldquo;G.2 Lexical
+    href="#scanner" >&ldquo;G.2 Lexical
     scanner,&rdquo;</a> change the {num} macro as follows:
 
     <blockquote>
     <pre>num		<ins>[-+]?</ins>[0-9]+|<ins>[-+]?</ins>[0-9]*"."[0-9]+</pre>
     </blockquote>
 
-    <p>In <a href="grammar.html#grammar" >&ldquo;G.1
+    <p>In <a href="#grammar" >&ldquo;G.1
     Grammar,&rdquo;</a> remove unary_operator from the grammar:
 
     <blockquote>
@@ -17539,7 +17540,7 @@ term
    <li id=s.10.5a class=change>
     <p><span class=updated>[2013-07-18]</span> A percentage on
     'height', even if not used, can be inherited. In <a
-    href="visudet.html#the-height-property" >&ldquo;10.5 Content
+    href="#the-height-property" >&ldquo;10.5 Content
     height: the 'height' property,&rdquo;</a> change the
     &ldquo;computed value&rdquo; line as follows:
 
@@ -17549,7 +17550,7 @@ term
 	<td><em>Computed&nbsp;value:</em>&nbsp;&nbsp;
 
 	<td>the percentage or 'auto' <del>(see prose under <a
-	href="syndata.html#value-def-percentage" class="noxref"><span
+	href="#value-def-percentage" class="noxref"><span
 	class="value-inst-percentage">&lt;percentage&gt;</span></a>)</del>
 	<ins>(as specified)</ins>
      </table>
@@ -17563,7 +17564,7 @@ term
 
       <dd>Specifies a percentage height. The percentage is calculated
       with respect to the height of the generated box's <a
-      href="visuren.html#containing-block">containing block</a>. If
+      href="#containing-block">containing block</a>. If
       the height of the containing block is not specified explicitly
       (i.e., it depends on content height), and this element is not
       absolutely positioned, <del>the value computes to 'auto'</del>
@@ -17586,7 +17587,7 @@ term
 
    <li id=s.4.1.1c class=change>
     <p><span class=updated>[2013-09-09]</span> In <a
-    href="syndata.html#tokenization">&ldquo;4.1.1
+    href="#tokenization">&ldquo;4.1.1
     Tokenization,&rdquo;</a> make the UNICODE-RANGE token more
     precise:
 
@@ -17621,9 +17622,9 @@ term
 
    <li id=s.9.2a class=clarification>
     <p><span class=updated>[2012-09-19]</span> Modify <a
-    href="visuren.html#box-gen" >&ldquo;9.2 Controlling box
+    href="#box-gen" >&ldquo;9.2 Controlling box
     generation&rdquo;</a> and <a
-    href="visuren.html#anonymous-block-level" >&ldquo;9.2.1
+    href="#anonymous-block-level" >&ldquo;9.2.1
     Block-level elements and block boxes&rdquo;</a> as follows:
 
     <blockquote>
@@ -17695,7 +17696,7 @@ term
 
    <li id=s.9.2.4a class=clarification>
     <p><span class=updated>[2012-09-19]</span> Modify <a
-    href="visuren.html#display-prop" >&ldquo;9.2.4 The 'display'
+    href="#display-prop" >&ldquo;9.2.4 The 'display'
     property&rdquo;</a> as follows:
 
     <blockquote>
@@ -17723,7 +17724,7 @@ term
 
    <li id=s.17.4b class=clarification>
     <p><span class=updated>[2012-09-19]</span> Modify <a
-    href="tables.html#model" >&ldquo;17.4 Tables in the visual
+    href="#model" >&ldquo;17.4 Tables in the visual
     formatting model&rdquo;</a> as follows:
 
     <blockquote>
@@ -17762,7 +17763,7 @@ term
    <li id=s.4.1.1d class=change>
     <p><span class=updated>[2012-09-19]</span> For compatibility with
     SVG, modify the definition of macro num in <a
-    href="syndata.html#tokenization" >&ldquo;4.1.1
+    href="#tokenization" >&ldquo;4.1.1
     Tokenization&rdquo;</a> as follows:
 
     <blockquote>
@@ -17794,7 +17795,7 @@ term
     (X)HTML documents, if the root element has 'background:
     transparent' and the &lt;body&gt; element has 'display: none', the
     background of the canvas is likewise transparent. Change the text in
-    <a href="colors.html#background" >&ldquo;14.2 The
+    <a href="#background" >&ldquo;14.2 The
     background&rdquo;</a> as follows:
 
     <blockquote>
@@ -17822,7 +17823,7 @@ term
     the element establishes a stacking context or not.)
 
     <p>Change the definition of 'auto' in <a
-    href="visuren.html#z-index" >&ldquo;9.9.1 Specifying the stack
+    href="#z-index" >&ldquo;9.9.1 Specifying the stack
     level: the 'z-index' property&rdquo;</a> as follows:
 
     <blockquote>
@@ -17852,7 +17853,7 @@ term
      at-rule. This is expressed by adding the at-rule to the core
      syntax for rulesets, as shown below.
 
-    <p>In <a href="syndata.html#tokenization" >&ldquo;4.1.1
+    <p>In <a href="#tokenization" >&ldquo;4.1.1
      Tokenization&rdquo;,</a> change the production for ruleset as
      follows:
 
@@ -17865,7 +17866,7 @@ declaration-list: declaration [ ';' S* declaration-list ]?
               | /* empty */;</ins></pre>
     </blockquote>
 
-    <p>In <a href="syndata.html#rule-sets" >&ldquo;4.1.7 Rule sets,
+    <p>In <a href="#rule-sets" >&ldquo;4.1.7 Rule sets,
      declaration blocks, and selectors&rdquo;,</a> change the second
      paragraph as follows:
 
@@ -17882,7 +17883,7 @@ declaration-list: declaration [ ';' S* declaration-list ]?
       future levels.</ins>
     </blockquote>
 
-    <p>In <a href="syndata.html#parsing-errors" >&ldquo;4.2 Rules for
+    <p>In <a href="#parsing-errors" >&ldquo;4.2 Rules for
      handling parsing errors&rdquo;,</a> change the rule for malformed
      declarations as follows:
 
@@ -17919,14 +17920,14 @@ p { color:green; color{;color:maroon} } /* unexpected tokens { } */
      </ul>
     </blockquote>
 
-    <p>And, finally, in <a href="page.html#page-box" >&ldquo;13.2 Page
+    <p>And, finally, in <a href="#page-box" >&ldquo;13.2 Page
      boxes: the @page rule&rdquo,</a> remove the following text, which
      is now redundant:
 
     <blockquote>
      <p><del>The rules for handling malformed declarations, malformed
       statements, and invalid at-rules inside @page are as defined in
-      <a href="syndata.html#parsing-errors" >section&nbsp;4.2,</a>
+      <a href="#parsing-errors" >section&nbsp;4.2,</a>
       with the following addition: when the UA expects the start of a
       declaration or at-rule (i.e., an IDENT token or an ATKEYWORD
       token) but finds an unexpected token instead, that token is
@@ -17945,7 +17946,7 @@ p { color:green; color{;color:maroon} } /* unexpected tokens { } */
 
    <li id=s.10.8.1 class=change>
     <p><span class=updated>[2015-04-01]</span>
-      In <a href="visudet.html#leading" >“10.8.1 Leading and
+      In <a href="#leading" >“10.8.1 Leading and
       half-leading”</a>, replace the last paragraph as follows:
 
      <blockquote>
@@ -17984,7 +17985,7 @@ p { color:green; color{;color:maroon} } /* unexpected tokens { } */
 
 <!-- SPLIT: sample.html -->  
 
-<h2>Default style sheet for HTML 4</h2>
+<h2 id=sample>Default style sheet for HTML 4</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>This style sheet describes the typical formatting of all HTML 4
@@ -17993,7 +17994,7 @@ practice. Developers are encouraged to use it as a default style sheet
 in their implementations.
 
 <P>The full presentation of some HTML elements cannot be expressed in
-CSS&nbsp;2, including <a href="conform.html#replaced-element">replaced</a>
+CSS&nbsp;2, including <a href="#replaced-element">replaced</a>
 elements ("img", "object"), scripting elements ("script", "applet"), form 
 control elements, and frame elements.
 
@@ -18089,7 +18090,7 @@ BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
 
 <!-- SPLIT: zindex.html -->  
 
-<h2>Elaborate description of Stacking Contexts</h2>
+<h2 id=zindex>Elaborate description of Stacking Contexts</h2>
 
 <p>This chapter defines the CSS&nbsp;2 painting order in more detail than
 described in the rest of the specification.</p>
@@ -18354,7 +18355,7 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: propidx.html -->  
 
-<h2>Full property table</h2>
+<h2 id=propidx>Full property table</h2>
 
 <P><em>This appendix is informative, not normative.</em></P>
 
@@ -18362,16 +18363,16 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: grammar.html -->  
 
-<h2>Grammar of CSS&nbsp;2</h2>
+<h2 id=grammar>Grammar of CSS&nbsp;2</h2>
 
 <p>This appendix is non-normative.
 
 <P>The grammar below defines the syntax of CSS&nbsp;2. It is in some sense,
 however, a superset of CSS&nbsp;2 as this specification imposes additional
 semantic constraints not expressed in this grammar. A conforming UA
-must also adhere to the <a href="./syndata.html#syntax">
+must also adhere to the <a href="#syntax">
 forward-compatible parsing rules</a>, the selectors notation, the <a
-href="./about.html#property-defs">property and value notation</a>,
+href="#property-defs">property and value notation</a>,
 and the unit notation. However, not all syntactically correct CSS can take
 effect, since the document language may impose restrictions that are
 not in CSS, e.g., HTML imposes restrictions on the possible values of
@@ -18382,7 +18383,7 @@ the "class" attribute.
 <P> The grammar below is <span class="index-inst"
 title="LALR(1)">LALR(1)</span> (but note that most UA's should not use it
 directly, since it does not express the <a
-href="syndata.html#parsing-errors">parsing conventions</a>, only the
+href="#parsing-errors">parsing conventions</a>, only the
 CSS&nbsp;2 syntax). The format of the productions is optimized for human
 consumption and some shorthand notation beyond Yacc (see [[YACC]]) is
 used:</P>
@@ -18621,7 +18622,7 @@ the CSS1 tokenizer, and some UAs have accepted 2-byte encodings.
 
 <li>CSS1 only allowed four hex-digits after the backslash (\) to refer
 to Unicode characters, CSS2 <a
-href="syndata.html#characters">allows six</a>. Furthermore,
+href="#characters">allows six</a>. Furthermore,
 CSS2 allows a white space character to delimit the escape
 sequence. E.g., according to CSS1, the string "\abcdef" has 3 letters
 (\abcd, e, and f), according to CSS2 it has only one (\abcdef).
@@ -18631,7 +18632,7 @@ since strings in CSS1 were only used for font names and for URLs, the
 only way this can lead to incompatibility between CSS1 and CSS2 is if
 a style sheet contains a font family that has a tab in its name.
 
-<li>Similarly, newlines (<a href="syndata.html#strings">escaped with a
+<li>Similarly, newlines (<a href="#strings">escaped with a
 backslash</a>) were not allowed in strings in CSS1.
 
 <li>CSS2 parses a number immediately followed by an identifier as a
@@ -18651,7 +18652,7 @@ escaped (".\35 5ft")
 <h3>Implementation note</h3>
 
 <p>The lexical scanner for the CSS core syntax in <a
-href="syndata.html#tokenization">section&nbsp;4.1.1</a> can be
+href="#tokenization">section&nbsp;4.1.1</a> can be
 implemented as a scanner without back-up. In Lex notation, that
 requires the addition of the following patterns (which do not change
 the returned tokens, only the efficiency of the scanner):
@@ -18679,12 +18680,12 @@ u\+[0-9a-f?]{1,6}/- return UNICODE_RANGE;
 
 <!-- SPLIT: leftblank.html -->
 
-<h2>Appendix H: Has been intentionally left blank</h2>
+<h2 id=leftblank>Appendix H: Has been intentionally left blank</h2>
 
 
 <!-- SPLIT: indexlist.html -->  
 
-<h2>Index</h2>
+<h2 id=indexlist>Index</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 <!--
 <DIV class=NOPRINT>
