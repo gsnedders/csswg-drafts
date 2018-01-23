@@ -418,7 +418,7 @@ the long description is denoted by a "\[D]" after the image.
 <h3><a id="acknowledgements">Acknowledgments</a></h3> 
 
 <p>This section is non-normative.
-
+<!--
 <p>See the <a
 href="http://www.w3.org/TR/2008/REC-CSS2-20080411/about.html#q15"
 >acknowledgments section of the original CSS2</a> and the <a
@@ -426,7 +426,7 @@ href="http://www.w3.org/TR/2011/REC-CSS2-20110607/about.html#acknowledgements"
 >acknowledgments section of CSS&nbsp;2.1</a> for the people that
 contributed to CSS2 and CSS&nbsp;2.1.
 
-<!-- TODO
+<!--
 <p>We would like to thank the following people who, through their
 input and feedback on the www-style mailing list, have helped us with
 the creation of this specification:
@@ -445,6 +445,9 @@ the creation of this specification:
 	 &hellip; and all the contributors to the CSS1 test suite.
 
 -->
+
+Issue: The markup makes Bikeshed render the above (commented out TBD acks) like BS.
+
 <!-- SPLIT: intro.html -->
 
 <h2 id=intro>Introduction to CSS&nbsp;2</h2> 
