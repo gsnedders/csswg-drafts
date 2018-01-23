@@ -44,9 +44,9 @@ Abstract: an overview of specifications that make up the whole of CSS.
 
 <!-- SPLIT: about.html -->
 
-<H1>About the CSS&nbsp;2 Specification</H1>
+<h2>About the CSS&nbsp;2 Specification</h2>
 
-<h2><a id="css2.x-v-css2">CSS&nbsp;2.x vs CSS&nbsp;2</a></h2>
+<h3><a id="css2.x-v-css2">CSS&nbsp;2.x vs CSS&nbsp;2</a></h3>
 
 <p>The CSS community has gained significant experience with the CSS2
 specification since it became a recommendation in 1998. Errors in the
@@ -100,7 +100,7 @@ CSS&nbsp;2.x, and then they should only reference CSS2 for those
 features, or preferably reference such feature(s) in the respective
 level-3 Module that includes those feature(s)).
 
-<h2><a id="reading">Reading the specification</a></h2>
+<h3><a id="reading">Reading the specification</a></h3>
 
 <p>This section is non-normative.
 
@@ -127,7 +127,7 @@ numbers will not appear in the electronic version. In case of a
 discrepancy, the electronic version is considered the authoritative
 version of the document.
 
-<h2><a id="organization">How the specification is organized</a></h2>
+<h3><a id="organization">How the specification is organized</a></h3>
 
 <p>This section is non-normative.
 
@@ -161,10 +161,10 @@ and two indexes: one for
 <a href="indexlist.html">general index</a>.
 </dl>
 
-<H2><a id="conventions">Conventions</a></H2>
+<h3><a id="conventions">Conventions</a></h3>
 
-<H3><a id="doc-language" href="conform.html#doclanguage">Document language</a> elements
-and attributes</H3>
+<h4><a id="doc-language" href="conform.html#doclanguage">Document language</a> elements
+and attributes</h4>
 
 <ul>
 <li>CSS property and pseudo-class names are delimited
@@ -174,13 +174,13 @@ by single quotes.
 and delimited by double quotes.
 </ul>
 
-<H3><a id="property-defs">CSS property definitions</a></H3>
+<h4><a id="property-defs">CSS property definitions</a></h4>
 <P>Each CSS property definition begins with a summary of key
 information that resembles the following:</p>
 
 <!-- #include src=properties/property-name.srb -->
 
-<h4><a id="value-defs">Value</a></h4>
+<h5><a id="value-defs">Value</a></h5>
 
 <P>This part specifies the set of valid values for the property whose
 name is <span class="propinst-property-name">'property-name'</span>. A property
@@ -290,7 +290,7 @@ required before the '2' to get this parsed as the two lengths '1em'
 and '2em'.
 
 
-<h4><a id="initial-value">Initial</a></h4>
+<h5><a id="initial-value">Initial</a></h5>
 
 <P>This part specifies the property's initial value. Please consult
 the section on <a href="cascade.html">the cascade</a> for information
@@ -298,14 +298,14 @@ about the interaction between style sheet-specified, inherited, and
 initial property values.
 
 
-<h4><a id="applies-to">Applies to</a></h4>
+<h5><a id="applies-to">Applies to</a></h5>
 
 <p>This part lists the elements to which the property applies. All
 elements are considered to have all properties, but some properties
 have no rendering effect on some types of elements. For example, the <span
 class="propinst-clear">'clear'</span> property only affects block-level elements.
 
-<h4><a id="inherited-prop">Inherited</a></h4>
+<h5><a id="inherited-prop">Inherited</a></h5>
 
 <p>This part indicates whether the value of the property is inherited
 from an ancestor element. Please consult the section on <a
@@ -314,26 +314,26 @@ interaction between style sheet-specified, inherited, and initial
 property values.
 
 
-<h4><a id="percentage-wrt">Percentage values</a></h4>
+<h5><a id="percentage-wrt">Percentage values</a></h5>
 
 <p>This part indicates how percentages should be interpreted, if they occur in
 the value of the property. If "N/A" appears here, it means that the
 property does not accept percentages in its values.
 
-<h4><a id="media-applies">Media groups</a></h4>
+<h5><a id="media-applies">Media groups</a></h5>
 
 <p>This part indicates the <a href="media.html#media-groups">media
 groups</a> to which the property applies. Information about media
 groups is non-normative.
 
-<h4><a id="computed-defs">Computed value</a></h4>
+<h5><a id="computed-defs">Computed value</a></h5>
 
 <p>This part describes the computed value for the property. See the
 section on <a href="cascade.html#computed-value">computed values</a>
 for how this definition is used.
 
 
-<H3><a id="shorthand">Shorthand properties</a></H3>
+<h4><a id="shorthand">Shorthand properties</a></h4>
 
 <p>Some properties are <span class="index-def" title="shorthand
 property"><dfn>shorthand properties</dfn></span>, meaning that they allow
@@ -380,7 +380,7 @@ class="propinst-font-style">'font-style'</span>
 take their initial values.</p>
 </div>
 
-<h3><a id="notes-and-examples">Notes and examples</a></h3>
+<h4><a id="notes-and-examples">Notes and examples</a></h4>
 
 <P>All examples that illustrate illegal usage are clearly
 marked as "ILLEGAL EXAMPLE".
@@ -395,7 +395,7 @@ conform to the DTDs given in the examples.
 the source HTML</a> for the specification and CSS user agents will
 render them specially.
 
-<h3><a id="images-and-longdesc">Images and long descriptions</a></h3>
+<h4><a id="images-and-longdesc">Images and long descriptions</a></h4>
 
 <P>Most images in the electronic version of this specification are
 accompanied by "long descriptions" of what they represent.  A link to
@@ -403,7 +403,7 @@ the long description is denoted by a "\[D]" after the image.
 
 <P>Images and long descriptions are informative only.
 
-<H2><a id="acknowledgements">Acknowledgments</a></H2> 
+<h3><a id="acknowledgements">Acknowledgments</a></h3> 
 
 <p>This section is non-normative.
 
@@ -433,9 +433,9 @@ the creation of this specification:
 
 <!-- SPLIT: intro.html -->
 
-<H1>Introduction to CSS&nbsp;2</H1> 
+<h2>Introduction to CSS&nbsp;2</h2> 
 
-<H2><a id="html-tutorial">A brief CSS&nbsp;2 tutorial for HTML</a></H2>
+<h3><a id="html-tutorial">A brief CSS&nbsp;2 tutorial for HTML</a></h3>
 
 <p>This section is non-normative.
 
@@ -602,7 +602,7 @@ to its surroundings. The "em" unit refers to the font size of the
 element. In this case the result is that the margins around the BODY
 element are three times wider than the font size.
 
-<H2><a id="xml-tutorial">A brief CSS&nbsp;2 tutorial for XML</a></H2>
+<h3><a id="xml-tutorial">A brief CSS&nbsp;2 tutorial for XML</a></h3>
 
 <p>This section is non-normative.
 
@@ -690,7 +690,7 @@ ARTICLE, HEADLINE, AUTHOR, PARA { margin: 0.5em }
 describe the presentation of the document. 
 
 
-<H2><a id="processing-model">The CSS&nbsp;2 processing model</a></H2>
+<h3><a id="processing-model">The CSS&nbsp;2 processing model</a></h3>
 
 <p>This section up to but not including its subsections is
 non-normative.
@@ -750,7 +750,7 @@ the results, display them on the screen, render them as speech,
 etc.).
 </ol>
 
-<h3><a id="the-canvas">The canvas</a></h3>
+<h4><a id="the-canvas">The canvas</a></h4>
 
 <P>For all media, the term <span class="index-def" title="canvas"> <a
 id="canvas"><dfn>canvas</dfn></a></span> describes "the space where
@@ -764,7 +764,7 @@ viewport</a>. User agents rendering to a page generally impose
 width and height constraints. Aural user agents may impose limits
 in audio space, but not in time. 
 
-<h3><a id="addressing">CSS&nbsp;2 addressing model</a></h3>
+<h4><a id="addressing">CSS&nbsp;2 addressing model</a></h4>
 
 <P> CSS&nbsp;2 <a href="selector.html">selectors</a> and properties allow
 style sheets to refer to the following parts of a document
@@ -792,7 +792,7 @@ the document will be rendered.
 interface</a>).
 </ul>
 
-<H2><a id="design-principles">CSS design principles</a></H2>
+<h3><a id="design-principles">CSS design principles</a></h3>
 
 <p>This section is non-normative.
 
@@ -911,9 +911,9 @@ about designing accessible documents using CSS and HTML, see [[!WCAG20]].</em>
 
 <!-- SPLIT: conform.html -->
 
-<H1>Conformance: Requirements and Recommendations</H1>
+<h2>Conformance: Requirements and Recommendations</h2>
 
-<H2><a id="defs">Definitions</a></H2>
+<h3><a id="defs">Definitions</a></h3>
 
 <P>The key words <span class="index-def" title="MUST">"MUST"</span>,
 <span class="index-def" title="MUST NOT">"MUST NOT"</span>, <span
@@ -1246,7 +1246,7 @@ end tags.
 
 
 
-<h2><a id="conformance">UA Conformance</a></h2>
+<h3><a id="conformance">UA Conformance</a></h3>
 
 <P>This section defines <span class="index-def"
 title="conformance"><a id="conformance-term">conformance</a></span> with
@@ -1334,14 +1334,14 @@ properties to these elements. Authors are recommended to treat such
 support as experimental. A future level of CSS may specify this further.
 
 
-<h2><a id="errors">Error conditions</a></h2>
+<h3><a id="errors">Error conditions</a></h3>
 
 <p>In general, this document specifies error handling behavior
 throughout the specification. For example, see the <a
 href="syndata.html#parsing-errors">rules for handling parsing errors</a>. 
 
-<h2><span class="index-def" title="text/css"><a
-id="text-css">The text/css content type</a></span></h2>
+<h3><span class="index-def" title="text/css"><a
+id="text-css">The text/css content type</a></span></h3>
 
 <p>CSS style sheets that exist in separate files are sent over the
 Internet as a sequence of bytes accompanied by encoding
@@ -1355,8 +1355,8 @@ content type has been registered by RFC 2318 ([[RFC2318]]).
 
   <!-- SPLIT: syndata.html -->
   
-  <h1>Syntax and basic data types</h1>
-<h2 id="syntax">Syntax</h2>
+  <h2>Syntax and basic data types</h2>
+<h3 id="syntax">Syntax</h3>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1376,7 +1376,7 @@ href="grammar.html">Appendix G</a>.
 
 
 
-<h3 id="tokenization">Tokenization</h3>
+<h4 id="tokenization">Tokenization</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1528,7 +1528,7 @@ undefined in CSS&nbsp;2.
 
 
 
-<h3 id="keywords">Keywords</h3>
+<h4 id="keywords">Keywords</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1562,7 +1562,7 @@ background: "red";
 
 
 
-<h4 id="vendor-keywords">Vendor-specific extensions</h4>
+<h5 id="vendor-keywords">Vendor-specific extensions</h5>
 
 <p>This section is informative.</p>
 
@@ -1602,7 +1602,7 @@ href="#parsing-errors">rules for handling parsing errors</a>. However, because t
 
 
 
-<h4 id="vendor-keyword-history">Informative Historical Notes</h4>
+<h5 id="vendor-keyword-history">Informative Historical Notes</h5>
 
 <p>This section is informative.</p>
 
@@ -1633,7 +1633,7 @@ Responsible Implementation of CSS") in <cite>CSS Snapshot 2015</cite>
 
 
 
-<h3 id="characters">Characters and case</h3>
+<h4 id="characters">Characters and case</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1732,7 +1732,7 @@ Level 3</cite> [[CSS3SYN]].
 
 
 
-<h3 id="statements">Statements</h3>
+<h4 id="statements">Statements</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1750,8 +1750,8 @@ around the statements.
 
 
 
-<h3 id="at-rules"><span class="index-def" title="at-rule">
-At-rules</span></h3>
+<h4 id="at-rules"><span class="index-def" title="at-rule">
+At-rules</span></h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1820,7 +1820,7 @@ h1 {color: blue }
 
 
 
-<h3 id="block">Blocks</h3>
+<h4 id="block">Blocks</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1854,7 +1854,7 @@ a block as defined above.
 
 
 
-<h3 id="rule-sets">Rule sets, declaration blocks, and selectors</h3>
+<h4 id="rule-sets">Rule sets, declaration blocks, and selectors</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -1923,8 +1923,8 @@ p[example="public class foo\
 
 
 
-<h3 id="declaration">Declarations and <a
-id="properties">properties</a></h3>
+<h4 id="declaration">Declarations and <a
+id="properties">properties</a></h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -2010,7 +2010,7 @@ em em { font-style: normal }
 
 
 
-<h3 id="comments">Comments</h3>
+<h4 id="comments">Comments</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -2032,8 +2032,8 @@ user agents. See the HTML 4 specification ([[!HTML401]]) for more information.
 
 
 
-<h2 id="parsing-errors">Rules for handling parsing
-errors</h2>
+<h3 id="parsing-errors">Rules for handling parsing
+errors</h3>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -2244,9 +2244,9 @@ undefined in CSS&nbsp;2
 
 
 
-<h2 id="values">Values</h2>
+<h3 id="values">Values</h3>
 
-<h3 id="numbers">Integers and real numbers</h3>
+<h4 id="numbers">Integers and real numbers</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Values and Units Module
 Level 3</cite> [[CSS3VAL]].
@@ -2271,7 +2271,7 @@ non-negative value.
 
 
 
-<h3 id="length-units">Lengths</h3>
+<h4 id="length-units">Lengths</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Values and Units Module
 Level 3</cite> [[CSS3VAL]].
@@ -2485,7 +2485,7 @@ p  { font-size: 12px }    /* px */
 
 
 
-<h3 id="percentage-units">Percentages</h3>
+<h4 id="percentage-units">Percentages</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Values and Units Module
 Level 3</cite> [[CSS3VAL]].
@@ -2527,7 +2527,7 @@ p { line-height: 120% }  /* 120% of 'font-size' */
 
 
 
-<h3 id="uri">URLs and URIs</h3>
+<h4 id="uri">URLs and URIs</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Values and Units Module
 Level 3</cite> [[CSS3VAL]].
@@ -2607,7 +2607,7 @@ unavailable or inapplicable resources.
 
 
 
-<h3 id="counter">Counters</h3>
+<h4 id="counter">Counters</h4>
 
 <p><span class="index-def" title="&lt;counter&gt;, definition of"><a
 id="value-def-counter">Counters</a></span> are denoted by
@@ -2652,7 +2652,7 @@ p:before {content: counter(par-num, upper-roman) ". "}
 
 
 
-<h3 id="color-units">Colors</h3>
+<h4 id="color-units">Colors</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Color Module
 Level 3</cite> [[CSS3COLOR]].
@@ -2782,7 +2782,7 @@ may be larger or smaller than 0..255).</em>
 
 
 
-<h3 id="strings">Strings</h3>
+<h4 id="strings">Strings</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -2825,7 +2825,7 @@ a[title="a not so very long title"] {/*...*/}
 
 
 
-<h3 id="unsupported-values">Unsupported Values</h3>
+<h4 id="unsupported-values">Unsupported Values</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -2852,7 +2852,7 @@ display declaration.
 
 
 
-<h2 id="charset">CSS style sheet representation</h2>
+<h3 id="charset">CSS style sheet representation</h3>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -3017,7 +3017,7 @@ This ensures that:
 
 
 
-<h3 id="escaping">Referring to characters not represented in a character encoding</h3>
+<h4 id="escaping">Referring to characters not represented in a character encoding</h4>
 
 <p class=note>Note: This section is updated by <cite>CSS Syntax Module
 Level 3</cite> [[CSS3SYN]].
@@ -3073,11 +3073,11 @@ For example, we recommend:</em></p>
 
 <!-- SPLIT: selector.html -->
 
-<h1>Selectors</h1>
+<h2>Selectors</h2>
 
 
 
-<h2 id="pattern-matching">Pattern matching</h2>
+<h3 id="pattern-matching">Pattern matching</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3152,7 +3152,7 @@ equal to "myid".<TD><a href="#id-selectors">ID selectors</a></TR>
 
 
 
-<h2 id="selector-syntax">Selector syntax</h2>
+<h3 id="selector-syntax">Selector syntax</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3194,7 +3194,7 @@ information applies to a subpart of each subject.
 
 
 
-<h3 id="grouping">Grouping</h3>
+<h4 id="grouping">Grouping</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3227,7 +3227,7 @@ href="about.html#shorthand">shorthand properties</a></span>.
 
 
 
-<h2 id="universal-selector">Universal selector</h2>
+<h3 id="universal-selector">Universal selector</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3250,7 +3250,7 @@ omitted. For example:</P>
 
 
 
-<h2 id="type-selectors">Type selectors</h2>
+<h3 id="type-selectors">Type selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3271,7 +3271,7 @@ h1 { font-family: sans-serif }
 
 
 
-<h2 id="descendant-selectors">Descendant selectors</h2>
+<h3 id="descendant-selectors">Descendant selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3348,7 +3348,7 @@ div p *[href]
 
 
 
-<h2 id="child-selectors">Child selectors</h2>
+<h3 id="child-selectors">Child selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3385,7 +3385,7 @@ pseudo-class below.
 
 
 
-<h2 id="adjacent-selectors">Adjacent sibling selectors</h2>
+<h3 id="adjacent-selectors">Adjacent sibling selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3424,7 +3424,7 @@ h1.opener + h2 { margin-top: -5mm }
 
 
 
-<h2 id="attribute-selectors">Attribute selectors</h2>
+<h3 id="attribute-selectors">Attribute selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3435,7 +3435,7 @@ in the source document.
 
 
 
-<h3 id="matching-attrs">Matching attributes and attribute values</h3>
+<h4 id="matching-attrs">Matching attributes and attribute values</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3552,7 +3552,7 @@ DIALOGUE[character=juliet]
 
 
 
-<H3 id="default-attrs">Default attribute values in DTDs</h3>
+<h4 id="default-attrs">Default attribute values in DTDs</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3615,7 +3615,7 @@ cases' style rules.
 
 
 
-<h3 id="class-html">Class selectors</h3>
+<h4 id="class-html">Class selectors</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3705,7 +3705,7 @@ non-normative in this specification.</em>
 
 
 
-<h2 id="id-selectors">ID selectors</h2>
+<h3 id="id-selectors">ID selectors</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3797,8 +3797,8 @@ namespace-specific knowledge.
 
 
 
-<h2><a id="pseudo-elements">Pseudo-elements</a> and <a
-id="pseudo-classes">pseudo-classes</a></h2>
+<h3><a id="pseudo-elements">Pseudo-elements</a> and <a
+id="pseudo-classes">pseudo-classes</a></h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3859,9 +3859,9 @@ order</A> determines the outcome.
 
 
 
-<h2 id="pseudo-class-selectors">Pseudo-classes</h2>
+<h3 id="pseudo-class-selectors">Pseudo-classes</h3>
 
-<h3><a id="first-child">:first-child</a> pseudo-class</h3>
+<h4><a id="first-child">:first-child</a> pseudo-class</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3934,11 +3934,11 @@ a:first-child       /* Same */
 
 
 
-<h3><a id="link-pseudo-classes">The link pseudo-classes</a>: <span
+<h4><a id="link-pseudo-classes">The link pseudo-classes</a>: <span
 class="index-def" title="pseudo-classes:::link|:link|link
 (pseudo-class)">:link</span> and <span class="index-def"
 title="pseudo-classes:::visited|:visited|visited
-(pseudo-class)">:visited</span></h3>
+(pseudo-class)">:visited</span></h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -3997,13 +3997,13 @@ about handling privacy.
 
 
 
-<h3><a id="dynamic-pseudo-classes">The dynamic pseudo-classes:</a>
+<h4><a id="dynamic-pseudo-classes">The dynamic pseudo-classes:</a>
 <span class="index-def" title="pseudo-classes:::hover|:hover|hover
 (pseudo-class)">:hover</span>, <span class="index-def"
 title="pseudo-classes:::active|:active|active
 (pseudo-class)">:active</span>, and <span class="index-def"
 title="pseudo-classes:::focus|:focus|focus
-(pseudo-class)">:focus</span></h3>
+(pseudo-class)">:focus</span></h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4106,9 +4106,9 @@ links.</em>
 
 
 
-<h3><a id="lang">The language pseudo-class:</a> <span
+<h4><a id="lang">The language pseudo-class:</a> <span
 class="index-def" title="pseudo-classes:::lang|:lang|lang
-(pseudo-class)">:lang</span></h3>
+(pseudo-class)">:lang</span></h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4172,7 +4172,7 @@ text uses the English quotation marks.  </div>
 
 
 
-<h2 id="pseudo-element-selectors">Pseudo-elements</h2>
+<h3 id="pseudo-element-selectors">Pseudo-elements</h3>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4187,9 +4187,9 @@ future level of CSS may define them more precisely.</em>
 
 
 
-<h3>The <span class="index-def"
+<h4>The <span class="index-def"
 title="pseudo-elements:::first-line|:first-line|first-line"><a
-id="first-line-pseudo">:first-line</a></span> pseudo-element</h3>
+id="first-line-pseudo">:first-line</a></span> pseudo-element</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4335,7 +4335,7 @@ other properties as well.</p>
 
 
 
-<h3><a id="first-letter">The</a> <span class="index-def" title="pseudo-elements:::first-letter|:first-letter|first-letter">:first-letter</span> pseudo-element</h3>
+<h4><a id="first-letter">The</a> <span class="index-def" title="pseudo-elements:::first-letter|:first-letter|first-letter">:first-letter</span> pseudo-element</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4559,10 +4559,10 @@ element.  Properties set on :first-line are inherited by
 
 
 
-<h3><a id="before-and-after">The</a> <span class="index-def"
+<h4><a id="before-and-after">The</a> <span class="index-def"
 title="pseudo-elements:::before|:before">:before</span> and <span
 class="index-def" title="pseudo-elements:::after|:after">:after</span>
-pseudo-elements</h3>
+pseudo-elements</h4>
 
 <p class=note>Note: This section is updated by <cite>Selectors Level 3</cite>
 [[CSS3-SELECTORS]].
@@ -4597,9 +4597,9 @@ p.special:first-letter {color: #ffd800}
 
 <!-- SPLIT: cascade.src -->
 
-<h1>Assigning property values, Cascading, and Inheritance</h1>
+<h2>Assigning property values, Cascading, and Inheritance</h2>
 
-<h2><a id="value-stages">Specified, computed, and actual values</a></h2>
+<h3><a id="value-stages">Specified, computed, and actual values</a></h3>
 
 <p>Once a user agent has parsed a document and constructed a <a
 href="conform.html#doctree">document tree</a>, it must assign, for
@@ -4614,8 +4614,8 @@ value if necessary (the "used value"), and finally transformed
 according to the limitations of the local environment (the "actual
 value").
 
-<h3><span class="index-def" title="specified value">
-<a id="specified-value">Specified values</a></span></h3>
+<h4><span class="index-def" title="specified value">
+<a id="specified-value">Specified values</a></span></h4>
 
 <p>User agents must first assign a specified value to each property based
 on the following mechanisms (in order of precedence):</p>
@@ -4630,8 +4630,8 @@ in <a href="#value-def-inherit" >&ldquo;The 'inherit' value&rdquo;</a> below.
 </ol>
 
 
-<h3><span class="index-def" title="computed value">
-<a id="computed-value">Computed values</a></span></h3>
+<h4><span class="index-def" title="computed value">
+<a id="computed-value">Computed values</a></span></h4>
 
 <p>Specified values are resolved to computed values during the cascade;
 for example URIs are made absolute and 'em' and 'ex'
@@ -4655,8 +4655,8 @@ properties may define the computed value of a property for an element
 to depend on whether the property applies to that element.
 
 
-<h3><span class="index-def" title="used value">
-<a id="used-value">Used values</a></span></h3>
+<h4><span class="index-def" title="used value">
+<a id="used-value">Used values</a></span></h4>
 
 <p>Computed values are processed as far as possible without formatting
 the document. Some values, however, can only be determined when the
@@ -4667,8 +4667,8 @@ determined. The <dfn id="usedValue">used value</dfn> is the result of
 taking the computed value and resolving any remaining dependencies
 into an absolute value.
 
-<h3><span class="index-def" title="actual value">
-<a id="actual-value">Actual values</a></span></h3>
+<h4><span class="index-def" title="actual value">
+<a id="actual-value">Actual values</a></span></h4>
 
 <p>A used value is in principle the value used for rendering, but a
 user agent may not be able to make use of the value in a given
@@ -4679,7 +4679,7 @@ use only black and white shades instead of full color. The actual
 value is the used value after any approximations have been applied.
 
 
-<h2><a id="inheritance">Inheritance</a></h2>
+<h3><a id="inheritance">Inheritance</a></h3>
 
 <p>Some values are inherited by the children of an element in the <a
 href="conform.html#doctree">document tree</a>, as described <a
@@ -4735,9 +4735,9 @@ not intercepted by <span class=index-inst><a
 href="visuren.html#box-gen">anonymous boxes.</a></span>
 
 
-<h3>The <span class="index-def" title="inherit, definition
+<h4>The <span class="index-def" title="inherit, definition
 of"><a id="value-def-inherit">'inherit'</a></span>
-value</h3>
+value</h4>
 
 <P>Each property may also have a cascaded value of 'inherit', which
 means that, for a given element, the property takes as specified
@@ -4775,7 +4775,7 @@ body {
 http://lists.w3.org/Archives/Member/w3c-css-wg/1998JanMar/0054.html
 -IJ, HWL -->
 
-<H2><a id="at-import">The @import rule</a></h2>
+<h3><a id="at-import">The @import rule</a></h3>
 
 <P>The <span class="index-def"
 title="@import"><dfn>'@import'</dfn></span> rule allows users to
@@ -4828,7 +4828,7 @@ media lists and the definition of matching.
 multiple places, user agents must process (or act as though they do)
 each link as though the link were to a separate style sheet.
 
-<H2><a id="cascade">The cascade</a></h2>
+<h3><a id="cascade">The cascade</a></h3>
 
 <P>Style sheets may have three different origins: author, user, and
 user agent.</p>
@@ -4876,7 +4876,7 @@ rules in user style sheets. Precedence is reversed, however, for
 than rules in the UA's default style sheet.
 
 
-<H3><a id="cascading-order">Cascading order</a></H3>
+<h4><a id="cascading-order">Cascading order</a></h4>
 
 <P>To find the value for an element/property combination, user agents
 must apply the following sorting order:</p>
@@ -4923,7 +4923,7 @@ the reader. User agents must give the user the ability to turn off the
 influence of specific author style sheets, e.g., through a pull-down
 menu. Conformance to UAAG 1.0 checkpoint 4.14 satisfies this condition [[UAAG10]].
 
-<H3><a id="important-rules">!important rules</a></H3>
+<h4><a id="important-rules">!important rules</a></h4>
 
 <P>CSS attempts to create a balance of power between author
 and user style sheets. By default, rules in an author's style
@@ -4969,7 +4969,7 @@ p { font-size: 24pt }
 </div>
 
 
-<H3><a id="specificity">Calculating a selector's specificity</a></H3>
+<h4><a id="specificity">Calculating a selector's specificity</a></h4>
 
 <P>A selector's specificity is calculated as follows:</p>
 
@@ -5033,7 +5033,7 @@ specificity.
 </div>
 
 
-<H3><a id="preshint">Precedence of non-CSS presentational hints</a></H3> 
+<h4><a id="preshint">Precedence of non-CSS presentational hints</a></h4> 
 
 <P>The UA may choose to honor presentational attributes in an HTML source
 document. If so, these attributes are translated to the corresponding
@@ -5085,9 +5085,9 @@ font[color] { color: orange ! important; }
 
 <!-- SPLIT: media.html -->
 
-<H1>Media types</H1>
+<h2>Media types</h2>
 
-<H2><a id="media-intro">Introduction to media types</a></H2>
+<h3><a id="media-intro">Introduction to media types</a></h3>
 
 <P>One of the most important features of style sheets is that they
 specify how a document is to be presented on different media: on the
@@ -5107,7 +5107,7 @@ typically need a larger font on a computer screen than on paper.
 Therefore, it is necessary to express that a style sheet, or a
 section of a style sheet, applies to certain media types.
 
-<H2><a id="media-sheets">Specifying media-dependent style sheets</a></H2>
+<h3><a id="media-sheets">Specifying media-dependent style sheets</a></h3>
 <P>There are currently two ways to specify media dependencies for
 style sheets:</p>
 
@@ -5152,7 +5152,7 @@ element specifies the target media of an external style sheet:
 the <a href="cascade.html">chapter on the cascade</a>.
 
 
-<H3><a id="at-media-rule">The @media rule</a></H3> 
+<h4><a id="at-media-rule">The @media rule</a></h4> 
 
 <P>An <span class="index-def" title="media">@media</span> rule
 specifies the target <a href="#media-types">media types</a> (separated
@@ -5181,7 +5181,7 @@ sheet rules for various media in the same style sheet:</P>
 that the style sheet applies to. At-rules inside @media are invalid in
 CSS&nbsp;2.
 
-<H2><a id="media-types">Recognized media types</a></H2> 
+<h3><a id="media-types">Recognized media types</a></h3> 
 
 <!--
 <p>[say that the media names are normative but the table of
@@ -5294,7 +5294,7 @@ by a CSS specification.
 </em>
 </div>
 
-<H3><a id="media-groups">Media groups</a></H3>
+<h4><a id="media-groups">Media groups</a></h4>
 
 <P><em>This section is informative, not normative.</em></P>
 
@@ -5376,14 +5376,14 @@ align="center">bitmap<TD align="center">static</TR>
 
 <!-- SPLIT: box.html -->
 
-<H1><a id="box-model">Box model</a></H1>
+<h2><a id="box-model">Box model</a></h2>
 
 <P>The CSS box model describes the rectangular boxes that are
 generated for elements in the <a href="conform.html#doctree">document
 tree</a> and laid out according to the <a href="visuren.html">visual formatting
 model</a>.
 
-<H2><a id="box-dimensions">Box dimensions</a></H2> 
+<h3><a id="box-dimensions">Box dimensions</a></h3> 
 
 <P>Each box has a
 <span class="index-def" title="box::content|content::of a box">
@@ -5462,7 +5462,7 @@ box is specified by the <span
 class="propinst-background">'background'</span> property of the
 generating element. Margin backgrounds are always transparent.
 
-<H2><a id="mpb-examples">Example of margins, padding, and borders</a></H2> 
+<h3><a id="mpb-examples">Example of margins, padding, and borders</a></h3> 
 
 <P>This example illustrates how margins, padding, and borders
 interact. The example HTML document:
@@ -5544,12 +5544,12 @@ content areas shines through them.
 <span class="propinst-border-style">'border-style'</span> property).
 </ul>
 
-<H2><a id="margin-properties">Margin properties</a>:
+<h3><a id="margin-properties">Margin properties</a>:
 <span class="propinst-margin-top">'margin-top'</span>, 
 <span class="propinst-margin-right">'margin-right'</span>, 
 <span class="propinst-margin-bottom">'margin-bottom'</span>,
 <span class="propinst-margin-left">'margin-left'</span>, and
-<span class="propinst-margin">'margin'</span></H2>
+<span class="propinst-margin">'margin'</span></h3>
 
 <P>Margin properties specify the width of the <a
 href="#box-margin-area">margin area</a> of a box.  The <span
@@ -5640,7 +5640,7 @@ body {
 </PRE>
 </div>
 
-<H3><a id="collapsing-margins">Collapsing margins</a></H3>
+<h4><a id="collapsing-margins">Collapsing margins</a></h4>
 
 <P>In CSS, the adjoining margins of two or more boxes (which might or
 might not be siblings) can combine to form a single margin. Margins
@@ -5787,13 +5787,13 @@ whose margins they are being collapsed; the top border edge position
 is only required for laying out descendants of these elements.
 
 
-<H2><a id="padding-properties">Padding properties</a>:
+<h3><a id="padding-properties">Padding properties</a>:
 <span class="propinst-padding-top">'padding-top'</span>,
 <span class="propinst-padding-right">'padding-right'</span>,
 <span class="propinst-padding-bottom">'padding-bottom'</span>,
 <span class="propinst-padding-left">'padding-left'</span>, and
 <span class="propinst-padding">'padding'</span>
-</H2> 
+</h3> 
 
 <P>The padding properties specify the width of the <a
 href="#box-padding-area">padding area</a> of a box. The <span
@@ -5875,7 +5875,7 @@ to the element's font size: '1em' is equal to the size of the
 font in use.
 </div>
 
-<H2><a id="border-properties">Border properties</a></H2>
+<h3><a id="border-properties">Border properties</a></h3>
 
 <P>The border properties specify the width, color, and style of the <a
 href="#box-border-area">border area</a> of a box. These properties
@@ -5891,12 +5891,12 @@ buttons, menus, etc.) differently than for
 </em>
 </div>
 
-<H3><a id="border-width-properties">Border width</A>: <span
+<h4><a id="border-width-properties">Border width</A>: <span
 class="propinst-border-top-width">'border-top-width'</span>, <span
 class="propinst-border-right-width">'border-right-width'</span>, <span
 class="propinst-border-bottom-width">'border-bottom-width'</span>,
 <span class="propinst-border-left-width">'border-left-width'</span>, and
-<span class="propinst-border-width">'border-width'</span></H3>
+<span class="propinst-border-width">'border-width'</span></h4>
 
 <P>The border width properties specify the width of the <a
 href="#box-border-area">border area</a>.  The properties
@@ -5960,13 +5960,13 @@ h1 { border-width: thin thick medium }      /* thin thick medium thick */
 </PRE>
 </div>
 
-<H3><a id="border-color-properties">Border color</A>:
+<h4><a id="border-color-properties">Border color</A>:
 <span class="propinst-border-top-color">'border-top-color'</span>,
 <span class="propinst-border-right-color">'border-right-color'</span>,
 <span class="propinst-border-bottom-color">'border-bottom-color'</span>,
 <span class="propinst-border-left-color">'border-left-color'</span>, and
 <span class="propinst-border-color">'border-color'</span>
-</H3>
+</h4>
 
 <P>The border color properties specify the color of a box's border.
 
@@ -6009,12 +6009,12 @@ p {
 </PRE>
 </div>
 
-<H3><a id="border-style-properties">Border style</a>:
+<h4><a id="border-style-properties">Border style</a>:
 <span class="propinst-border-top-style">'border-top-style'</span>,
 <span class="propinst-border-right-style">'border-right-style'</span>,
 <span class="propinst-border-bottom-style">'border-bottom-style'</span>,
 <span class="propinst-border-left-style">'border-left-style'</span>, and
-<span class="propinst-border-style">'border-style'</span></H3>
+<span class="propinst-border-style">'border-style'</span></h4>
 
 <P>The border style properties specify the line style of a box's
 border (solid, double, dashed, etc.). The properties defined in this
@@ -6091,12 +6091,12 @@ the vertical borders will be 'dotted'.
 <P> Since the initial value of the border styles is 'none', no borders
 will be visible unless the border style is set.
 
-<H3><a id="border-shorthand-properties">Border shorthand properties</a>:
+<h4><a id="border-shorthand-properties">Border shorthand properties</a>:
 <span class="propinst-border-top">'border-top'</span>,
 <span class="propinst-border-right">'border-right'</span>,
 <span class="propinst-border-bottom">'border-bottom'</span>,
 <span class="propinst-border-left">'border-left'</span>, and
-<span class="propinst-border">'border'</span></h3>
+<span class="propinst-border">'border'</span></h4>
 
 <!-- #include src=properties/border-top.srb -->
 
@@ -6173,7 +6173,7 @@ relevant.
 </div>
 
 
-<h2><a id="bidi-box-model">The box model for inline elements in bidirectional context</a></h2>
+<h3><a id="bidi-box-model">The box model for inline elements in bidirectional context</a></h3>
 
 <p>For each line box, UAs must take the inline boxes generated for
 each element and render the margins, borders and padding in visual
@@ -6196,9 +6196,9 @@ appears has the left margin, left border and left padding.
 
 <!-- SPLIT: visuren.html -->
 
-<h1>Visual formatting model</h1>
+<h2>Visual formatting model</h2>
 
-<h2><a id="visual-model-intro">Introduction to the visual formatting model</a></h2>
+<h3><a id="visual-model-intro">Introduction to the visual formatting model</a></h3>
 
 <p>This chapter and the next describe the <span class="index-def"
 title="visual formatting model">visual formatting model</span>: how user
@@ -6238,7 +6238,7 @@ differently for those formatting issues not covered by this
 specification.
 </p>
 
-<h3><a id="viewport">The viewport</a></h3>
+<h4><a id="viewport">The viewport</a></h4>
 
 <p>User agents for <a
 href="media.html#continuous-media-group">continuous media</a>
@@ -6260,9 +6260,9 @@ agents may render to more than one canvas (i.e., provide different
 views of the same document).
 </p>
 
-<h3><span class="index-def" title="containing block">
+<h4><span class="index-def" title="containing block">
 <a id="containing-block">Containing blocks</a></span>
-</h3>
+</h4>
 
 <p>In CSS&nbsp;2, many box positions and sizes are calculated with respect
 to the edges
@@ -6281,7 +6281,7 @@ href="visufx.html#overflow">overflow</a>.
 how a containing block's dimensions are calculated are described in
 the <a href="visudet.html">next chapter</a>.
 </p>
-<h2><a id="box-gen">Controlling box generation</a></h2>
+<h3><a id="box-gen">Controlling box generation</a></h3>
 
 <p>The following sections describe the types of boxes that may be
 generated in CSS&nbsp;2. A box's type affects, in part, its behavior in the
@@ -6300,7 +6300,7 @@ elements may generate additional boxes in addition to the principal
 box: 'list-item' elements. These additional boxes are placed with
 respect to the principal box.
 
-<h3><a id="block-boxes">Block-level elements and block boxes</a></h3>
+<h4><a id="block-boxes">Block-level elements and block boxes</a></h4>
 
 <p><span class="index-def" title="block-level element"><a
 id="block-level"><dfn>Block-level elements</dfn></a></span> &ndash;
@@ -6334,7 +6334,7 @@ title="block box"><dfn>block boxes</dfn></span>.
 <p>The three terms "block-level box," "block container box," and
 "block box" are sometimes abbreviated as "block" where unambiguous.
 
-<h4><a id="anonymous-block-level">Anonymous block boxes</a></h4>
+<h5><a id="anonymous-block-level">Anonymous block boxes</a></h5>
 
 <p>In a document like this:
 </p>
@@ -6437,7 +6437,7 @@ the DIV above needs to know the height of its containing block to
 resolve a percentage height, then it will use the height of the
 containing block formed by the DIV, not of the anonymous block box.
 
-<h3><a id="inline-boxes">Inline-level elements and inline boxes</a></h3>
+<h4><a id="inline-boxes">Inline-level elements and inline boxes</a></h4>
 
 <p><span class="index-def" title="inline-level element">
 <a id="inline-level"><dfn>Inline-level
@@ -6467,7 +6467,7 @@ inline-level box"><dfn>atomic inline-level boxes</dfn></span> because
 they participate in their inline formatting context as a single opaque
 box.
 
-<h4><a id="anonymous">Anonymous inline boxes</a></h4>
+<h5><a id="anonymous">Anonymous inline boxes</a></h5>
 
 <p>Any text that is directly contained inside a block container element (not
 inside an inline element) must be treated as an anonymous inline
@@ -6504,15 +6504,15 @@ simply called anonymous boxes in this specification.
 <p>There are more types of anonymous boxes that arise when formatting
 <a href="tables.html#anonymous-boxes">tables</a>.
 </p>
-<h3><a id="run-in">Run-in boxes</a></h3>
+<h4><a id="run-in">Run-in boxes</a></h4>
 
 <p>[This section exists so that the section numbers are the same as in
 previous drafts. <span class="index-def" title="run-in">'Display:
 run-in'</span> is now defined in CSS level&nbsp;3 (see <a
 href="https://www.w3.org/TR/css3-box/">CSS basic box model</a>).]
 
-<h3><a id="display-prop">The</a> <span
-class="propinst-display">'display'</span> property</h3>
+<h4><a id="display-prop">The</a> <span
+class="propinst-display">'display'</span> property</h4>
 
 <!-- #include src=properties/display.srb -->
 
@@ -6616,7 +6616,7 @@ img { display: none }      /* Do not display images */
 </div>
 
 
-<h2><a id="positioning-scheme">Positioning schemes</a></h2>
+<h3><a id="positioning-scheme">Positioning schemes</a></h3>
 
 <p>In CSS&nbsp;2, a box may be laid out according to three <span
 class="index-def" title="positioning scheme"><dfn>positioning
@@ -6660,8 +6660,8 @@ more accessible by allowing them to avoid mark-up tricks
 </em>
 </div>
 
-<h3><a id="choose-position">Choosing a positioning scheme:</a> <span
-class="propinst-position">'position'</span> property</h3>
+<h4><a id="choose-position">Choosing a positioning scheme:</a> <span
+class="propinst-position">'position'</span> property</h4>
 
 <p>The <span class="propinst-position">'position'</span> and <span
 class="propinst-float">'float'</span> properties determine which 
@@ -6747,11 +6747,11 @@ page box"</a> in chapter&nbsp;13.</span>
 User agents may treat position as 'static' on the root element.
 </p>
 
-<h3><a id="position-props">Box offsets</a>: <span
+<h4><a id="position-props">Box offsets</a>: <span
 class="propinst-top">'top'</span>, <span
 class="propinst-right">'right'</span>, <span
 class="propinst-bottom">'bottom'</span>, <span
-class="propinst-left">'left'</span></h3>
+class="propinst-left">'left'</span></h4>
 
 <p>An element is said to be <span class="index-def" title="positioned
 element/box"><a id="positioned-element"><dfn>positioned</dfn></a></span>
@@ -6826,7 +6826,7 @@ positioned, replaced elements for details.
 </dd>
 </dl>
 
-<h2><a id="normal-flow">Normal flow</a></h2> 
+<h3><a id="normal-flow">Normal flow</a></h3> 
 
 <p>Boxes in the normal flow belong to a <span class="index-def"
 title="formatting context">formatting context</span>, which in CSS&nbsp;2
@@ -6839,7 +6839,7 @@ href="#inline-formatting">inline formatting</a> context. Table
 formatting contexts are described in the <a href="tables.html"
 >chapter on tables.</a>
 </p>
-<h3><a id="block-formatting">Block formatting contexts</a></h3>
+<h4><a id="block-formatting">Block formatting contexts</a></h4>
 
 <p>Floats, absolutely positioned elements, block containers (such as
 inline-blocks, table-cells, and table-captions) that are not block
@@ -6870,7 +6870,7 @@ the section on <a href="page.html#allowed-page-breaks">allowed
 page breaks</a>.
 </p>
 
-<h3><a id="inline-formatting">Inline formatting contexts</a></h3>
+<h4><a id="inline-formatting">Inline formatting contexts</a></h4>
 
 <p>An inline formatting context is established by a block container
 box that contains no block-level boxes.
@@ -7040,7 +7040,7 @@ dashed border is rendered on three sides in each case.</li>
 </ul>
 </div>
 
-<h3><a id="relative-positioning">Relative positioning</a></h3>  
+<h4><a id="relative-positioning">Relative positioning</a></h4>  
 
 <p>Once a box has been laid out according to the <a
 href="#normal-flow">normal flow</a> or floated, it may be shifted relative to
@@ -7116,7 +7116,7 @@ information.
 href="#comparison">comparing normal flow, floats, and absolute
 positioning</a>.
 </p>
-<h2><a id="floats">Floats</a></h2>
+<h3><a id="floats">Floats</a></h3>
 
 <p>A float is a box that is shifted to the left or right on the
 current line. The most interesting characteristic of a float (or
@@ -7338,8 +7338,8 @@ class="propinst-clear">'clear'</span> property).
 </div>
 
 
-<h3><a id="float-position">Positioning the float:</a> the
-<span class="propinst-float">'float'</span> property</h3>
+<h4><a id="float-position">Positioning the float:</a> the
+<span class="propinst-float">'float'</span> property</h4>
 
 <!-- #include src=properties/float.srb -->
 
@@ -7456,8 +7456,8 @@ alt="An a at the left side of a box and a b at the right side">
 </div>
 
 
-<h3><a id="flow-control">Controlling flow next to floats:</a>
-the <span class="propinst-clear">'clear'</span> property</h3> 
+<h4><a id="flow-control">Controlling flow next to floats:</a>
+the <span class="propinst-clear">'clear'</span> property</h4> 
 
 <!-- #include src=properties/clear.srb -->
 
@@ -7656,7 +7656,7 @@ the implementation should force a break and effectively insert one or more empty
 </p>
 </div>
 
-<h2><a id="absolute-positioning">Absolute positioning</a></h2>
+<h3><a id="absolute-positioning">Absolute positioning</a></h3>
 
 <p>In the absolute positioning model, a box is explicitly offset with
 respect to its containing block.  It is removed from the normal flow
@@ -7675,7 +7675,7 @@ element</dfn></a></span> (or its box) imply that the element's <span
 class="propinst-position">'position'</span> property has the value
 'absolute' or 'fixed'.
 </p>
-<h3><a id="fixed-positioning">Fixed positioning</a></h3>
+<h4><a id="fixed-positioning">Fixed positioning</a></h4>
 
 <p>Fixed positioning is a subcategory of absolute positioning. The
 only difference is that for a fixed positioned box, the containing
@@ -7757,8 +7757,8 @@ style rules:</p>
 </code></pre>
 </div>
 
-<h2><a id="dis-pos-flo">Relationships between 'display', 'position',
-and 'float'</a></h2>
+<h3><a id="dis-pos-flo">Relationships between 'display', 'position',
+and 'float'</a></h3>
 
 <p>The three properties that affect box generation and layout &mdash; 
 <span class="propinst-display">'display'</span>, 
@@ -7809,8 +7809,8 @@ table-cell, table-caption, inline-block </td><td>block</td></tr>
 <tr><td>others </td><td>same as specified</td></tr>
 </table>
 
-<h2><a id="comparison">Comparison of normal flow, floats,  
-and absolute positioning</a></h2>
+<h3><a id="comparison">Comparison of normal flow, floats,  
+and absolute positioning</a></h3>
 <p>To illustrate the differences between normal flow, relative
 positioning, floats, and absolute positioning, we provide a series of
 examples based on the following HTML:
@@ -7854,7 +7854,7 @@ various positioning schemes in CSS&nbsp;2, and are not intended to be
 reference renderings of the examples given.
 </p>
 
-<h3><a id="comp-normal-flow">Normal flow</a></h3>
+<h4><a id="comp-normal-flow">Normal flow</a></h4>
 
 <p>Consider the following CSS declarations for <em>outer</em> and
 <em>inner</em> that do not alter the <a href="#normal-flow">normal
@@ -7876,7 +7876,7 @@ established by the P element, producing something like:</p>
      alt="Image illustrating the normal flow of text between parent and sibling boxes."></p>
 </div>
 
-<h3><a id="comp-relpos">Relative positioning</a></h3>
+<h4><a id="comp-relpos">Relative positioning</a></h4>
 
 <p>To see the effect of <a href="#relative-positioning">relative
 positioning</a>, we specify:</p>
@@ -7913,7 +7913,7 @@ box's content."></p>
 text of <em>outer</em> and the body text would have overlapped.
 </p>
 
-<h3><a id="comp-float">Floating a box</a></h3>
+<h4><a id="comp-float">Floating a box</a></h4>
 
 <p>Now consider the effect of <a href="#floats">floating</a> the
 <em>inner</em> element's text to the right by means of the following
@@ -7990,7 +7990,7 @@ flow below the float:
 alt="Image illustrating the effects of floating an element with setting the clear property to control the flow of text around the element."></p>
 </div>
 
-<h3><a id="comp-abspos">Absolute positioning</a></h3>
+<h4><a id="comp-abspos">Absolute positioning</a></h4>
 
 <p>Finally, we consider the effect of <a
 href="#absolute-positioning">absolute positioning</a>.
@@ -8106,10 +8106,10 @@ that the change bars seem to "float" to the left of the current
 line.</p>
 </div>
 
-<h2><a id="layers">Layered presentation</a></h2>
+<h3><a id="layers">Layered presentation</a></h3>
 
-<h3><a id="z-index">Specifying the stack level</a>: the <span
-class="propinst-z-index">'z-index'</span> property</h3> 
+<h4><a id="z-index">Specifying the stack level</a>: the <span
+class="propinst-z-index">'z-index'</span> property</h4> 
 
 <!-- #include src=properties/z-index.srb -->
 
@@ -8270,11 +8270,11 @@ behavior can be overridden by using one of the existing
 background properties</a>.
 </p>
 
-<h2><a id="direction">Text direction:</a>
+<h3><a id="direction">Text direction:</a>
 the <span class="propinst-direction">'direction'</span>
 and <span class="propinst-unicode-bidi">'unicode-bidi'</span>
 properties
-</h2>
+</h3>
 
 <p><a href="conform.html#conformance">Conforming</a> user agents that do
 not support bidirectional text may ignore the <span
@@ -8544,10 +8544,10 @@ of a line.
 
 <!-- SPLIT: visudet.html -->
 
-<h1>Visual formatting model details</h1>
+<h2>Visual formatting model details</h2>
 
-<h2><a id="containing-block-details">Definition of "containing
-block"</a></h2>
+<h3><a id="containing-block-details">Definition of "containing
+block"</a></h3>
 
 <p>The position and size of an element's box(es) are sometimes
 calculated relative to a certain rectangle, called the <dfn><span
@@ -8693,8 +8693,8 @@ by "div1").
 </div>
 
 
-<h2><a id="the-width-property">Content width</a>: the <span
-class="propinst-width">'width'</span> property</h2>
+<h3><a id="the-width-property">Content width</a>: the <span
+class="propinst-width">'width'</span> property</h3>
 
 <!-- #include src=properties/width.srb -->
 
@@ -8754,8 +8754,8 @@ p { width: 100px }
 </pre>
 </div>
 
-<h2><a id="Computing_widths_and_margins">Calculating widths and
-margins</a></h2>
+<h3><a id="Computing_widths_and_margins">Calculating widths and
+margins</a></h3>
 
 <p>The values of an element's <span
 class="propinst-width">'width'</span>, <span
@@ -8796,7 +8796,7 @@ class="propinst-min-width">'min-width'</span> and <span
 class="propinst-max-width">'max-width'</span>, see the section <a
 href="#min-max-widths">Minimum and maximum widths</a> below.</em>
 
-<h3><a id="inline-width">Inline, non-replaced elements</a></h3>
+<h4><a id="inline-width">Inline, non-replaced elements</a></h4>
 
 <p>The <span class="propinst-width">'width'</span> property does not
 apply. A computed value of 'auto' for <span
@@ -8805,7 +8805,7 @@ class="propinst-margin-right">'margin-right'</span> becomes a used
 value of '0'.
 </p>
 
-<h3><a id="inline-replaced-width">Inline, replaced elements</a></h3>
+<h4><a id="inline-replaced-width">Inline, replaced elements</a></h4>
 
 <p>A computed value of 'auto' for <span
 class="propinst-margin-left">'margin-left'</span> or <span
@@ -8851,8 +8851,8 @@ the width of the largest rectangle that has a 2:1 ratio and fits the
 device instead.
 
 
-<h3><a id="blockwidth">Block-level, non-replaced elements in normal
-flow</a></h3>
+<h4><a id="blockwidth">Block-level, non-replaced elements in normal
+flow</a></h4>
 
 <p>The following <a id="width-constraints">constraints</a> must hold
 among the used values of the other properties:</p>
@@ -8900,7 +8900,7 @@ their used values are equal. This horizontally centers the element
 with respect to the edges of the containing block.
 </p>
 
-<h3><a id="block-replaced-width">Block-level, replaced elements in normal flow</a></h3>
+<h4><a id="block-replaced-width">Block-level, replaced elements in normal flow</a></h4>
 
 <p>The used value of 
 <span class="propinst-width">'width'</span> is determined
@@ -8909,7 +8909,7 @@ elements</a>.
 Then the rules <a href="#blockwidth">for non-replaced
 block-level elements</a> are applied to determine the margins.
 </p>
-<h3><a id="float-width">Floating, non-replaced elements</a></h3>
+<h4><a id="float-width">Floating, non-replaced elements</a></h4>
 
 <p>If <span
 class="propinst-margin-left">'margin-left'</span>, or <span
@@ -8935,7 +8935,7 @@ scroll bars.
 <p>Then the shrink-to-fit width is: min(max(preferred minimum width,
 available width), preferred width).</p>
 
-<h3><a id="float-replaced-width">Floating, replaced elements</a></h3>
+<h4><a id="float-replaced-width">Floating, replaced elements</a></h4>
 
 <p>If <span class="propinst-margin-left">'margin-left'</span> or <span
 class="propinst-margin-right">'margin-right'</span> are computed as
@@ -8943,7 +8943,7 @@ class="propinst-margin-right">'margin-right'</span> are computed as
 class="propinst-width">'width'</span> is determined as for <a
 href="#inline-replaced-width">inline replaced elements</a>.
 </p>
-<h3><a id="abs-non-replaced-width">Absolutely positioned, non-replaced elements</a></h3>
+<h4><a id="abs-non-replaced-width">Absolutely positioned, non-replaced elements</a></h4>
 
 <p>For the purposes of this section and the next, the term <a
 id=static-position><span class=index>"static position"</span></a>
@@ -9059,7 +9059,7 @@ is found by solving for 'width' after setting 'left' (in case 1) or
 <p>Then the shrink-to-fit width is: min(max(preferred minimum width, available
 width), preferred width).</p>
 
-<h3><a id="abs-replaced-width">Absolutely positioned, replaced elements</a></h3>
+<h4><a id="abs-replaced-width">Absolutely positioned, replaced elements</a></h4>
 
 <p>In this case, <a href="#abs-non-replaced-width">section 10.3.7</a>
 applies up through and including the constraint equation, but the rest
@@ -9113,7 +9113,7 @@ that value.
 </ol>
 
 
-<h3><a id="inlineblock-width">'Inline-block', non-replaced elements in normal flow</a></h3>
+<h4><a id="inlineblock-width">'Inline-block', non-replaced elements in normal flow</a></h4>
 
 <p>If <span class="propinst-width">'width'</span> is 'auto', the
 used value is the <a href="#shrink-to-fit-float">shrink-to-fit</a>
@@ -9125,15 +9125,15 @@ class="propinst-margin-right">'margin-right'</span> becomes a used
 value of '0'.
 </p>
 
-<h3><a id="inlineblock-replaced-width">'Inline-block', replaced elements in normal flow</a></h3>
+<h4><a id="inlineblock-replaced-width">'Inline-block', replaced elements in normal flow</a></h4>
 
 <p>Exactly as <a href="#inline-replaced-width">inline replaced
 elements.</a>
 </p>
 
-<h2><a id="min-max-widths">Minimum and maximum widths</a>: <span
+<h3><a id="min-max-widths">Minimum and maximum widths</a>: <span
 class="propinst-min-width">'min-width'</span> and <span
-class="propinst-max-width">'max-width'</span></h2>
+class="propinst-max-width">'max-width'</span></h3>
 
 <!-- #include src=properties/min-width.srb -->
 <!-- #include src=properties/max-width.srb -->
@@ -9315,8 +9315,8 @@ were computed as this value.
 -->
 
 
-<h2><a id="the-height-property">Content height</a>: the <span
-class="propinst-height">'height'</span> property</h2>
+<h3><a id="the-height-property">Content height</a>: the <span
+class="propinst-height">'height'</span> property</h3>
 
 <!-- #include src=properties/height.srb -->
 
@@ -9386,8 +9386,8 @@ will <a href="visufx.html#overflow">overflow</a> according to the
 </p>
 </div>
 
-<h2><a id="Computing_heights_and_margins">Calculating heights and
-margins</a></h2>
+<h3><a id="Computing_heights_and_margins">Calculating heights and
+margins</a></h3>
 
 <p>For calculating the values of <span class="propinst-top">'top'</span>, <span class="propinst-margin-top">'margin-top'</span>, <span class="propinst-height">'height'</span>,
 <span class="propinst-margin-bottom">'margin-bottom'</span>, and <span class="propinst-bottom">'bottom'</span> a distinction must be made between
@@ -9420,7 +9420,7 @@ class="propinst-min-height">'min-height'</span> and <span
 class="propinst-max-height">'max-height'</span>, see the section <a
 href="#min-max-heights">Minimum and maximum heights</a> below.</em>
 
-<h3><a id="inline-non-replaced">Inline, non-replaced elements</a></h3>
+<h4><a id="inline-non-replaced">Inline, non-replaced elements</a></h4>
 
 <p>The <span class="propinst-height">'height'</span> property does not
 apply. The height of the content area should be based on the font, but
@@ -9446,9 +9446,9 @@ the height of the content area is not affected
 by the glyphs from the fallback fonts,
 and only depends on the first available font.</p>
 
-<h3><a id="inline-replaced-height">Inline replaced elements</a>,
+<h4><a id="inline-replaced-height">Inline replaced elements</a>,
 block-level replaced elements in normal flow, 'inline-block' replaced
-elements in normal flow and floating replaced elements</h3>
+elements in normal flow and floating replaced elements</h4>
 
 <p>If <span class="propinst-margin-top">'margin-top'</span>, or <span
 class="propinst-margin-bottom">'margin-bottom'</span> are 'auto',
@@ -9483,8 +9483,8 @@ greater than the device width.
 when calculating the height of the line box. -->
 <!-- /Issue 181 -->
 
-<h3><a id="normal-block">Block-level non-replaced elements in normal
-flow when 'overflow' computes to 'visible'</a></h3>
+<h4><a id="normal-block">Block-level non-replaced elements in normal
+flow when 'overflow' computes to 'visible'</a></h4>
 
 <p>This section also applies to block-level non-replaced elements in
 normal flow when 'overflow' does not compute to 'visible' but has been
@@ -9523,7 +9523,7 @@ that the child box may be an <a
 href="visuren.html#anonymous-block-level">anonymous block box.</a>
 </p>
 
-<h3><a id="abs-non-replaced-height">Absolutely positioned, non-replaced elements</a></h3>
+<h4><a id="abs-non-replaced-height">Absolutely positioned, non-replaced elements</a></h4>
 
 <p>For the purposes of this section and the next, the term "static
 position" (of an element) refers, roughly, to the position an element
@@ -9595,7 +9595,7 @@ values for 'margin-top' and 'margin-bottom' are set to 0 and solve for
 'bottom'</li>
 </ol>
 
-<h3><a id="abs-replaced-height">Absolutely positioned, replaced elements</a></h3>
+<h4><a id="abs-replaced-height">Absolutely positioned, replaced elements</a></h4>
 
 <p>This situation is similar to the previous one, except that the
 element has an <a href="conform.html#intrinsic">intrinsic</a> height. The
@@ -9637,7 +9637,7 @@ value.
 
 
 
-<h3><a id="block-root-margin">Complicated cases</a></h3>
+<h4><a id="block-root-margin">Complicated cases</a></h4>
 
 <p>This section applies to:
 
@@ -9661,8 +9661,8 @@ href="#root-height">height depends on the element's descendants per 10.6.7</a>.
 the height of the line box.
 
 
-<h3><a id="root-height">'Auto' heights for block formatting context
-roots</a></h3>
+<h4><a id="root-height">'Auto' heights for block formatting context
+roots</a></h4>
 
 <p>In certain cases (see, e.g., sections
 <a href="#abs-non-replaced-height">10.6.4</a> and
@@ -9691,9 +9691,9 @@ e.g., floats inside absolutely positioned descendants or other floats are not.
 
 
 
-<h2><a id="min-max-heights">Minimum and maximum heights</a>: <span
+<h3><a id="min-max-heights">Minimum and maximum heights</a>: <span
 class="propinst-min-height">'min-height'</span> and <span
-class="propinst-max-height">'max-height'</span></h2>
+class="propinst-max-height">'max-height'</span></h3>
 
 <p>It is sometimes useful to constrain the height of elements to a
 certain range. Two properties offer this functionality:
@@ -9778,10 +9778,10 @@ rules under <a href="#Computing_heights_and_margins">"Computing
 heights and margins"</a> above, using the resulting width and height as
 if they were the computed values.
 </p>
-<h2><a id="line-height">Line height calculations</a>: the <span
+<h3><a id="line-height">Line height calculations</a>: the <span
 class="propinst-line-height">'line-height'</span> and <span
 class="propinst-vertical-align">'vertical-align'</span>
-properties</h2>
+properties</h3>
 
 <p>As described in the section on <a
 href="visuren.html#inline-formatting">inline formatting contexts</a>,
@@ -9823,7 +9823,7 @@ still have margins, padding, borders and a line height, and thus
 influence these calculations just like elements with content.
 </p>
 
-<h3><a id="leading">Leading and half-leading</a></h3>
+<h4><a id="leading">Leading and half-leading</a></h4>
 
 <p>CSS assumes that every font has font metrics that specify a
 characteristic height above the baseline and a depth below it. In this
@@ -10061,9 +10061,9 @@ bottom border edge.</p>
 
 <!-- SPLIT: visufx.html -->
 
-<h1>Visual effects</h1>
+<h2>Visual effects</h2>
 
-<h2><a id="overflow-clipping">Overflow and clipping</a></h2>
+<h3><a id="overflow-clipping">Overflow and clipping</a></h3>
 
 <p>Generally, the content of a block box is confined to the
 content edges of the box. In certain cases, a box may <span
@@ -10105,8 +10105,8 @@ whether a box is clipped to its padding edge, and if so, whether
 a scrolling mechanism is provided to access any clipped out content.
 </p>
 
-<h3><a id="overflow">Overflow</a>: the <span
-class="propinst-overflow">'overflow'</span> property</h3>
+<h4><a id="overflow">Overflow</a>: the <span
+class="propinst-overflow">'overflow'</span> property</h4>
 
 <!-- #include src=properties/overflow.srb -->
 
@@ -10279,8 +10279,8 @@ the element whose overflow is being clipped and scrolled.
 </p>
 </div>
 
-<h3><a id="clipping">Clipping</a>: the <span
-class="propinst-clip">'clip'</span> property</h3>
+<h4><a id="clipping">Clipping</a>: the <span
+class="propinst-clip">'clip'</span> property</h4>
 
 <!--
 <p>[What about the "lost errata" for clip? See
@@ -10389,8 +10389,8 @@ non-rectangular clipping. Future updates may also reintroduce a
 syntax for offsetting shapes from each edge instead of offsetting from
 a point.</em></p></div>
 
-<h2><a id="visibility">Visibility</a>: the <span
-class="propinst-visibility">'visibility'</span> property</h2>
+<h3><a id="visibility">Visibility</a>: the <span
+class="propinst-visibility">'visibility'</span> property</h3>
 
 <!-- #include src=properties/visibility.srb -->
 
@@ -10480,11 +10480,11 @@ UA.)
 
 <!-- SPLIT: generate.html -->
 
-<h1>
+<h2>
 <a id="generated-text">Generated</a> <span class="index-def"
 title="generated content">content</span>, automatic <span
 class="index-def" title="automatic numbering">numbering</span>,
-and lists</h1>
+and lists</h2>
 
 <p>In some cases, authors may want user agents to render content
 that does not come from the <a href="conform.html#doctree">document
@@ -10506,10 +10506,10 @@ for the <span class="propinst-display">'display'</span> property.
 </ul>
 
 
-<h2><a id="before-after-content">The</a> <span class="index-def"
+<h3><a id="before-after-content">The</a> <span class="index-def"
 title=":before|pseudo-elements:::before|before">:before</span> and <span
 class="index-def" title=":after|pseudo-elements:::after|after">:after</span>
-pseudo-elements</h2>
+pseudo-elements</h3>
 
 <p>Authors specify the style and location of generated content with
 the :before and :after pseudo-elements. As their names indicate, the
@@ -10617,8 +10617,8 @@ and :after with replaced elements (such as IMG in HTML). This will
 be defined in more detail in a future specification.</p>
 </div>
 
-<h2><a id="content">The</a> <span
-class="propinst-content">'content'</span> property</h2>
+<h3><a id="content">The</a> <span
+class="propinst-content">'content'</span> property</h3>
 
 <!-- #include src=properties/content.srb -->
 
@@ -10736,7 +10736,7 @@ h1:before {
 is not fed back to the document language processor (e.g., for
 reparsing).
 
-<h2><a id="quotes">Quotation marks</a></h2>
+<h3><a id="quotes">Quotation marks</a></h3>
 
 <P>In CSS&nbsp;2, authors may specify, in a style-sensitive and
 context-dependent manner, how user agents should render quotation
@@ -10746,8 +10746,8 @@ quotation. The <span class="propinst-content">'content'</span>
 property gives access to those quotation marks and causes them to be
 inserted before and after a quotation.
 
-<H3><a id="quotes-specify">Specifying quotes</a> with the <span
-class="propinst-quotes">'quotes'</span> property</H3>
+<h4><a id="quotes-specify">Specifying quotes</a> with the <span
+class="propinst-quotes">'quotes'</span> property</h4>
 
 <!-- #include src=properties/quotes.srb -->
 
@@ -10854,8 +10854,8 @@ mark characters:</em></p>
 </div>
 
 
-<H3><a id="quotes-insert">Inserting quotes</a> with the <span
-class="propinst-content">'content'</span> property</H3>
+<h4><a id="quotes-insert">Inserting quotes</a> with the <span
+class="propinst-content">'content'</span> property</h4>
 
 <p>Quotation marks are inserted in appropriate places in a document
 with the <span class="index-def" title="open-quote"><a
@@ -10916,8 +10916,8 @@ id="value-def-no-open-quote">'no-open-quote'</a></span> keyword,
 which inserts nothing, but increments the quotation depth by one.
 
 
-<h2>Automatic <span class="index-def" title="counters"><a
-id="counters">counters</a></span> and numbering</h2>
+<h3>Automatic <span class="index-def" title="counters"><a
+id="counters">counters</a></span> and numbering</h3>
 
 <p>Automatic numbering in CSS&nbsp;2 is controlled with two properties,
 <span class="propinst-counter-increment">'counter-increment'</span>
@@ -11017,7 +11017,7 @@ specified together:</p>
 H1 { counter-reset: section -1 imagenum 99 }
 </pre>
 
-<h3><a id="scope">Nested counters and scope</a></h3>
+<h4><a id="scope">Nested counters and scope</a></h4>
 
 <p>Counters are "self-nesting", in the sense that resetting a counter
 in a descendant element or pseudo-element automatically creates a new
@@ -11126,7 +11126,7 @@ LI:before { content: counters(item, ".") " "; counter-increment: item }
 </PRE>
 </div>
 
-<h3><a id="counter-styles">Counter styles</a></h3>
+<h4><a id="counter-styles">Counter styles</a></h4>
 
 <p>By default, counters are formatted with decimal numbers, but all the
 styles available for the <span
@@ -11157,7 +11157,7 @@ P:before         { content: counter(p, none) }
 </div>
 
 
-<h3><a id="undisplayed-counters">Counters in elements with 'display: none'</a></h3>
+<h4><a id="undisplayed-counters">Counters in elements with 'display: none'</a></h4>
 
 <p>An element that is not displayed (<span
 class="propinst-display">'display'</span> set to 'none') cannot
@@ -11191,7 +11191,7 @@ set to 'hidden', on the other hand, <em>do</em> increment counters.
 
 
 
-<h2><a id="lists">Lists</a></h2>
+<h3><a id="lists">Lists</a></h3>
 
 <P>CSS&nbsp;2 offers basic visual formatting of lists. An element with
 'display: list-item' generates a <a
@@ -11215,11 +11215,11 @@ properties</a> apply to the principal box only; an 'outside' marker
 box is transparent.
  
 
-<h3><a id="list-style">Lists:</a> the <span
+<h4><a id="list-style">Lists:</a> the <span
 class="propinst-list-style-type">'list-style-type'</span>, <span
 class="propinst-list-style-image">'list-style-image'</span>, <span
 class="propinst-list-style-position">'list-style-position'</span>, and
-<span class="propinst-list-style">'list-style'</span> properties</h3>
+<span class="propinst-list-style">'list-style'</span> properties</h4>
 
 
 <!-- #include src=properties/list-style-type.srb -->
@@ -11559,9 +11559,9 @@ ul { list-style: none }
 
 <!-- SPLIT: page.html -->
   
-<h1><a id="the-page">Paged media</a></h1>
+<h2><a id="the-page">Paged media</a></h2>
 
-<h2><a id="page-intro">Introduction to paged media</a></h2>
+<h3><a id="page-intro">Introduction to paged media</a></h3>
 
 <p>Paged media (e.g., paper, transparencies, pages that are displayed
 on computer screens, etc.) differ from <a
@@ -11591,7 +11591,7 @@ proper sequence.
 </ul>
 
 
-<h2><a id="page-box">Page boxes</a>: the @page rule</h2>
+<h3><a id="page-box">Page boxes</a>: the @page rule</h3>
 
 <p>The <span class="index-def" title="page box"><dfn>page
 box</dfn></span> is a rectangular region that contains two areas:</p>
@@ -11633,7 +11633,7 @@ selector</dfn></span> specifies for which pages the declarations
 apply. In CSS&nbsp;2, page selectors may designate the first page,
 all left pages, or all right pages</p>
 
-<h3><a id="page-margins">Page margins</a></h3>
+<h4><a id="page-margins">Page margins</a></h4>
 
 <P>In CSS&nbsp;2, only the <a href="box.html#margin-properties">margin
 properties</a> (<span class="propinst-margin-top">'margin-top'</span>,
@@ -11677,14 +11677,14 @@ the paper cutter.
 
 
 <!--
-<h4><a id="oversized-page-box">[This section intentionally left blank]</a></h4>
+<h5><a id="oversized-page-box">[This section intentionally left blank]</a></h5>
 
 
-<h4><a id="positioning-page-box">[This section intentionally left blank]</a></h4>
+<h5><a id="positioning-page-box">[This section intentionally left blank]</a></h5>
 -->
 
 
-<h3><a id="page-selectors">Page selectors: selecting left, right, and first pages</a></H3>
+<h4><a id="page-selectors">Page selectors: selecting left, right, and first pages</a></h4>
 
 <P>When printing double-sided documents, the <a href="#page-box">page
 boxes</a> on left and right pages may be different. This can be
@@ -11753,7 +11753,7 @@ on left, right, and first pages. In this case, the page area width
 of the first page should be used.
 
 
-<h3> <a id="outside-page-box">Content outside the page box</a></h3>
+<h4> <a id="outside-page-box">Content outside the page box</a></h4>
 
 <P>When formatting content in the page model, some content may end up
 outside the current page box. For example, an element whose <span
@@ -11786,7 +11786,7 @@ several ways, including discarding them or creating page boxes for
 them at the end of the document.
 </ul>
 
-<H2><a id="page-breaks">Page breaks</a></H2>
+<h3><a id="page-breaks">Page breaks</a></h3>
 
 <P>This section describes page breaks in CSS&nbsp;2. Five
 properties indicate where the user agent may or should break pages,
@@ -11796,11 +11796,11 @@ box</a> and causes remaining pieces of the <a
 href="conform.html#doctree">document tree</a> to be laid out in a new
 page box.
 
-<h3><a id="page-break-props">Page break properties</a>: <span
+<h4><a id="page-break-props">Page break properties</a>: <span
 class="propinst-page-break-before">'page-break-before'</span>,
 <span class="propinst-page-break-after">'page-break-after'</span>,
 <span class="propinst-page-break-inside">'page-break-inside'</span>
-</h3>
+</h4>
 
 <!-- #include src=properties/page-break-before.srb -->
 
@@ -11852,9 +11852,9 @@ these properties to other elements, e.g., 'table-row' elements.
 padding have no visual effect where the split occurs.
 
 
-<h3><a id="break-inside">Breaks inside elements</a>: <span
+<h4><a id="break-inside">Breaks inside elements</a>: <span
 class="propinst-orphans">'orphans'</span>, <span
-class="propinst-widows">'widows'</span></h3>
+class="propinst-widows">'widows'</span></h4>
 
 <!-- #include src=properties/orphans.srb -->
 
@@ -11871,7 +11871,7 @@ Examples of how they are used to control page breaks are given below.
 <P>For information about paragraph formatting, please consult the
 section on <a href="visuren.html#line-box">line boxes</a>.
 
-<h3><a id="allowed-page-breaks">Allowed page breaks</a></h3>
+<h4><a id="allowed-page-breaks">Allowed page breaks</a></h4>
 
 <p>In the normal flow, page breaks can occur at the following places:</p>
 
@@ -11942,7 +11942,7 @@ order to find additional breakpoints.
 C is dropped as well, to find still more break points.
 
 
-<h3><a id="forced">Forced page breaks</a></h3>
+<h4><a id="forced">Forced page breaks</a></h4>
 
 <p>A page break <em>must</em> occur at (1) if, among the <span
 class="propinst-page-break-after">'page-break-after'</span> and <span
@@ -11951,7 +11951,7 @@ properties of all the elements generating boxes that meet at this
 margin, there is at least one with the value 'always', 'left', or
 'right'.
 
-<h3><a id="best-page-breaks">"Best" page breaks</a></h3>
+<h4><a id="best-page-breaks">"Best" page breaks</a></h4>
 
 <p>CSS&nbsp;2 does <em>not</em> define which of a set of allowed page breaks
 must be used; CSS&nbsp;2 does not forbid a user agent from breaking at every
@@ -12003,7 +12003,7 @@ as a block to the next page.
 </ul>
 </div>
 
-<h2><a id="page-cascade">Cascading in the page context</a></H2>
+<h3><a id="page-cascade">Cascading in the page context</a></h3>
 
 <P>Declarations in the <a href="#page-context">page context</a> obey
 the <a href="cascade.html">cascade</a> just like normal CSS
@@ -12030,7 +12030,7 @@ have a left margin of '3cm'.
 
 <!-- SPLIT: colors.html -->
   
-<h1>Colors and Backgrounds</h1>
+<h2>Colors and Backgrounds</h2>
 
 <p>CSS properties allow authors to specify the foreground color and
 background of an element. Backgrounds may be colors or
@@ -12042,8 +12042,8 @@ along with the document.
 <p> See the section on <a href="./syndata.html#color-units">color units</a>
 for the syntax of valid color values. 
 </p>
-<h2><a id="colors">Foreground color</a>: the <span
-class="propinst-color">'color'</span> property</h2>
+<h3><a id="colors">Foreground color</a>: the <span
+class="propinst-color">'color'</span> property</h3>
 
 <p class=note>Note: This section is updated by <cite>CSS Color Module
 Level 3</cite> [[CSS3COLOR]].
@@ -12060,7 +12060,7 @@ em { color: rgb(255,0,0) }     /* RGB range 0-255   */
 </pre>
 </div>
 
-<h2 id="background">The background</h2>
+<h3 id="background">The background</h3>
 
 <p>Authors may specify the background of an element (i.e., its
 rendering surface) as either a color or an image.  In terms of the <a
@@ -12133,7 +12133,7 @@ class="propinst-z-index">'z-index'</span> property) are painted at the bottom of
 stacking context, below anything in that stacking context.
 </p>
 
-<h3><a id="background-properties">Background properties</a>: <span
+<h4><a id="background-properties">Background properties</a>: <span
 class="propinst-background-color">'background-color'</span>, <span
 class="propinst-background-image">'background-image'</span>, <span
 class="propinst-background-repeat">'background-repeat'</span>, <span
@@ -12141,7 +12141,7 @@ class="propinst-background-attachment">'background-attachment'</span>,
 <span
 class="propinst-background-position">'background-position'</span>, and
 <span class="propinst-background">'background'</span>
-</h3>
+</h4>
 
 <!-- #include src=properties/background-color.srb -->
 
@@ -12430,9 +12430,9 @@ P { background: url("chess.png") gray 50% repeat fixed }
 
 <!-- SPLIT: fonts.html -->
   
-<h1>Fonts</h1>
+<h2>Fonts</h2>
 
-<h2><a id="fonts-intro">Introduction</a></h2>
+<h3><a id="fonts-intro">Introduction</a></h3>
 
 <p>Setting font properties will be among the most common uses of style
 sheets. Unfortunately, there exists no well-defined and universally
@@ -12444,7 +12444,7 @@ labeled as being <em>Oblique, Slanted, Incline, Cursive</em> or
 font selection properties to a specific font.
 </p>
 
-<h2><a id="algorithm">Font matching algorithm</a></h2>
+<h3><a id="algorithm">Font matching algorithm</a></h3>
 
 <p>Because there is no accepted, universal taxonomy of font
 properties, matching of properties to font faces must be done
@@ -12523,8 +12523,8 @@ the computed value of 'font-size'.
 
 </ol>
 
-<h2><a id="font-family-prop">Font family</a>: the <span
-class="propinst-font-family">'font-family'</span> property</h2>
+<h3><a id="font-family-prop">Font family</a>: the <span
+class="propinst-font-family">'font-family'</span> property</h3>
 
 <!-- #include src=properties/font-family.srb -->
 
@@ -12620,7 +12620,7 @@ declaration, because 'inherit' in that position can neither be a valid
 keyword nor a valid font family name.
 
 
-<h3><a id="generic-font-families">Generic font families</a></h3>
+<h4><a id="generic-font-families">Generic font families</a></h4>
 
 <p>Generic font families are a fallback mechanism, a means of
 preserving some of the style sheet author's intent in the worst case
@@ -12639,7 +12639,7 @@ allowed by the underlying technology.
 <p>User agents are encouraged to allow users to select alternative
 choices for the generic fonts.
 
-<h4><span class="index-def" title="serif, definition of"><a id="serif-def"><dfn>serif</dfn></a></span></h4>
+<h5><span class="index-def" title="serif, definition of"><a id="serif-def"><dfn>serif</dfn></a></span></h5>
 
 <p>Glyphs of serif fonts, as the term is used in CSS, tend to have finishing
 strokes, flared or tapering ends, or have actual serifed endings
@@ -12673,8 +12673,8 @@ Monotype Albion 70, Bitstream Cyberbit, ER Bukinist
   <td>Lo Cicero Cherokee
 </table>
 
-<h4><span class="index-def" title="sans-serif, definition of">
-<a id="sans-serif-def"><dfn>sans-serif</dfn></a></span></h4>
+<h5><span class="index-def" title="sans-serif, definition of">
+<a id="sans-serif-def"><dfn>sans-serif</dfn></a></span></h5>
 
 <p>Glyphs in sans-serif fonts, as the term is used in CSS, tend to have stroke
 endings that are plain -- with little or no flaring, cross stroke, or other
@@ -12705,8 +12705,8 @@ Futura, ITC Stone Sans, Gill Sans, Akzidenz Grotesk, Helvetica
   <td>MS Tahoma
 </table>
 
-<h4><span class="index-def" title="cursive, definition of">
-<a id="cursive-def"><dfn>cursive</dfn></a></span></h4>
+<h5><span class="index-def" title="cursive, definition of">
+<a id="cursive-def"><dfn>cursive</dfn></a></span></h5>
 
 <p>Glyphs in cursive fonts, as the term is used in CSS, generally have
 either joining strokes or other cursive characteristics beyond those
@@ -12731,8 +12731,8 @@ Zapf-Chancery
   <td>DecoType Naskh, Monotype Urdu 507
 </table>
 
-<h4><span class="index-def" title="fantasy, definition of">
-<a id="fantasy-def"><dfn>fantasy</dfn></a></span></h4>
+<h5><span class="index-def" title="fantasy, definition of">
+<a id="fantasy-def"><dfn>fantasy</dfn></a></span></h5>
 
 
 <p>Fantasy fonts, as used in CSS, are primarily decorative while
@@ -12745,8 +12745,8 @@ Picture fonts, which do not represent characters). Examples include:</p>
 </table>
 
 
-<h4><span class="index-def" title="monospace, definition of">
-<a id="monospace-def"><dfn>monospace</dfn></a></span></h4>
+<h5><span class="index-def" title="monospace, definition of">
+<a id="monospace-def"><dfn>monospace</dfn></a></span></h5>
 
 
 <p>The sole criterion of a monospace font is that all glyphs have the same fixed width. (This can make some scripts,
@@ -12769,8 +12769,8 @@ typewriter, and is often used to set samples of computer code.
 </table>
 
 
-<h2><a id="font-styling">Font styling</a>: the
-<span class="propinst-font-style">'font-style'</span> property</h2>
+<h3><a id="font-styling">Font styling</a>: the
+<span class="propinst-font-style">'font-style'</span> property</h3>
 
 <!-- #include src=properties/font-style.srb -->
 
@@ -12799,8 +12799,8 @@ h1 em { font-style: normal }
 <p>In the example above, emphasized text within 'H1' will appear in a
 normal face.
 </p>
-<h2><a id="small-caps">Small-caps</a>: the
-<span class="propinst-font-variant">'font-variant'</span> property</h2>
+<h3><a id="small-caps">Small-caps</a>: the
+<span class="propinst-font-variant">'font-variant'</span> property</h3>
 
 <!-- #include src=properties/font-variant.srb -->
 
@@ -12833,8 +12833,8 @@ expanded letters, etc. CSS&nbsp;2 has no properties that select those.
 transformed to uppercase, the same considerations as for <span
 class="propinst-text-transform">'text-transform'</span> apply.
 </p>
-<h2><a id="font-boldness">Font boldness</a>: the
-<span class="propinst-font-weight">'font-weight'</span> property</h2>
+<h3><a id="font-boldness">Font boldness</a>: the
+<span class="propinst-font-weight">'font-weight'</span> property</h3>
 
 <!-- #include src=properties/font-weight.srb -->
 
@@ -13001,9 +13001,9 @@ availability. This behavior will be more precisely defined in CSS3.
 </div>
 -->
 
-<h2><a id="font-size-props">Font size</a>: the <span
+<h3><a id="font-size-props">Font size</a>: the <span
 class="propinst-font-size">'font-size'</span>
-property</h2>
+property</h3>
 
 <!-- #include src=properties/font-size.srb -->
 
@@ -13109,7 +13109,7 @@ em { font-size: 150% }
 em { font-size: 1.5em }
 </pre>
 
-<h2><a id="font-shorthand">Shorthand font property</a>: the <span class="propinst-font">'font'</span> property</h2>
+<h3><a id="font-shorthand">Shorthand font property</a>: the <span class="propinst-font">'font'</span> property</h3>
 
 <!-- #include src=properties/font.srb -->
 
@@ -13229,14 +13229,14 @@ button p {
 
 <!-- SPLIT: text.html -->
 
-  <h1>Text</h1>
+  <h2>Text</h2>
 
 <p>The properties defined in the following sections affect the visual
 presentation of characters, spaces, words, and paragraphs.
 </p>
 
-<h2><a id="indentation-prop">Indentation</a>: the <span
-class="propinst-text-indent">'text-indent'</span> property</h2>
+<h3><a id="indentation-prop">Indentation</a>: the <span
+class="propinst-text-indent">'text-indent'</span> property</h3>
 
 <!-- #include src=properties/text-indent.srb -->
 
@@ -13293,8 +13293,8 @@ For this reason, it is often wise to specify '<code>text-indent: 0</code>'
 on elements that are specified '<code>display:inline-block</code>'.
 </p>
 
-<h2><a id="alignment-prop">Alignment:</a> the <span
-class="propinst-text-align">'text-align'</span> property</h2>
+<h3><a id="alignment-prop">Alignment:</a> the <span
+class="propinst-text-align">'text-align'</span> property</h3>
 
 <!-- #include src=properties/text-align.srb -->
 
@@ -13352,12 +13352,12 @@ whether the element's default writing direction is left-to-right or
 right-to-left, respectively.</em>
 </p>
 
-<h2><a id="decoration">Decoration</a></h2>
+<h3><a id="decoration">Decoration</a></h3>
 
-<h3><a id="lining-striking-props">Underlining, overlining, striking, and
+<h4><a id="lining-striking-props">Underlining, overlining, striking, and
 blinking</a>: the <span
 class="propinst-text-decoration">'text-decoration'</span>
-property</h3>
+property</h4>
 
 <!-- #include src=properties/text-decoration.srb -->
 
@@ -13496,9 +13496,9 @@ the span element, and the orange lines represent the blocks.
 </p>
 </div>
 
-<h2><a id="spacing-props">Letter and word spacing</a>: the <span
+<h3><a id="spacing-props">Letter and word spacing</a>: the <span
 class="propinst-letter-spacing">'letter-spacing'</span> and <span
-class="propinst-word-spacing">'word-spacing'</span> properties</h2>
+class="propinst-word-spacing">'word-spacing'</span> properties</h3>
 
 <!-- #include src=properties/letter-spacing.srb -->
 
@@ -13580,8 +13580,8 @@ h1 { word-spacing: 1em }
 </code></pre>
 </div>
 
-<h2><a id="caps-prop">Capitalization</a>: the <span
-class="propinst-text-transform">'text-transform'</span> property</h2>
+<h3><a id="caps-prop">Capitalization</a>: the <span
+class="propinst-text-transform">'text-transform'</span> property</h3>
 
 <!-- #include src=properties/text-transform.srb -->
 
@@ -13615,8 +13615,8 @@ h1 { text-transform: uppercase }
 </code></pre>
 </div>
 
-<h2><a id="white-space-prop">White space</a>: the <span
-class="propinst-white-space">'white-space'</span> property</h2>
+<h3><a id="white-space-prop">White space</a>: the <span
+class="propinst-white-space">'white-space'</span> property</h3>
 
 <!-- #include src=properties/white-space.srb -->
 
@@ -13678,7 +13678,7 @@ pre[wrap]  { white-space: pre-wrap }
 </code></pre>
 </div>
 
-<h3><a id="white-space-model">The 'white-space' processing model</a></h3>
+<h4><a id="white-space-model">The 'white-space' processing model</a></h4>
 <p>
 For each inline element (including anonymous inline elements), the
 following steps are performed, treating bidi formatting characters as if
@@ -13745,7 +13745,7 @@ breaking opportunity.
 CSS&nbsp;2 does not fully define where line breaking opportunities occur.</em>
 </div>
 
-<h3><a id="egbidiwscollapse">Example of bidirectionality with white space collapsing</a></h3>
+<h4><a id="egbidiwscollapse">Example of bidirectionality with white space collapsing</a></h4>
 <p>
 Given the following markup fragment, taking special note of spaces (with varied backgrounds and borders for emphasis and identification):
 </p>
@@ -13783,7 +13783,7 @@ to avoid spaces immediately inside start and end tags, as these tend
 to do weird things when dealing with white space collapsing.
 </p>
 
-<h3><a id="ctrlchars">Control and combining characters' details</a></h3>
+<h4><a id="ctrlchars">Control and combining characters' details</a></h4>
 
 <p>Control characters other than U+0009 (tab), U+000A (line feed),
 U+0020 (space), and U+202x (bidi formatting characters) are treated as
@@ -13797,8 +13797,8 @@ match the base character.</p>
 
 <!-- SPLIT: tables.html -->
   
-<h1>Tables</h1>
-<h2><a id="tables-intro">Introduction to tables</a></h2>
+<h2>Tables</h2>
+<h3><a id="tables-intro">Introduction to tables</a></h3>
 
 <p>This chapter defines the processing model for tables in CSS. Part
 of this processing model is the layout. For the layout, this chapter
@@ -13915,7 +13915,7 @@ title="internal table element|table element::internal"><dfn id="internal-table-e
 table element</dfn></span> is one that produces a row, row group, column,
 column group, or cell.
 
-<h2><a id="table-display">The CSS table model</a></h2>
+<h3><a id="table-display">The CSS table model</a></h3>
 
 <p>The CSS table model is based on the HTML4 table model, in
 which the structure of a table closely parallels the visual layout of
@@ -14052,7 +14052,7 @@ algorithms intended for backwards compatible rendering. However, this
 is not meant to discourage the use of 'display: table' on other,
 non-table elements in HTML.
 
-<h3><a id="anonymous-boxes">Anonymous table objects</a></h3> 
+<h4><a id="anonymous-boxes">Anonymous table objects</a></h4> 
 
 <p>Document languages other than HTML may not contain all the elements
 in the CSS&nbsp;2 table model. In these cases, the "missing"
@@ -14215,7 +14215,7 @@ D     { display: inline; font-weight: bolder }
 </pre>
 </div>
 
-<h2><a id="columns">Columns</a></h2>
+<h3><a id="columns">Columns</a></h3>
 
 <p>Table cells may belong to two contexts: rows and columns. However,
 in the source document cells are descendants of rows, never of
@@ -14273,7 +14273,7 @@ col.totals { width: 5em }
 </pre>
 </div>
 
-<h2><a id="model">Tables in the visual formatting model</a></h2>
+<h3><a id="model">Tables in the visual formatting model</a></h3>
 
 <p>In terms of the visual formatting model, a table can behave like a
 <a href="visuren.html#block-level">block-level</a> (for 'display:
@@ -14321,7 +14321,7 @@ it">
 <p class="caption">Diagram of a table with a caption above it.
 </div>
 
-<h3><a id="caption-position">Caption position and alignment</a></h3>
+<h4><a id="caption-position">Caption position and alignment</a></h4>
 
 <!-- #include src=properties/caption-side.srb -->
 
@@ -14359,7 +14359,7 @@ caption { caption-side: bottom;
 </pre>
 </div>
 
-<h2><a id="table-layout">Visual layout of table contents</a></h2>
+<h3><a id="table-layout">Visual layout of table contents</a></h3>
 
 <p>Internal table elements generate rectangular <a
 href="box.html#box-dimensions">boxes</a> which participate in the
@@ -14456,7 +14456,7 @@ renderings of an erroneous HTML table.
 </div>
 </div>
 
-<h3><a id="table-layers">Table layers and transparency</a></h3>
+<h4><a id="table-layers">Table layers and transparency</a></h4>
 
 <p>For the purposes of finding the background of each table cell, the
 different table elements may be thought of as being on six
@@ -14566,9 +14566,9 @@ class="propinst-border-spacing">'border-spacing'</span> property is
 always the background of the table element. See <a
 href="#separated-borders">the separated borders model</a>.
 
-<h3><a id="width-layout">Table width algorithms:</a>
+<h4><a id="width-layout">Table width algorithms:</a>
 the <span class="propinst-table-layout">'table-layout'</span>
-property</h3>
+property</h4>
 
 <p>CSS does not define an "optimal" layout for tables since, in many
 cases, what is optimal is a matter of taste. CSS does define
@@ -14607,7 +14607,7 @@ and columns. Values have the following meaning:
 
 <p>The two algorithms are described below.
 
-<h4><a id="fixed-table-layout">Fixed table layout</a></h4>
+<h5><a id="fixed-table-layout">Fixed table layout</a></h5>
 
 <p>With this (fast) algorithm, the horizontal layout of the table does
 not depend on the contents of the cells; it only depends on the
@@ -14671,7 +14671,7 @@ not affect column widths. Any cell that has content that overflows
 uses the <span class="propinst-overflow">'overflow'</span> property to
 determine whether to clip the overflow content.
 
-<h4><a id="auto-table-layout">Automatic table layout</a></h4>
+<h5><a id="auto-table-layout">Automatic table layout</a></h5>
 
 <p>In this algorithm (which generally requires no more than two
 passes), the table's width is given by the width of its columns (and
@@ -14772,7 +14772,7 @@ width of a column may indirectly influence the height of a row, and
 vice versa.</em>
 </div>
 
-<h3><a id="height-layout">Table height algorithms</a></h3>
+<h4><a id="height-layout">Table height algorithms</a></h4>
 
 <p>The height of a table is given by the <span
 class="propinst-height">'height'</span> property for the 'table' or
@@ -14918,7 +14918,7 @@ div { height: 0; overflow: hidden; }
 </div>
 
 
-<h3><a id="column-alignment">Horizontal alignment in a column</a></h3>
+<h4><a id="column-alignment">Horizontal alignment in a column</a></h4>
 
 <p>The horizontal alignment of inline-level content within a cell
 box can be specified by the value of
@@ -14927,7 +14927,7 @@ the cell.
 
 <!-- dynamic effect -->
 
-<h3><a id="dynamic-effects">Dynamic row and column effects</a></h3>
+<h4><a id="dynamic-effects">Dynamic row and column effects</a></h4>
 
 <p>The <span class="propinst-visibility">'visibility'</span> property
 takes the value 'collapse' for row, row group, column, and column
@@ -14941,7 +14941,7 @@ to remove table rows or columns without forcing a re-layout of the
 table in order to account for the potential change in column
 constraints.
 
-<h2><a id="borders">Borders</a></h2>
+<h3><a id="borders">Borders</a></h3>
 
 <p>There are two distinct models for setting borders on table cells in
 CSS. One is most suitable for so-called <span class="index-inst"
@@ -14956,7 +14956,7 @@ either model, so it is often a matter of taste which one is used.
 selects the separated borders border model. The value 'collapse'
 selects the collapsing borders model. The models are described below.
 
-<h3><a id="separated-borders">The separated borders model</a></h3>
+<h4><a id="separated-borders">The separated borders model</a></h4>
 
 <!-- #include src=properties/border-spacing.srb -->
 
@@ -15025,8 +15025,8 @@ td.special { border: inset 10pt }  /* The top-left cell */
 </div>
 </div>
 
-<h4><a id="empty-cells">Borders and Backgrounds around empty cells:</a> the <span
-class="propinst-empty-cells">'empty-cells'</span> property</h4>
+<h5><a id="empty-cells">Borders and Backgrounds around empty cells:</a> the <span
+class="propinst-empty-cells">'empty-cells'</span> property</h5>
 
 <!-- #include src=properties/empty-cells.srb -->
 
@@ -15062,7 +15062,7 @@ table { empty-cells: show }
 </pre>
 </div>
 
-<h3><a id="collapsing-borders">The collapsing border model</a></h3>
+<h4><a id="collapsing-borders">The collapsing border model</a></h4>
 
 <p>In the collapsing border model, it is possible to specify borders
 that surround all or part of a cell, row, row group, column, and
@@ -15130,7 +15130,7 @@ does have margins).
 <p>CSS&nbsp;2 does not define where the edge of a background on a
 table element lies.
 
-<h4><a id="border-conflict-resolution">Border conflict resolution</a></h4>
+<h5><a id="border-conflict-resolution">Border conflict resolution</a></h5>
 
 <p>In the collapsing border model, borders at every edge of every cell
 may be specified by border properties on a variety of elements that
@@ -15247,7 +15247,7 @@ td.cell6       { border: 5px solid green; }
 </pre>
 </div>
 
-<h3><a id="table-border-styles">Border styles</a></h3>
+<h4><a id="table-border-styles">Border styles</a></h4>
 
 <p>Some of the values of the <span class="index-inst"
 title="&lt;border-style&gt;"><span
@@ -15323,10 +15323,10 @@ below they are marked with an asterisk.
 
 <!-- SPLIT: ui.html -->
   
-<h1>User interface</h1>
+<h2>User interface</h2>
 
-<h2><a id="cursor-props">Cursors:</a> the <span
-class="propinst-cursor">'cursor'</span> property</h2>
+<h3><a id="cursor-props">Cursors:</a> the <span
+class="propinst-cursor">'cursor'</span> property</h3>
 
 <!-- #include src=properties/cursor.srb -->
 
@@ -15407,7 +15407,7 @@ If that cursor format was also not supported, the UA would skip to the next valu
 
 
 
-<h2><a id="system-colors">System Colors</a></h2>
+<h3><a id="system-colors">System Colors</a></h3>
 
 <div class="note"><p><em><strong>Note.</strong> 
 The System Colors are deprecated in the CSS3 Color Module [[!CSS3COLOR]].
@@ -15500,14 +15500,14 @@ p { color: WindowText; background-color: Window }
 </code></pre>
 </div>
 
-<h2><a id="system-fonts">User preferences for fonts</a></h2>
+<h3><a id="system-fonts">User preferences for fonts</a></h3>
 
 <p>As for colors, authors may specify fonts in a way that makes use of
 a user's system resources. Please consult the <span
 class="propinst-font">'font'</span> property for details.
 </p>
-<h2><a id="dynamic-outlines">Dynamic outlines:</a> the <span
-class="index-def" title="outline">'outline'</span> property</h2>
+<h3><a id="dynamic-outlines">Dynamic outlines:</a> the <span
+class="index-def" title="outline">'outline'</span> property</h3>
 
 <p>At times, style sheet authors may want to create outlines around
 visual objects such as buttons, active form fields, image maps, etc.,
@@ -15602,7 +15602,7 @@ of the outline, without provoking a reflow.
 </p>
 </div>
 
-<h3><a id="outline-focus">Outlines and the focus</a></h3>
+<h4><a id="outline-focus">Outlines and the focus</a></h4>
 
 <p>Graphical user interfaces may use outlines around elements to tell
 the user which element on the page has the <span class="index-def"
@@ -15627,7 +15627,7 @@ rules can be used:
 </code></pre>
 </div>
 
-<h2><a id="magnification">Magnification</a></h2>
+<h3><a id="magnification">Magnification</a></h3>
 
 <p>The CSS working group considers that the magnification of a
 document or portions of a document should not be specified through
@@ -15644,12 +15644,12 @@ page, a user agent should keep the text within the comic strip balloon.
 <!-- SPLIT: aural.html -->  
   
   
-<H1>Aural style sheets</H1>
+<h2>Aural style sheets</h2>
 
 <p>This chapter is informative. UAs are not required to implement the
 properties of this chapter in order to conform to CSS 2.
 
-<h2><a id="aural-media-group">The media types 'aural' and 'speech'</a></h2>
+<h3><a id="aural-media-group">The media types 'aural' and 'speech'</a></h3>
 
 <p>We expect that in a future level of CSS there will be new
 properties and values defined for speech output. Therefore
@@ -15682,7 +15682,7 @@ while
 </div>
 
 
-<H2><a id="aural-intro">Introduction to aural style sheets</a></H2>
+<h3><a id="aural-intro">Introduction to aural style sheets</a></h3>
 
 <p>The aural rendering of a document, already commonly used by the
 blind and print-impaired communities, combines speech synthesis and
@@ -15731,7 +15731,7 @@ paragraphs of class "peter" from the right. Paragraphs with class
 </div>
 
 
-<H3><a id="angles">Angles</a></H3>
+<h4><a id="angles">Angles</a></h4>
 <P>Angle values are denoted by <span class="index-def"
 title="&lt;angle&gt;::definition of"><a
 id="value-def-angle">&lt;angle&gt;</a></span> in the text.
@@ -15758,7 +15758,7 @@ equivalent.
 <p>Like for &lt;length&gt;, the unit may be omitted, if the value is
 zero: '0deg' may be written as '0'.
 
-<H3><a id="times">Times</a></H3>
+<h4><a id="times">Times</a></h4>
 
 <P>Time values are denoted by <span class="index-def" title="&lt;time&gt;::definition of"><a id="value-def-time">&lt;time&gt;</a></span> in the
 text.
@@ -15779,7 +15779,7 @@ followed by a time unit identifier.
 <p>Like for &lt;length&gt;, the unit may be omitted, if the value is
 zero: '0s' may be written as '0'.
 
-<H3><a id="frequencies">Frequencies</a></H3>
+<h4><a id="frequencies">Frequencies</a></h4>
 
 <P>Frequency values are denoted by <span class="index-def"
 title="&lt;frequency&gt;::definition of"><a
@@ -15804,8 +15804,8 @@ is a treble sound.
 <p>Like for &lt;length&gt;, the unit may be omitted, if the value is
 zero: '0Hz' may be written as '0'.
 
-<H2><a id="volume-props">Volume properties</a>: <span
-class="propinst-volume">'volume'</span></H2>
+<h3><a id="volume-props">Volume properties</a>: <span
+class="propinst-volume">'volume'</span></h3>
 
 <!-- #include src=properties/volume.srb -->
 
@@ -15873,8 +15873,8 @@ dynamic range.
 <p>The same author style sheet could be used in all cases, simply by
 mapping the '0' and '100' points suitably at the client side.
 
-<H2><a id="speaking-props">Speaking properties</a>: <span
-class="propinst-speak">'speak'</span></H2>
+<h3><a id="speaking-props">Speaking properties</a>: <span
+class="propinst-speak">'speak'</span></h3>
 
 <!-- #include src=properties/speak.srb -->
 
@@ -15908,10 +15908,10 @@ any pause before and after the element, but no sound is generated. The
 latter requires no time and is not rendered (though its descendants
 may be).
 
-<H2><a id="pause-props">Pause properties</a>: <span
+<h3><a id="pause-props">Pause properties</a>: <span
 class="propinst-pause-before">'pause-before'</span>, <span
 class="propinst-pause-after">'pause-after'</span>, and <span
-class="propinst-pause">'pause'</span></H2>
+class="propinst-pause">'pause'</span></h3>
 
 <!-- #include src=properties/pause-before.srb -->
 
@@ -15966,10 +15966,10 @@ h3 { pause-after: 10ms } /* pause-before unspecified; pause-after: 10ms */
 </PRE>
 </div>
 
-<H2><a id="cue-props">Cue properties</a>: <span
+<h3><a id="cue-props">Cue properties</a>: <span
 class="propinst-cue-before">'cue-before'</span>, <span
 class="propinst-cue-after">'cue-after'</span>, and <span
-class="propinst-cue">'cue'</span></H2>
+class="propinst-cue">'cue'</span></h3>
 
 <!-- #include src=properties/cue-before.srb -->
 
@@ -16024,8 +16024,8 @@ before content from the ':before' pseudo-element. Similarly,
 'pause-after' gaps and 'cue-after' sounds are inserted after content
 from the ':after' pseudo-element.
 
-<H2><a id="mixing-props">Mixing properties</a>: <span
-class="propinst-play-during">'play-during'</span></H2>
+<h3><a id="mixing-props">Mixing properties</a>: <span
+class="propinst-play-during">'play-during'</span></h3>
 
 <!-- #include src=properties/play-during.srb -->
 
@@ -16076,10 +16076,10 @@ span.quiet     { play-during: none }
 </pre>
 </div>
 
-<H2><a id="spatial-props">Spatial properties</a>: <span
+<h3><a id="spatial-props">Spatial properties</a>: <span
 class="propinst-azimuth">'azimuth'</span> and
 <span class="propinst-elevation">'elevation'</span>
-</H2>
+</h3>
 
 <p>Spatial audio is an important stylistic property for aural
 presentation. It provides a natural way to tell several voices apart,
@@ -16198,13 +16198,13 @@ tr.c { elevation: level }
 </pre>
 </div>
 
-<h2><a id="voice-char-props">Voice characteristic properties</a>: <span
+<h3><a id="voice-char-props">Voice characteristic properties</a>: <span
 class="propinst-speech-rate">'speech-rate'</span>, <span
 class="propinst-voice-family">'voice-family'</span>,
 <span class="propinst-pitch">'pitch'</span>,
 <span class="propinst-pitch-range">'pitch-range'</span>,
 <span class="propinst-stress">'stress'</span>, and
-<span class="propinst-richness">'richness'</span></H2>
+<span class="propinst-richness">'richness'</span></h3>
 
 <!-- #include src=properties/speech-rate.srb -->
 
@@ -16354,10 +16354,10 @@ The higher the value, the more the voice will carry.
 A lower value will produce a soft, mellifluous voice.
 </dl>
 
-<H2><a id="speech-props">Speech properties</a>:
+<h3><a id="speech-props">Speech properties</a>:
 <span class="propinst-speak-punctuation">'speak-punctuation'</span>
 and <span class="propinst-speak-numeral">'speak-numeral'</span>
-</h2>
+</h3>
 
 <p>An additional speech property, <span
 class="propinst-speak-header">'speak-header'</span>, is
@@ -16391,7 +16391,7 @@ following meanings:</P>
 "Two hundred thirty seven". Word representations are language-dependent.
 </dl>
 
-<h2><a id="aural-tables">Audio rendering of tables</a></h2>
+<h3><a id="aural-tables">Audio rendering of tables</a></h3>
 <p>When a table is spoken by a speech generator, the relation between
 the data cells and the header cells must be expressed in a different
 way than by horizontal and vertical alignment. Some speech browsers
@@ -16400,8 +16400,8 @@ giving them the opportunity to map out the spatially represented
 relations. When that is not possible, the style sheet must specify at
 which points the headers are spoken.</p>
 
-<h3><a id="speak-headers">Speaking headers:</a> the <span
-class="propinst-speak-header">'speak-header'</span> property</h3>
+<h4><a id="speak-headers">Speaking headers:</a> the <span
+class="propinst-speak-header">'speak-header'</span> property</h4>
 
 
 <!-- #include src=properties/speak-header.srb -->
@@ -16535,7 +16535,7 @@ San Jose, 25-Aug-97, Meals: 37.74
 </pre>
 </div>
 
-<h2><a id="sample">Sample style sheet for HTML</a></h2>
+<h3><a id="sample">Sample style sheet for HTML</a></h3>
 
 <p>This style sheet describes a possible rendering of HTML 4:
 
@@ -16565,7 +16565,7 @@ a:active      { voice-family: betty, female; pitch-range: 80; pitch: x-high }
 }
 </pre>
 
-<h2><a id="Emacspeak">Emacspeak</a></h2>
+<h3><a id="Emacspeak">Emacspeak</a></h3>
 
 <p>For information, here is the list of properties implemented by
 Emacspeak, a speech subsystem for the Emacs editor.
@@ -16583,9 +16583,9 @@ status of aural properties.)
 
 <!-- SPLIT: refs.html -->  
   
-<H1>Bibliography</H1>
+<h2>Bibliography</h2>
 <!--
-<H2><a id="normative">Normative references</a></H2>
+<h3><a id="normative">Normative references</a></h3>
 <dl>
 <dt><strong><a id="ref-COLORIMETRY" class="normref">[COLORIMETRY]</a></strong>
 <dd>"Colorimetry", Third Edition, Commission Internationale de
@@ -16739,7 +16739,7 @@ http://www.w3.org/TR/2006/REC-xml11-20060816/</a>
 Report, Murray Hill, 1975.
 </dl>
 
-<H2><a id="informative">Informative references</a></H2>
+<h3><a id="informative">Informative references</a></h3>
 <dl>
 
 <DT><STRONG><a id="ref-CHARSETS" class="informref">[CHARSETS]</A></STRONG></DT>
@@ -16858,7 +16858,7 @@ http://www.w3.org/TR/2009/REC-xml-names-20091208/</a>.
 -->
 <!-- SPLIT: changes.html -->  
 
-<H1>Changes</H1>
+<h2>Changes</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>Below are the changes relative to the first revision of CSS2
@@ -17984,7 +17984,7 @@ p { color:green; color{;color:maroon} } /* unexpected tokens { } */
 
 <!-- SPLIT: sample.html -->  
 
-<H1>Default style sheet for HTML 4</H1>
+<h2>Default style sheet for HTML 4</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 
 <P>This style sheet describes the typical formatting of all HTML 4
@@ -18089,12 +18089,12 @@ BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
 
 <!-- SPLIT: zindex.html -->  
 
-<H1>Elaborate description of Stacking Contexts</H1>
+<h2>Elaborate description of Stacking Contexts</h2>
 
 <p>This chapter defines the CSS&nbsp;2 painting order in more detail than
 described in the rest of the specification.</p>
 
-<h2><a id="stacking-defs">Definitions</a></h2>
+<h3><a id="stacking-defs">Definitions</a></h3>
 
 <dl>
 
@@ -18115,7 +18115,7 @@ forth.</dd>
 
 </dl>
 
-<h2><a id="painting-order">Painting order</a></h2>
+<h3><a id="painting-order">Painting order</a></h3>
 
     <p>The bottom of the stack is the furthest from the user, the top
     of the stack is the nearest to the user:
@@ -18341,7 +18341,7 @@ z-index:  canvas  -1	0    1	  2
 	not in the steps above.)
     </ol>
 
-    <h2><a id="stacking-notes">Notes</a></h2>
+    <h3><a id="stacking-notes">Notes</a></h3>
 
     <p>The background of the root element is only painted once, over
     the whole canvas.
@@ -18354,7 +18354,7 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: propidx.html -->  
 
-<H1>Full property table</H1>
+<h2>Full property table</h2>
 
 <P><em>This appendix is informative, not normative.</em></P>
 
@@ -18362,7 +18362,7 @@ z-index:  canvas  -1	0    1	  2
 
 <!-- SPLIT: grammar.html -->  
 
-<H1>Grammar of CSS&nbsp;2</H1>
+<h2>Grammar of CSS&nbsp;2</h2>
 
 <p>This appendix is non-normative.
 
@@ -18377,7 +18377,7 @@ effect, since the document language may impose restrictions that are
 not in CSS, e.g., HTML imposes restrictions on the possible values of
 the "class" attribute.
 
-<h2><a id="grammar">Grammar</a></h2>
+<h3><a id="grammar">Grammar</a></h3>
 
 <P> The grammar below is <span class="index-inst"
 title="LALR(1)">LALR(1)</span> (but note that most UA's should not use it
@@ -18484,7 +18484,7 @@ hexcolor
   ;
 </pre>
 
-<h2><a id="scanner">Lexical scanner</a></h2>
+<h3><a id="scanner">Lexical scanner</a></h3>
 
 <p> The following is the <span class="index-def"
 title="tokenizer">tokenizer</span>, written in Flex (see [[FLEX]])
@@ -18603,8 +18603,8 @@ Z		z|\\0{0,4}(5a|7a)(\r\n|[ \t\r\n\f])?|\\z
 .			{return *yytext;}
 </pre>
 
-<h2><a id="tokenizer-diffs">Comparison of tokenization in CSS&nbsp;2 and
-CSS1</a></h2>
+<h3><a id="tokenizer-diffs">Comparison of tokenization in CSS&nbsp;2 and
+CSS1</a></h3>
 
 <p>There are some differences in the syntax specified in the CSS1
 recommendation ([[!CSS1]]), and the one above. Most of these are due
@@ -18648,7 +18648,7 @@ make ".55ft" a valid class, CSS2 requires the first digit to be
 escaped (".\35 5ft")
 </ul>
 
-<h2>Implementation note</h2>
+<h3>Implementation note</h3>
 
 <p>The lexical scanner for the CSS core syntax in <a
 href="syndata.html#tokenization">section&nbsp;4.1.1</a> can be
@@ -18679,12 +18679,12 @@ u\+[0-9a-f?]{1,6}/- return UNICODE_RANGE;
 
 <!-- SPLIT: leftblank.html -->
 
-<H1>Appendix H: Has been intentionally left blank</H1>
+<h2>Appendix H: Has been intentionally left blank</h2>
 
 
 <!-- SPLIT: indexlist.html -->  
 
-<H1>Index</H1>
+<h2>Index</h2>
 <P><em>This appendix is informative, not normative.</em></P>
 <!--
 <DIV class=NOPRINT>
