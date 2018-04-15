@@ -313,10 +313,13 @@ LN= ln
 	$(MKANCHDB) -r $*.html value-def- $(VALUEDB) $@
 	$(MKANCHDB) -r $*.html propdef- $(VALUEDB) $@
 
-%.png: %.eps; convert -density 96x96 $< $@
-%.png: %.ps; convert -density 96x96 $< $@
-%.png: %.idraw; convert -density 96x96 $< $@
+%.big.png: %.eps; convert -density 96x96 $< $@
+%.big.png: %.ps; convert -density 96x96 $< $@
+%.big.png: %.idraw; convert -density 96x96 $< $@
 %.eps: %.fig; fig2dev -L eps -F -c $< $@
+
+%.png: %.big.png
+	zopflipng -m $< $@
 
 #.idraw.gif:
 #	$(RM) $@
