@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg243"
+   version="1.1"
+   viewBox="1732 2782 6313 8906"
+   height="562pt"
+   width="398pt">
+  <metadata
+     id="metadata249">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs247" />
+  <g
+     id="g241"
+     fill="none">
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline147"
+       fill="#ffff00"
+       points=" 2107,10601 2107,7810 5747,7810 5747,10601 2107,10601" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline149"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2107,10601 2107,7810 5747,7810 5747,10601 2107,10601" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text151"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="10581"
+       x="2205"
+       xml:space="preserve">UL padding</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline153"
+       fill="#5151ff"
+       points=" 2542,8843 2542,8236 5175,8236 5175,8843 2592,8843" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text155"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="8837"
+       x="2630"
+       xml:space="preserve">LI padding</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline157"
+       fill="#5151ff"
+       points=" 2714,8662 2714,8418 5125,8418 5125,8662 2714,8662" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text159"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="8655"
+       x="2714"
+       xml:space="preserve">First element of list</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline161"
+       fill="#ffff00"
+       points=" 2113,5840 2113,3119 5725,3119 5725,5840 2113,5840" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text163"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="10801"
+       x="1804"
+       xml:space="preserve">UL margins</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text165"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="10324"
+       x="2410"
+       xml:space="preserve">LI margins</text>
+    <!-- Line -->
+    <rect
+       id="rect167"
+       stroke-width="8px"
+       stroke="#000000"
+       height="291"
+       width="2462"
+       y="8407"
+       x="2713" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline169"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2349,10358 2349,8053 5504,8053 5504,10358 2349,10358" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline171"
+       fill="#5151ff"
+       points=" 2530,10116 2525,9174 5184,9174 5184,10116 2592,10116" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text173"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="10096"
+       x="2630"
+       xml:space="preserve">LI padding</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline175"
+       fill="#5151ff"
+       points=" 2714,9930 2714,9265 5140,9265 5140,9930 2714,9930" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text177"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="9474"
+       x="2714"
+       xml:space="preserve">Second element of list is a</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text179"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="9686"
+       x="2714"
+       xml:space="preserve">bit longer to illustrate</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text181"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="9899"
+       x="2714"
+       xml:space="preserve">wrapping.</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline183"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 1744,11389 6126,11389" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline185"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 1744,11389 1864,11419 1864,11359 1744,11389" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline187"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 6126,11389 6005,11359 6005,11419 6126,11389" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text189"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="11673"
+       x="3366"
+       xml:space="preserve">Box width of UL</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline191"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 6232,8781 6232,9144" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline193"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 6232,8781 6202,8902 6262,8902 6232,8781" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline195"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 6232,9144 6262,9023 6202,9023 6232,9144" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text197"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="9019"
+       x="6354"
+       xml:space="preserve">Collapsed margin is</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text199"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="9185"
+       x="6354"
+       xml:space="preserve">max(12px, 12px)=12px</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text201"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="11188"
+       x="3207"
+       xml:space="preserve">Content width of UL</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline203"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2349,10934 5504,10934" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline205"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2349,10934 2471,10965 2471,10904 2349,10934" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline207"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 5504,10934 5383,10904 5383,10965 5504,10934" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline209"
+       fill="#5151ff"
+       points=" 2576,5460 2576,4517 5184,4517 5184,5460 2576,5460" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline211"
+       stroke-dasharray="60 60"
+       stroke-width="15px"
+       stroke="#38fb30"
+       points=" 2589,5447 2589,4531 5175,4531 5175,5447 2589,5447" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text213"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="4818"
+       x="2709"
+       xml:space="preserve">Second element of list is a</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text215"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="5031"
+       x="2709"
+       xml:space="preserve">bit longer to illustrate</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text217"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="5243"
+       x="2709"
+       xml:space="preserve">wrapping.</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline219"
+       fill="#5151ff"
+       points=" 2577,4187 2577,3580 5175,3580 5175,4187 2577,4187" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text221"
+       text-anchor="start"
+       font-size="168"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#ffffff"
+       y="3999"
+       x="2709"
+       xml:space="preserve">First element of list</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline223"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2789,7234 5094,7234" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline225"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2789,7234 2911,7264 2911,7203 2789,7234" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline227"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 5094,7234 4973,7203 4973,7264 5094,7234" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text229"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="italic"
+       font-family="Helvetica"
+       fill="#000000"
+       y="7108"
+       x="3260"
+       xml:space="preserve">Content width of LI</text>
+    <!-- Line -->
+    <polyline
+       id="polyline231"
+       stroke-dasharray="10 45"
+       stroke-width="15px"
+       stroke="#000000"
+       points=" 5175,8410 5175,7260" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline233"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2543,8843 2543,8236 5175,8236 5175,8843 2543,8841" />
+    <!-- Line -->
+    <polyline
+       id="polyline235"
+       stroke-dasharray="10 45"
+       stroke-width="15px"
+       stroke="#000000"
+       points=" 2725,8420 2725,7230" />
+    <!-- Line -->
+    <rect
+       id="rect237"
+       stroke-width="8px"
+       stroke="#000000"
+       height="655"
+       width="2460"
+       y="9305"
+       x="2715" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline239"
+       stroke-dasharray="60 60"
+       stroke-width="15px"
+       stroke="#38fb30"
+       points=" 2543,10105 2543,9186 5175,9186 5175,10105 2543,10105" />
+  </g>
+</svg>

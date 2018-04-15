@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg503"
+   version="1.1"
+   viewBox="2507 2585 5076 4915"
+   height="295pt"
+   width="305pt">
+  <metadata
+     id="metadata509">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs507" />
+  <g
+     id="g501"
+     fill="none">
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline441"
+       stroke-dasharray="10 40"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2519,7488 2519,4968 7571,4968 7571,7488 2519,7488" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline443"
+       stroke-dasharray="10 40"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2519,5232 2519,3504 7571,3504 7571,5232 2519,5232" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline445"
+       stroke-dasharray="10 40"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2782,5954 2782,4097 3981,4097 3981,5954 2782,5954" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline447"
+       stroke-dasharray="10 40"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2783,4899 2783,3833 7307,3833 7307,4899 2783,4899" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline449"
+       stroke-dasharray="10 40"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2783,7151 2783,5291 7307,5291 7307,7151 2783,7151" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline451"
+       stroke-width="15px"
+       stroke="#ff1440"
+       points=" 2651,7224 2651,5232 7439,5232 7439,7224 2651,7224" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline453"
+       stroke-width="15px"
+       stroke="#ff1440"
+       points=" 2651,4969 2651,3768 7439,3768 7439,4969 2651,4969" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline455"
+       fill="#c2c2c2"
+       points=" 2938,5810 2938,4229 3836,4229 3836,5810 2938,5810" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline457"
+       stroke-width="15px"
+       stroke="#000000"
+       points=" 2938,5810 2938,4229 3836,4229 3836,5810 2938,5810" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text459"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="4052"
+       x="2783"
+       xml:space="preserve">Some sample text in the first paragraph. It has a floating</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text461"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="4316"
+       x="3983"
+       xml:space="preserve">image that was right about here (X) in the</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text463"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="4580"
+       x="3983"
+       xml:space="preserve">source. However, the image is so large that</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text465"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="4856"
+       x="3983"
+       xml:space="preserve">it extends below the text of this paragraph.</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline467"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 3836,4229 2937,5810" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text469"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="5516"
+       x="3983"
+       xml:space="preserve">The second paragraph is therefore also</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text471"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="5780"
+       x="3983"
+       xml:space="preserve">affected. Any inline boxes in it are &quot;pushed</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text473"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="6044"
+       x="3983"
+       xml:space="preserve">aside,&quot; as they are forbidden from coming</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text475"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="6308"
+       x="2783"
+       xml:space="preserve">inside the area delimited by the floating image's margins.</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text477"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="6572"
+       x="2783"
+       xml:space="preserve">Note that the paragraph boxes are still rectangular, but</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text479"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="6848"
+       x="2783"
+       xml:space="preserve">their borders and backgrounds are &quot;clipped&quot; or interrupted</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text481"
+       text-anchor="start"
+       font-size="132"
+       font-weight="normal"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="7112"
+       x="2783"
+       xml:space="preserve">by the floating image.</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline483"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 5447,3506 5975,2841" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text485"
+       text-anchor="start"
+       font-size="132"
+       font-weight="bold"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="2720"
+       x="5447"
+       xml:space="preserve">paragraph margin</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline487"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 3458,4164 3060,2844" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text489"
+       text-anchor="start"
+       font-size="132"
+       font-weight="bold"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="2720"
+       x="2795"
+       xml:space="preserve">image margin</text>
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text491"
+       text-anchor="start"
+       font-size="132"
+       font-weight="bold"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="2996"
+       x="3851"
+       xml:space="preserve">paragraph border</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline493"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 4115,3100 4511,3768" />
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline495"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 2939,4229 3858,5825" />
+    <!-- Text -->
+    <!--  text  -->
+    <text
+       id="text497"
+       text-anchor="start"
+       font-size="132"
+       font-weight="bold"
+       font-style="normal"
+       font-family="Helvetica"
+       fill="#000000"
+       y="3260"
+       x="5844"
+       xml:space="preserve">paragraph padding</text>
+    <!-- Line -->
+    <!--  polyline  -->
+    <polyline
+       id="polyline499"
+       stroke-width="8px"
+       stroke="#000000"
+       points=" 5844,3828 6503,3372" />
+  </g>
+</svg>
