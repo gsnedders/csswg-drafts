@@ -6,7 +6,13 @@
 <!--script src="http://www.w3c-test.org/css/harness/annotate.js#CSS21_DEV" type="text/javascript" defer></script-->
 </HEAD>
 <BODY>
+<!--<bs-del>-->
 <H6>Appendix H: Has been intentionally left blank</H6>
+<!--</bs-del>-->
+<!--<bs-ins>
+<H1>Has been intentionally left blank</H1>
+</bs-ins>-->
+
 
 </BODY>
 </HTML>

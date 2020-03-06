@@ -100,7 +100,7 @@ MAINSRCS = $(SRCS1)
 
 REFS= $(REFSRCS:.src=.html)
 
-SPECSRCS= $(SRCS0) $(MAINSRCS) $(APPSRCS) $(INDEXSRCS) $(REFS)
+SPECSRCS= $(SRCS0) $(MAINSRCS) $(APPSRCS) $(INDEXSRCS) $(REFSRCS)
 
 SPECOBJS= $(SPECSRCS:.src=.html)
 
@@ -121,6 +121,7 @@ ALLOBJS= $(SPECOBJS) $(IMAGES) $(LONGDESCS) $(STYLESHEETS)
 PROPSRC= properties/properties.db
 PROPSAMPLE= properties/sample.db
 PROPBLKSDIR= build/properties
+PROPBLKSDIRBS= build/bs/properties
 
 # dbase for property name anchors
 PROPERTYDB= build/property.db
@@ -172,6 +173,8 @@ INSAFTER= $(PERL) ./bin/insafter
 ADDLINKS= $(PERL) ./bin/addlinks
 # extract properties from db.
 PEXTR= $(PERL) ./bin/pextr
+# extract properties from db.
+PEXTRBS= $(PERL) ./bin/pextrbs
 # check validity of sample style sheet
 CHKSAMPLE= $(PERL) ./bin/chksample
 # make database of references (reference.src)
@@ -315,6 +318,44 @@ install-pdf: install css2.pdf
 install-all: install install-ps install-pdf css2.zip css2.txt
 	$(CP) css2.zip css2.txt $(INSTALLDIR)
 
+# bikeshed?
+css2.bs.html: css2.bs
+	bikeshed -q -f spec $< $@
+
+css2.bs: Project.cfg $(addprefix build/, $(SPECSRCS:.src=.bspart)) bikeshed-header.bs.part $(PROPBLKSDIRBS)/blocks.ok Makefile
+	grep '^@chapter' Project.cfg  |\
+	sed -e 's/@chapter //' |\
+	sed -e 's/\.html/.bspart/' |\
+	sed -e 's#^#build/#' |\
+	xargs cat |\
+	sed -e '1i\
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">' |\
+	xmllint --html --htmlout - |\
+	$(HIPP) -I$(PROPBLKSDIRBS)/.. |\
+	perl -np -e 's|^([\-+])|\\\1|mg' |\
+	cat bikeshed-header.bs.part - > $@
+
+build/%.bspart: %.src Makefile  $(PROPBLKSDIRBS)/blocks.ok
+	perl -0777 -np -e 's|<bs-del>.*?<\/bs-del>||gs' $< |\
+	perl -0777 -np -e 's|(<bs-ins>)(.*?)(<\/bs-ins>)|\1-->\2<!--\3|gs' |\
+	perl -0777 -np -e 's/^.*<BODY[^>]*>(.*)<\/BODY.*$$/\1/isg' |\
+	perl -0777 -np -e 's/<(h[0-9][^>]*)>[\s\n]*<span id=([^>\s]*)>/<\1 id=\2><span>/isg' |\
+	perl -np -e 's|<(\/)?([A-Z0-9]+[\s>])|<\1\L\2|gi' |\
+	perl -np -e 's|<(\/)?h5([\s>])|<\1h6\2|g' |\
+	perl -np -e 's|<(\/)?h4([\s>])|<\1h5\2|g' |\
+	perl -np -e 's|<(\/)?h3([\s>])|<\1h4\2|g' |\
+	perl -np -e 's|<(\/)?h2([\s>])|<\1h3\2|g' |\
+	perl -np -e 's|<(\/)?h1([\s>])|<\1h2\2|g' |\
+	perl -np -e 's| id="q0"||g' |\
+	perl -np -e 's|\[\[([^-])|\[\[!\1|g' |\
+	perl -np -e 's|\[\[-|\[\[|g' |\
+	perl -np -e "s#('(?!(azimuth|background|background-attachment|background-color|background-image|background-position|background-repeat|border|border-bottom|border-bottom-color|border-bottom-style|border-bottom-width|border-collapse|border-color|border-left|border-left-color|border-left-style|border-left-width|border-right|border-right-color|border-right-style|border-right-width|border-spacing|border-style|border-top|border-top-color|border-top-style|border-top-width|border-width|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue|cue-after|cue-before|cursor|direction|display|elevation|empty-cells|float|font|font-family|font-size|font-style|font-variant|font-weight|height|left|letter-spacing|line-height|list-style|list-style-image|list-style-position|list-style-type|margin|margin-bottom|margin-left|margin-right|margin-top|max-height|max-width|min-height|min-width|orphans|outline|outline-color|outline-style|outline-width|overflow|padding|padding-bottom|padding-left|padding-right|padding-top|page-break-after|page-break-before|page-break-inside|pause|pause-after|pause-before|pitch|pitch-range|play-during|position|property-name|quotes|richness|right|speak|speak-header|speak-numeral|speak-punctuation|speech-rate|stress|table-layout|text-align|text-decoration|text-indent|text-transform|top|unicode-bidi|vertical-align|visibility|voice-family|volume|white-space|widows|width|word-spacing|z-index)')\S*?')#'\1'#g" > $@
+
+$(PROPBLKSDIRBS)/blocks.ok: $(PROPSRC) Makefile
+	@rm -rf $(PROPBLKSDIRBS)
+	@mkdir -p $(PROPBLKSDIRBS)
+	$(PEXTRBS) $(PROPSRC) $(PROPBLKSDIRBS)
+	touch $@
 
 #### Special section to build PS file and single plain text file
 
@@ -369,7 +410,7 @@ css2.tgz: $(ALLOBJS) # images/links.ok
 
 css2.zip: $(ALLOBJS)
 	$(ZIP) $@ $(ALLOBJS)
-#	$(ZIP) $@ $(ALLOBJS) `$(LS) -d images/*.png | $(GREP) -v "\."` 
+#	$(ZIP) $@ $(ALLOBJS) `$(LS) -d images/*.png | $(GREP) -v "\."`
 
 #### Section generate property tables from property database.
 
@@ -472,7 +513,7 @@ build/refs.db : $(SPECSRCS) $(REFSRCS)
 
 ### Spell check, using a "CSS" personal dictionary.
 
-checkspell: 
+checkspell:
 	-@echo "# Begin spell checking."
 	-@for i in $(SPECSRCS) $(LONGDESCS); \
 	   do\
@@ -505,7 +546,7 @@ checkprops: $(SPECSRCS) $(PROPSRC)
 
 # Check spaces
 
-checkspaces: $(SPECSRCS) 
+checkspaces: $(SPECSRCS)
 	-@echo "# Begin checking spaces."
 	-@$(CHKSPACES) $(SPECSRCS) $(LONGDESCS)
 	-@echo "# End checking spaces."
@@ -541,7 +582,7 @@ clean:
 realclean: clean
 
 depend:
-	$(HMKDEPEND) $(SPECOBJS) 
+	$(HMKDEPEND) $(SPECOBJS)
 
 
 
